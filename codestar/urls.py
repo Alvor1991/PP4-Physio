@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from physio.views import my_physio
+from appointments.views import my_appointments
 
 urlpatterns = [
-    path('physio/', my_physio, name='physio'),
+    path('appointments/', my_appointments, name='appointments'),
     path('admin/', admin.site.urls),
 ]
