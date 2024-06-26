@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Appointment
 
 # Create your views here.
-def my_appointments(request):
-    return HttpResponse("Hello, Appointments!")
-
+class AppointmentList(generic.ListView):
+    queryset = Appointment.objects.all()
+    template_name = "appointments/appointment_list.html"
