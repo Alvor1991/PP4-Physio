@@ -19,11 +19,33 @@
     <div class="row">
         <div class="col card mb-4 mt-3 left top">
             <div class="card-body">
-                <!-- appointment notes -->
-                <!--| safe filter inside the template tags -->
-                <p class="card-text">
-                    {{ appointment.notes | safe }}
-                </p>
+                <h2>Appointment Details</h2>
+                <p><strong>Date:</strong> {{ appointment.date | date:"F j, Y" }}</p>
+                <p><strong>Time:</strong> {{ appointment.date | date:"g:i a" }}</p>
+
+                <h2>Client Information</h2>
+                <p><strong>Name:</strong> {{ appointment.client.username }}</p>
+                <p><strong>Contact:</strong> {{ appointment.client.email }}</p>
+                <p><strong>Phone:</strong> {{ appointment.client.phone_number }}</p>
+
+                <h2>Physiotherapist Information</h2>
+                <p><strong>Name:</strong> Dr. Emily Johnson</p>
+                <p><strong>Contact:</strong> emily.johnson@physioclinic.com</p> 
+
+                <h2>Appointment Notes</h2>
+                <p>{{ appointment.notes | safe }}</p>
+
+                <h2>Location</h2>
+                <p><strong>Address:</strong> 123 Wellness Avenue, Health City</p>
+                <p><strong>Room:</strong> Physiotherapy Room 3</p>
+
+                <h2>Session Details</h2>
+                <p><strong>Duration:</strong> 45 minutes</p>
+                <p><strong>Focus Areas:</strong> Knee strengthening exercises, pain management techniques</p>
+
+                <h2>Follow-up Actions</h2>
+                <p><strong>Next Appointment:</strong> Scheduled for August 25, 2024, at 6:00 PM</p>
+                <p><strong>Home Exercises:</strong> Continue with the prescribed knee exercises twice daily</p>
             </div>
         </div>
     </div>

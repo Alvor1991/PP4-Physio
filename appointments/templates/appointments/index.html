@@ -13,11 +13,12 @@
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <a href="{% url 'appointment_detail' appointment.id %}" class="post-link"></a>
-                            <h2 class="card-title">Appointment with {{ appointment.client.username }}</h2>
-                            <hr />
-                            <p class="card-text text-muted h6">Date: {{ appointment.date|date:"F j, Y, g:i a" }}</p>
-                            <p class="card-text">{{ appointment.notes|safe }}</p>
+                            <a href="{% url 'appointment_detail' appointment.id %}" class="post-link">
+                                <h2 class="card-title">Appointment with {{ appointment.client.username }}</h2>
+                                <hr />
+                                <p class="card-text text-muted h6">Date: {{ appointment.date|date:"F j, Y, g:i a" }}</p>
+                                <p class="card-text">{{ appointment.notes|safe }}</p>
+                            </a>
                         </div>
                     </div>
                 </div>
