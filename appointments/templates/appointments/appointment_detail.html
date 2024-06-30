@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-12 masthead-text">
+                <!-- Appointment title -->
+                <h1 class="post-title">Appointment with {{ appointment.client.username }}</h1>
+                <!-- Appointment date -->
+                <p class="post-subtitle">Date: {{ appointment.date | date:"F j, Y, g:i a" }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col card mb-4 mt-3 left top">
+            <div class="card-body">
+                <!-- appointment notes -->
+                <!--| safe filter inside the template tags -->
+                <p class="card-text">
+                    {{ appointment.notes | safe }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
