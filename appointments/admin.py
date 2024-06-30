@@ -10,7 +10,5 @@ class AppointmentAdmin(SummernoteModelAdmin):
     list_filter = ('date',)
     summernote_fields = ('notes',)
 
-
-# Register your models here.
 admin.site.register(User)
 
