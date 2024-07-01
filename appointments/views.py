@@ -1,20 +1,38 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.views import generic
-from django.utils import timezone
 from .models import Appointment
 from .forms import AppointmentForm
 
-# Define the AppointmentList view
-class AppointmentList(generic.ListView):
-    queryset = Appointment.objects.filter(date__gte=timezone.now()).order_by("date")
-    template_name = "appointments/index.html"
-    paginate_by = 6
+@login_required(login_url='/accounts/login/')
+def dashboard(request):
+    user_appointments = Appointment.objects.filter(client=request.user).order_by("date")
+    return render(request, "appointments/dashboard.html", {"appointments": user_appointments})
 
-# Define the appointment_detail view
+@login_required(login_url='/accounts/login/')
+def book_appointment(request):
+    if request.method == "POST":
+        form = AppointmentForm(request.POST)
+        if form.is_valid():
+            appointment = form.save(commit=False)
+            appointment.client = request.user
+            appointment.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Appointment booked successfully.'
+            )
+            return redirect('dashboard')
+    else:
+        form = AppointmentForm()
+    return render(request, "appointments/book_appointment.html", {"form": form})
+
+@login_required(login_url='/accounts/login/')
 def appointment_detail(request, id):
     appointment = get_object_or_404(Appointment, id=id)
-
+    if appointment.client != request.user:
+        messages.add_message(request, messages.ERROR, 'You are not authorized to view this appointment.')
+        return redirect('dashboard')
+    
     if request.method == "POST":
         form = AppointmentForm(request.POST, instance=appointment)
         if form.is_valid():
@@ -35,4 +53,5 @@ def appointment_detail(request, id):
             "form": form,
         },
     )
+
 
