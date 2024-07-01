@@ -8,7 +8,11 @@ class AboutAdmin(SummernoteModelAdmin):
 
 @admin.register(ContactRequest)
 class ContactRequestAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'read', 'created_on')
+    list_display = ('name', 'email', 'message', 'read', 'created_on')
     list_filter = ('read', 'created_on')
-    search_fields = ('name', 'email')
+    search_fields = ('name', 'email', 'message')
 
+    def get_readonly_fields(self, request, obj=None):
+        if obj:
+            return ['name', 'email', 'message', 'created_on']
+        return []
