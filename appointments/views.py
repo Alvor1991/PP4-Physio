@@ -1,35 +1,29 @@
-from django.shortcuts import render, get_object_or_404
-from django.views import generic
-from django.utils import timezone
+from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib import messages
 from .models import Appointment
-
-# Create your views here.
-class AppointmentList(generic.ListView):
-    queryset = Appointment.objects.filter(date__gte=timezone.now()).order_by("date")
-    template_name = "appointments/index.html"
-    paginate_by = 6
-
-from django.shortcuts import render, get_object_or_404
-from .models import Appointment
+from .forms import AppointmentForm
 
 def appointment_detail(request, id):
-    """
-    Display an individual :model:`appointments.Appointment`.
-
-    **Context**
-
-    ``appointment``
-        An instance of :model:`appointments.Appointment`.
-
-    **Template:**
-
-    :template:`appointments/appointment_detail.html`
-    """
-
     appointment = get_object_or_404(Appointment, id=id)
+
+    if request.method == "POST":
+        form = AppointmentForm(request.POST, instance=appointment)
+        if form.is_valid():
+            form.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Appointment updated successfully.'
+            )
+            return redirect('appointment_detail', id=appointment.id)
+    else:
+        form = AppointmentForm(instance=appointment)
 
     return render(
         request,
         "appointments/appointment_detail.html",
-        {"appointment": appointment},
+        {
+            "appointment": appointment,
+            "form": form,
+        },
     )
+
