@@ -1,6 +1,7 @@
 {% load static %}
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
+{% url 'treatments' as treatments_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -33,7 +34,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'appointments' %}"><span class="brand">Physio<span class="red-o">App</span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">Physio<span class="red-o">App</span></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,11 +43,15 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'appointments' %}">Home</a>
+                            href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
+                        <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
                            href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == treatments_url %}active{% endif %}" aria-current="page"
+                           href="{% url 'treatments' %}">Treatments</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -114,3 +119,4 @@
 </body>
 
 </html>
+

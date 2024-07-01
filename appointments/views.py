@@ -36,4 +36,3 @@ def appointment_detail(request, id):
         },
     )
 
-
