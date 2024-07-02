@@ -14,12 +14,10 @@ class User(AbstractUser):
 
 # Appointment model
 class Appointment(models.Model):
-    client = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={'role': 'client'})
+    client_name = models.CharField(max_length=100)
+    client_email = models.EmailField()
     date = models.DateTimeField()
     notes = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return f"Appointment for {self.client.username} on {self.date}"
-
-    class Meta:
-        ordering = ["-date"]
+        return f"Appointment for {self.client_name} on {self.date}"
