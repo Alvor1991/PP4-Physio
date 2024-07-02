@@ -2,10 +2,7 @@
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
 {% url 'treatments' as treatments_url %}
-{% url 'dashboard' as dashboard_url %}
-{% url 'account_login' as login_url %}
-{% url 'account_signup' as signup_url %}
-{% url 'account_logout' as logout_url %}
+{% url 'appointments' as appointments_url %}
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
@@ -78,16 +75,9 @@
         </div>
     </div>
     <main class="flex-shrink-0 main-bg">
-        {% if user.is_authenticated %}
-        <p class="text-end m-3">You are logged in as {{ user.username }}</p>
-        {% else %}
-        <p class="text-end m-3">You are not logged in</p>
-        {% endif %}
-        
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
-
     </main>
 
     <!-- Footer -->
@@ -111,6 +101,7 @@
 </body>
 
 </html>
+
 
 
 

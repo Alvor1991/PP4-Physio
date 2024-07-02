@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import User, Appointment
+from .models import Appointment
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -10,5 +10,4 @@ class AppointmentAdmin(SummernoteModelAdmin):
     list_filter = ('date',)
     summernote_fields = ('notes',)
 
-admin.site.register(User)
 
