@@ -8,7 +8,7 @@ def book_appointment(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Your appointment has been booked.')
-            return redirect('appointments')
+            return redirect('home')
     else:
         form = AppointmentForm()
     return render(request, 'appointments/book_appointment.html', {'form': form})
