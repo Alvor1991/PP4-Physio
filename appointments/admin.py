@@ -11,3 +11,6 @@ class AppointmentAdmin(SummernoteModelAdmin):
     summernote_fields = ('notes',)
 
 
+
+
+
