@@ -1,11 +1,5 @@
 from django.contrib import admin
-from .models import User, Appointment
-
-@admin.register(User)
-class UserAdmin(admin.ModelAdmin):
-    list_display = ('username', 'email', 'first_name', 'last_name', 'role', 'is_staff', 'is_superuser')
-    search_fields = ('username', 'email')
-    list_filter = ('role', 'is_staff', 'is_superuser')
+from .models import Appointment
 
 @admin.register(Appointment)
 class AppointmentAdmin(admin.ModelAdmin):
