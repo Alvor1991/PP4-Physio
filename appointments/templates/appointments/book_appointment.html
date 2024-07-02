@@ -3,13 +3,25 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-8 offset-md-2">
-      <h2>Book an Appointment</h2>
-      <form method="post" action="{% url 'book_appointment' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Book Appointment</button>
-      </form>
+      {% if success %}
+        <div class="alert alert-success text-center" role="alert">
+          Your appointment has been booked successfully.
+        </div>
+        <div class="text-center">
+          <a href="{% url 'home' %}" class="btn btn-primary mt-3">Go to Home</a>
+        </div>
+      {% else %}
+        <h2>Book an Appointment</h2>
+        <form method="post" action="{% url 'book_appointment' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" class="btn btn-primary">Book Appointment</button>
+        </form>
+      {% endif %}
     </div>
   </div>
 </div>
 {% endblock %}
+
+
+
