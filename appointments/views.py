@@ -1,17 +1,15 @@
-from django.shortcuts import render
-from .forms import AppointmentForm
+from django import forms
+from .models import Appointment
 
-def book_appointment(request):
-    success = False
-    if request.method == 'POST':
-        form = AppointmentForm(request.POST)
-        if form.is_valid():
-            form.save()
-            success = True
-            form = AppointmentForm()  # Reset form after successful submission
-    else:
-        form = AppointmentForm()
-    return render(request, 'appointments/book_appointment.html', {'form': form, 'success': success})
+class AppointmentForm(forms.ModelForm):
+    class Meta:
+        model = Appointment
+        fields = ['date', 'time', 'notes', 'client_name', 'client_email']
+        widgets = {
+            'date': forms.DateInput(attrs={'type': 'date'}),
+            'time': forms.Select(),  # This will be populated dynamically
+        }
+
 
 
 
