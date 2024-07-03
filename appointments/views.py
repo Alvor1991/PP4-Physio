@@ -9,9 +9,8 @@ def book_appointment(request):
             form.save()
             messages.success(request, 'Your appointment has been booked successfully.')
             return render(request, 'appointments/book_appointment.html', {'form': form, 'success': True})
-        else:
-            messages.error(request, 'Please correct the errors below.')
     else:
         form = AppointmentForm()
 
     return render(request, 'appointments/book_appointment.html', {'form': form, 'success': False})
+

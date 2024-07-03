@@ -7,5 +7,6 @@ class AppointmentForm(forms.ModelForm):
         fields = ['date', 'time', 'notes', 'client_name', 'client_email']
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date'}),
-            'time': forms.TimeInput(attrs={'type': 'time'}),
+            'time': forms.TimeInput(attrs={'type': 'time', 'step': 300}),
         }
+

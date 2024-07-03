@@ -3,9 +3,6 @@ from .models import Appointment
 
 @admin.register(Appointment)
 class AppointmentAdmin(admin.ModelAdmin):
-    list_display = ('client_name', 'client_email', 'date', 'notes')
+    list_display = ('client_name', 'client_email', 'date', 'time', 'notes')
     search_fields = ('client_name', 'client_email')
-    list_filter = ('date',)
-
-
-
+    list_filter = ('date', 'time')
