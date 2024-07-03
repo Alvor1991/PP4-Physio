@@ -15,35 +15,10 @@
         <form method="post" action="{% url 'book_appointment' %}">
           {% csrf_token %}
           {{ form.as_p }}
-          <button type="submit" class="btn btn-primary mb-5 mt-4">Book Appointment</button>
+          <button type="submit" class="btn btn-primary mb-5 mt-2">Book Appointment</button>
         </form>
       {% endif %}
     </div>
   </div>
 </div>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const dateField = document.querySelector('input[type="date"]');
-  const timeField = document.querySelector('select[name="time"]');
-
-  dateField.addEventListener('change', function() {
-    fetch(`/appointments/get_available_time_slots/?date=${this.value}`)
-      .then(response => response.json())
-      .then(data => {
-        timeField.innerHTML = '';
-        data.forEach(slot => {
-          const option = document.createElement('option');
-          option.value = slot;
-          option.textContent = slot;
-          timeField.appendChild(option);
-        });
-      });
-  });
-});
-</script>
 {% endblock %}
-
-
-
-
-

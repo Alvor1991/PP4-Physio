@@ -9,3 +9,6 @@ class Appointment(models.Model):
 
     def __str__(self):
         return f"Appointment for {self.client_name} on {self.date} at {self.time}"
+
+
+

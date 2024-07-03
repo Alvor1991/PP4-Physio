@@ -1,0 +1,26 @@
+                      List of relations
+ Schema |             Name              | Type  |    Owner    
+--------+-------------------------------+-------+-------------
+ public | about_about                   | table | uuacmhqx1aq
+ public | about_contactrequest          | table | uuacmhqx1aq
+ public | account_emailaddress          | table | uuacmhqx1aq
+ public | account_emailconfirmation     | table | uuacmhqx1aq
+ public | appointments_appointment      | table | uuacmhqx1aq
+ public | auth_group                    | table | uuacmhqx1aq
+ public | auth_group_permissions        | table | uuacmhqx1aq
+ public | auth_permission               | table | uuacmhqx1aq
+ public | auth_user                     | table | uuacmhqx1aq
+ public | auth_user_groups              | table | uuacmhqx1aq
+ public | auth_user_user_permissions    | table | uuacmhqx1aq
+ public | django_admin_log              | table | uuacmhqx1aq
+ public | django_content_type           | table | uuacmhqx1aq
+ public | django_migrations             | table | uuacmhqx1aq
+ public | django_session                | table | uuacmhqx1aq
+ public | django_site                   | table | uuacmhqx1aq
+ public | django_summernote_attachment  | table | uuacmhqx1aq
+ public | socialaccount_socialaccount   | table | uuacmhqx1aq
+ public | socialaccount_socialapp       | table | uuacmhqx1aq
+ public | socialaccount_socialapp_sites | table | uuacmhqx1aq
+ public | socialaccount_socialtoken     | table | uuacmhqx1aq
+(21 rows)
+
