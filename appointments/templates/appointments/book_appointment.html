@@ -21,8 +21,31 @@
     </div>
   </div>
 </div>
-{% endblock %}
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const dateInput = document.querySelector("#id_date");
+    const timeSlotSelect = document.querySelector("#id_time_slot");
+
+    dateInput.addEventListener("change", function() {
+        const selectedDate = dateInput.value;
+        if (selectedDate) {
+            fetch(`/appointments/get_time_slots/?date=${selectedDate}`)
+                .then(response => response.json())
+                .then(data => {
+                    timeSlotSelect.innerHTML = '';
+                    data.available_slots.forEach(slot => {
+                        const option = document.createElement("option");
+                        option.value = slot;
+                        option.textContent = slot;
+                        timeSlotSelect.appendChild(option);
+                    });
+                });
+        }
+    });
+});
+</script>
+{% endblock %}
 
 
 
