@@ -15,14 +15,6 @@
         <form method="post" action="{% url 'book_appointment' %}">
           {% csrf_token %}
           {{ form.as_p }}
-          <div class="form-group">
-            <label for="id_time_slot">Time Slot</label>
-            <select name="time_slot" id="id_time_slot" class="form-control">
-              {% for slot in form.fields.time_slot.choices %}
-                <option value="{{ slot.0 }}">{{ slot.1 }}</option>
-              {% endfor %}
-            </select>
-          </div>
           <button type="submit" class="btn btn-primary mb-5 mt-2">Book Appointment</button>
         </form>
       {% endif %}
@@ -30,6 +22,12 @@
   </div>
 </div>
 {% endblock %}
+
+
+
+
+
+
 
 
 
