@@ -12,7 +12,7 @@ class AppointmentAdmin(admin.ModelAdmin):
     formatted_date.short_description = 'Date'
 
     def formatted_time(self, obj):
-        return obj.time.strftime('%I:%M %p') if obj.time else 'N/A'
+        return obj.time.strftime('%H:%M') if obj.time else 'N/A'
     formatted_time.short_description = 'Time'
 
 
