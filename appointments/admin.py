@@ -3,6 +3,20 @@ from .models import Appointment
 
 @admin.register(Appointment)
 class AppointmentAdmin(admin.ModelAdmin):
-    list_display = ('client_name', 'client_email', 'date', 'time', 'notes')
+    list_display = ('client_name', 'client_email', 'formatted_date', 'formatted_time', 'notes')
     search_fields = ('client_name', 'client_email')
     list_filter = ('date', 'time')
+
+    def formatted_date(self, obj):
+        return obj.date.strftime('%Y-%m-%d')  
+    formatted_date.short_description = 'Date'
+
+    def formatted_time(self, obj):
+        return obj.time.strftime('%I:%M %p') if obj.time else 'N/A'
+    formatted_time.short_description = 'Time'
+
+
+
+
+
+

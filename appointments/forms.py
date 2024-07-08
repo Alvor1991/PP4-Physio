@@ -1,6 +1,7 @@
 from django import forms
 from .models import Appointment
 from .utils import get_available_time_slots
+from datetime import datetime
 
 class DateInput(forms.DateInput):
     input_type = 'date'
@@ -24,6 +25,17 @@ class AppointmentForm(forms.ModelForm):
                 self.fields['time_slot'].choices = []
         else:
             self.fields['time_slot'].choices = []
+
+    def save(self, commit=True):
+        appointment = super().save(commit=False)
+        # Save the time slot correctly
+        appointment.time = datetime.strptime(self.cleaned_data['time_slot'], '%H:%M').time()
+        if commit:
+            appointment.save()
+        return appointment
+
+
+
 
 
 
