@@ -6,7 +6,6 @@
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
-
 <head>
     <title>Physio Appointment Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,9 +25,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-
 <body class="d-flex flex-column h-100 main-bg">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
@@ -52,7 +49,7 @@
                             href="{% url 'treatments' %}">Treatments</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == appointments_url %}active{% endif %}" aria-current="page"
+                        <a class="nav-link {% if request.path == book_appointment_url %}active{% endif %}" aria-current="page"
                            href="{% url 'book_appointment' %}">Book Appointment</a>
                     </li>
                 </ul>
@@ -96,8 +93,8 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
 </body>
-
 </html>
+
 
 
 
