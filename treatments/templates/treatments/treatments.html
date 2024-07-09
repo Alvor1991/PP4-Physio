@@ -1,7 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container mt-5">
-    <h1>Treatments</h1>
-    <p>Details about the various treatments offered.</p>
+    <h1 class="mb-4">Our Treatments</h1>
+    <div class="row">
+        {% for treatment in treatments %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                {% if treatment.image %}
+                <img src="{{ treatment.image.url }}" class="card-img-top" alt="{{ treatment.name }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ treatment.name }}</h5>
+                    <p class="card-text">{{ treatment.description|truncatewords:20 }}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
-{% endblock content %}
+{% endblock %}
+
