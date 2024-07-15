@@ -13,6 +13,10 @@ class AppointmentForm(forms.ModelForm):
     class Meta:
         model = Appointment
         fields = ['client_name', 'client_email', 'date', 'time_slot', 'notes']
+        labels = {
+            'client_name': 'Name',
+            'client_email': 'Email',
+        }
 
     def __init__(self, *args, **kwargs):
         super(AppointmentForm, self).__init__(*args, **kwargs)
@@ -33,6 +37,7 @@ class AppointmentForm(forms.ModelForm):
         if commit:
             appointment.save()
         return appointment
+
 
 
 
