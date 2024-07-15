@@ -4,6 +4,10 @@ from .models import About, ContactRequest
 from .forms import ContactForm
 
 def about_me(request):
+    """
+    View to handle the 'About Me' page, including displaying the latest 'About' content 
+    and handling the contact form submission.
+    """
     if request.method == "POST":
         contact_form = ContactForm(data=request.POST)
         if contact_form.is_valid():

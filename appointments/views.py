@@ -7,6 +7,10 @@ from .utils import get_available_time_slots
 from datetime import datetime
 
 def book_appointment(request):
+    """
+    View to handle the appointment booking process, including form submission and validation.
+    If the form is valid, the appointment is saved, and a success message is displayed.
+    """
     if request.method == 'POST':
         form = AppointmentForm(request.POST)
         if form.is_valid():
@@ -21,6 +25,10 @@ def book_appointment(request):
     return render(request, 'appointments/book_appointment.html', {'form': form, 'success': False})
 
 def get_time_slots(request):
+    """
+    View to handle AJAX requests for available time slots for a given date.
+    Returns a JSON response with the available time slots.
+    """
     date = request.GET.get('date')
     if date:
         available_slots = get_available_time_slots(date)
