@@ -16,6 +16,7 @@ class AppointmentForm(forms.ModelForm):
         labels = {
             'client_name': 'Name',
             'client_email': 'Email',
+            'notes': '',
         }
 
     def __init__(self, *args, **kwargs):
@@ -37,6 +38,7 @@ class AppointmentForm(forms.ModelForm):
         if commit:
             appointment.save()
         return appointment
+
 
 
 
