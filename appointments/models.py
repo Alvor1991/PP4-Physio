@@ -1,6 +1,10 @@
 from django.db import models
 
 class Appointment(models.Model):
+    """
+    Model to store appointments booked by clients, 
+    including their name, email, date, time, and any additional notes.
+    """
     client_name = models.CharField(max_length=100)
     client_email = models.EmailField()
     date = models.DateField()
