@@ -1,7 +1,66 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
+
+<!-- Banner Image -->
+<div class="banner-image">
+    <img src="{% static 'images/home.jpg' %}" alt="Banner Image">
+</div>
+
 <div class="container mt-5">
     <h1>Welcome to My Physio Practice</h1>
     <p>General information about the practice...</p>
 </div>
+
+<!-- Services We Offer Section -->
+<div class="container mt-5">
+    <h2>Services We Offer</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Sports Injury Rehabilitation</h5>
+                    <p class="card-text">We help you recover from sports injuries quickly and effectively.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Post-Surgical Rehabilitation</h5>
+                    <p class="card-text">Our team provides care and support to get you back on your feet after surgery.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Pain Management</h5>
+                    <p class="card-text">We offer comprehensive pain management strategies to improve your quality of life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Pediatric Physiotherapy</h5>
+                    <p class="card-text">Specialized care for children to help them achieve their physical potential.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Geriatric Physiotherapy</h5>
+                    <p class="card-text">Focused care for older adults to maintain and improve their mobility and health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}
+
+
