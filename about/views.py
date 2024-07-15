@@ -7,6 +7,7 @@ def about_me(request):
     """
     View to handle the 'About Me' page, including displaying the latest 'About' content 
     and handling the contact form submission.
+    Displays an individual instance of :model:`about.About`
     """
     if request.method == "POST":
         contact_form = ContactForm(data=request.POST)

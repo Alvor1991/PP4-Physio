@@ -3,8 +3,9 @@ from cloudinary.models import CloudinaryField
 
 class About(models.Model):
     """
-    Model to store information about the website or business, 
-    including title, last updated date, and content.
+    Model representing the 'About Me' section.
+    Displays an individual instance of :model:`about.About`.
+    Contains title, updated date, and content fields.
     """
     title = models.CharField(max_length=200)
     updated_on = models.DateTimeField(auto_now=True)
@@ -15,8 +16,9 @@ class About(models.Model):
 
 class ContactRequest(models.Model):
     """
-    Model to store contact requests submitted by users, 
-    including their name, email, message, read status, and the date created.
+    Model representing a contact request.
+    Displays an individual instance of :model:`contact.ContactRequest`.
+    Contains name, email, message, read status, and creation date fields.
     """
     name = models.CharField(max_length=100)
     email = models.EmailField()

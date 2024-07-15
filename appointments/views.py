@@ -10,6 +10,7 @@ def book_appointment(request):
     """
     View to handle the appointment booking process, including form submission and validation.
     If the form is valid, the appointment is saved, and a success message is displayed.
+    Displays an individual instance of :model:`appointments.Appointment`
     """
     if request.method == 'POST':
         form = AppointmentForm(request.POST)
