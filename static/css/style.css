@@ -212,3 +212,28 @@ body {
 .service-card i {
     color: #188181;
 }
+
+.testimonial {
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+}
+
+.testimonial-author {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #188181;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #188181;
+    border-radius: 50%;
+    padding: 10px;
+}
