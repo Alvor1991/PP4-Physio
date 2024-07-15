@@ -176,7 +176,6 @@ body {
     overflow: hidden;
 }
 
-
 .banner-image img {
     width: 100%;
     height: auto;
@@ -184,3 +183,32 @@ body {
     object-fit: cover;
 }
 
+.service-card {
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card .card-body {
+    padding: 20px;
+}
+
+.service-card .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-card .card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service-card i {
+    color: #188181;
+}
