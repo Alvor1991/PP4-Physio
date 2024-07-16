@@ -7,13 +7,13 @@
     <img src="{% static 'images/home.jpg' %}" alt="Banner Image">
 </div>
 
-<div class="container mt-5">
+<div class="container mt-5 content-container">
     <h1>Welcome to My Physio Practice</h1>
-    <p>General information about the practice...</p>
+    <p>{{ home_content.welcome_message }}</p>
 </div>
 
 <!-- Services We Offer Section -->
-<div class="container mt-5">
+<div class="container mt-5 content-container">
     <h2 class="text-center mb-4">Services We Offer</h2>
     <div class="row">
         <div class="col-md-4">
@@ -76,7 +76,7 @@
 </div>
 
 <!-- Side by Side Sections -->
-<div class="container mt-5">
+<div class="container mt-5 content-container">
     <div class="row">
         <!-- Services Offered -->
         <div class="col-md-6 mb-4">
@@ -105,7 +105,7 @@
 </div>
 
 <!-- Client Testimonials Section -->
-<div class="container mt-5">
+<div class="container mt-5 content-container">
     <h2 class="text-center mb-4">Client Testimonials</h2>
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
