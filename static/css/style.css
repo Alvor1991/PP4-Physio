@@ -1,5 +1,13 @@
 body {
     background-color: #F9FAFC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-bg {
+    background-color: #F9FAFC;
+    flex: 1;
 }
 
 .brand {
@@ -23,10 +31,6 @@ body {
 
 .dark-bg {
     background-color: #445261;
-}
-
-.main-bg {
-    background-color: #F9FAFC;
 }
 
 .card {
@@ -242,4 +246,8 @@ body {
     .text-md-end {
         text-align: center !important;
     }
+}
+
+.container-footer-spacing {
+    padding-bottom: 100px;
 }
