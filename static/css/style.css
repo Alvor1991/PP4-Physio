@@ -246,6 +246,10 @@ body {
     .text-md-end {
         text-align: center !important;
     }
+
+    .footer .container .row > div {
+        margin-bottom: 15px;
+    }
 }
 
 .container-footer-spacing {
