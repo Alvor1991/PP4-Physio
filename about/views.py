@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib import messages
+from django.http import JsonResponse
 from .models import About, ContactRequest
 from .forms import ContactForm
 
@@ -14,7 +15,9 @@ def about_me(request):
         if contact_form.is_valid():
             contact_form.save()
             messages.add_message(request, messages.SUCCESS, "Your message has been sent successfully. I endeavor to respond within 2 working days.")
-
+            if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+                return JsonResponse({'success': True})
+    
     about = About.objects.all().order_by('-updated_on').first()
     contact_form = ContactForm()
 
@@ -26,3 +29,4 @@ def about_me(request):
             "contact_form": contact_form,
         },
     )
+
