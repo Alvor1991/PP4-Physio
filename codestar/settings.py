@@ -97,7 +97,10 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com"
 ]
 
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_FORMS = {
+    'signup': 'home.forms.CustomSignupForm', 
+}
+
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
