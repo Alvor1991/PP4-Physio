@@ -18,6 +18,7 @@ def book_appointment(request):
         form = AppointmentForm(request.POST)
         if form.is_valid():
             appointment = form.save(commit=False)
+            appointment.user = request.user
             appointment.time = datetime.strptime(form.cleaned_data['time_slot'], '%H:%M').time()
             appointment.save()
             messages.success(request, 'Your appointment has been booked successfully.')
@@ -37,13 +38,3 @@ def get_time_slots(request):
         available_slots = get_available_time_slots(date)
         return JsonResponse({'available_slots': available_slots})
     return JsonResponse({'available_slots': []})
-
-
-
-
-
-
-
-
-
-
