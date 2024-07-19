@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.http import JsonResponse
@@ -6,6 +7,7 @@ from .models import Appointment
 from .utils import get_available_time_slots
 from datetime import datetime
 
+@login_required
 def book_appointment(request):
     """
     View to handle the appointment booking process, including form submission and validation.
@@ -35,6 +37,7 @@ def get_time_slots(request):
         available_slots = get_available_time_slots(date)
         return JsonResponse({'available_slots': available_slots})
     return JsonResponse({'available_slots': []})
+
 
 
 
