@@ -28,16 +28,3 @@ class ContactRequest(models.Model):
 
     def __str__(self):
         return self.name
-
-class Testimonial(models.Model):
-    """
-    Model representing a client testimonial.
-    Displays an individual instance of :model:`testimonial.Testimonial`.
-    Contains author, text, and active status fields.
-    """
-    author = models.CharField(max_length=100)
-    text = models.TextField()
-    active = models.BooleanField(default=True)
-
-    def __str__(self):
-        return self.author
