@@ -12,7 +12,7 @@ class AppointmentForm(forms.ModelForm):
 
     class Meta:
         model = Appointment
-        fields = ['date', 'time_slot', 'notes']
+        fields = ['date', 'time_slot', 'treatment', 'notes']
 
     def __init__(self, *args, **kwargs):
         super(AppointmentForm, self).__init__(*args, **kwargs)
@@ -25,6 +25,7 @@ class AppointmentForm(forms.ModelForm):
                 self.fields['time_slot'].choices = []
         else:
             self.fields['time_slot'].choices = []
+        self.fields['treatment'].choices = Appointment.TREATMENT_CHOICES
 
     def save(self, commit=True):
         appointment = super().save(commit=False)
@@ -33,16 +34,3 @@ class AppointmentForm(forms.ModelForm):
         if commit:
             appointment.save()
         return appointment
-
-
-
-
-
-
-
-
-
-
-
-
-
