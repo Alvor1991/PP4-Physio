@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h2>Delete Appointment</h2>
+      <p>Are you sure you want to delete the appointment on {{ appointment.date }} at {{ appointment.time }}?</p>
+      <form method="post" action="{% url 'delete_appointment' appointment.id %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger mb-5 mt-2">Delete Appointment</button>
+        <a href="{% url 'home' %}" class="btn btn-secondary mb-5 mt-2">Cancel</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

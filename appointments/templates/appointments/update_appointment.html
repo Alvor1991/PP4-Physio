@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h2>Update Appointment</h2>
+      <form method="post" action="{% url 'update_appointment' appointment.id %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-warning mb-5 mt-2">Update Appointment</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

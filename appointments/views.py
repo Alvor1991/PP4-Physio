@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.http import JsonResponse
 from .forms import AppointmentForm
@@ -26,8 +26,39 @@ def book_appointment(request):
     else:
         form = AppointmentForm()
 
-    return render(request, 'appointments/book_appointment.html', {'form': form})
+    return render(request, 'appointments/book_appointment.html', {'form': form, 'success': False})
 
+@login_required
+def update_appointment(request, pk):
+    """
+    View to handle the appointment update process.
+    Displays an individual instance of :model:`appointments.Appointment`
+    """
+    appointment = get_object_or_404(Appointment, pk=pk, user=request.user)
+    if request.method == 'POST':
+        form = AppointmentForm(request.POST, instance=appointment)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your appointment has been updated successfully.')
+            return redirect('appointment_success', appointment.id)
+    else:
+        form = AppointmentForm(instance=appointment)
+
+    return render(request, 'appointments/update_appointment.html', {'form': form, 'appointment': appointment})
+
+@login_required
+def delete_appointment(request, pk):
+    """
+    View to handle the appointment deletion process.
+    Displays an individual instance of :model:`appointments.Appointment`
+    """
+    appointment = get_object_or_404(Appointment, pk=pk, user=request.user)
+    if request.method == 'POST':
+        appointment.delete()
+        messages.success(request, 'Your appointment has been deleted successfully.')
+        return redirect('home')
+
+    return render(request, 'appointments/delete_appointment.html', {'appointment': appointment})
 
 def get_time_slots(request):
     """
