@@ -2,6 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.http import JsonResponse
+from django.urls import reverse
 from .forms import AppointmentForm
 from .models import Appointment
 from .utils import get_available_time_slots
@@ -40,7 +41,7 @@ def update_appointment(request, pk):
         if form.is_valid():
             form.save()
             messages.success(request, 'Your appointment has been updated successfully.')
-            return redirect('appointment_success', appointment.id)
+            return render(request, 'appointments/appointment_success.html', {'appointment': appointment})
     else:
         form = AppointmentForm(instance=appointment)
 
@@ -70,3 +71,7 @@ def get_time_slots(request):
         available_slots = get_available_time_slots(date)
         return JsonResponse({'available_slots': available_slots})
     return JsonResponse({'available_slots': []})
+
+def appointment_success(request):
+    return render(request, 'appointments/appointment_success.html')
+
