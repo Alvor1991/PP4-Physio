@@ -16,8 +16,15 @@
       <div class="text-center mt-3">
         <a href="{% url 'home' %}" class="btn btn-primary">Go to Home</a>
         <a href="{% url 'book_appointment' %}" class="btn btn-secondary">Book Another Appointment</a>
+        <a href="{% url 'update_appointment' appointment.id %}" class="btn btn-warning">Update Appointment</a>
+        <form method="post" action="{% url 'delete_appointment' appointment.id %}" class="d-inline">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-danger">Delete Appointment</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
 {% endblock %}
+
+
