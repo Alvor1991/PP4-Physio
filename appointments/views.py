@@ -1,5 +1,3 @@
-# Appointments/views.py
-
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib import messages
@@ -24,11 +22,12 @@ def book_appointment(request):
             appointment.time = datetime.strptime(form.cleaned_data['time_slot'], '%H:%M').time()
             appointment.save()
             messages.success(request, 'Your appointment has been booked successfully.')
-            return redirect('book_appointment')
+            return render(request, 'appointments/appointment_success.html', {'appointment': appointment})
     else:
         form = AppointmentForm()
 
-    return render(request, 'appointments/book_appointment.html', {'form': form, 'success': False})
+    return render(request, 'appointments/book_appointment.html', {'form': form})
+
 
 def get_time_slots(request):
     """

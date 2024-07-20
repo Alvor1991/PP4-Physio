@@ -25,7 +25,6 @@ class AppointmentForm(forms.ModelForm):
                 self.fields['time_slot'].choices = []
         else:
             self.fields['time_slot'].choices = []
-        self.fields['treatment'].choices = Appointment.TREATMENT_CHOICES
 
     def save(self, commit=True):
         appointment = super().save(commit=False)
