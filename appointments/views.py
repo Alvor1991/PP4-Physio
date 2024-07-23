@@ -1,6 +1,5 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib import messages
 from django.http import JsonResponse
 from django.urls import reverse
 from .forms import AppointmentForm
@@ -22,11 +21,9 @@ def book_appointment(request):
             appointment.user = request.user
             appointment.time = datetime.strptime(form.cleaned_data['time_slot'], '%H:%M').time()
             appointment.save()
-            messages.success(request, 'Your appointment has been booked successfully.')
             return render(request, 'appointments/appointment_success.html', {'appointment': appointment})
     else:
         form = AppointmentForm()
-
     return render(request, 'appointments/book_appointment.html', {'form': form, 'success': False})
 
 @login_required
@@ -40,11 +37,9 @@ def update_appointment(request, pk):
         form = AppointmentForm(request.POST, instance=appointment)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your appointment has been updated successfully.')
             return render(request, 'appointments/appointment_success.html', {'appointment': appointment})
     else:
         form = AppointmentForm(instance=appointment)
-
     return render(request, 'appointments/update_appointment.html', {'form': form, 'appointment': appointment})
 
 @login_required
@@ -58,7 +53,6 @@ def delete_appointment(request, pk):
         appointment.delete()
         messages.success(request, 'Your appointment has been deleted successfully.')
         return redirect('home')
-
     return render(request, 'appointments/delete_appointment.html', {'appointment': appointment})
 
 def get_time_slots(request):
@@ -73,5 +67,7 @@ def get_time_slots(request):
     return JsonResponse({'available_slots': []})
 
 def appointment_success(request):
+    """
+    View to display the appointment success page.
+    """
     return render(request, 'appointments/appointment_success.html')
-
