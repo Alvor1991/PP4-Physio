@@ -2,6 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import JsonResponse
 from django.urls import reverse
+from django.contrib import messages  # Add this import
 from .forms import AppointmentForm
 from .models import Appointment
 from .utils import get_available_time_slots
@@ -21,7 +22,8 @@ def book_appointment(request):
             appointment.user = request.user
             appointment.time = datetime.strptime(form.cleaned_data['time_slot'], '%H:%M').time()
             appointment.save()
-            return render(request, 'appointments/appointment_success.html', {'appointment': appointment})
+            appointments = Appointment.objects.filter(user=request.user)
+            return render(request, 'appointments/appointment_success.html', {'appointment': appointment, 'appointments': appointments})
     else:
         form = AppointmentForm()
     return render(request, 'appointments/book_appointment.html', {'form': form, 'success': False})
@@ -37,7 +39,8 @@ def update_appointment(request, pk):
         form = AppointmentForm(request.POST, instance=appointment)
         if form.is_valid():
             form.save()
-            return render(request, 'appointments/appointment_success.html', {'appointment': appointment})
+            appointments = Appointment.objects.filter(user=request.user)
+            return render(request, 'appointments/appointment_success.html', {'appointment': appointment, 'appointments': appointments})
     else:
         form = AppointmentForm(instance=appointment)
     return render(request, 'appointments/update_appointment.html', {'form': form, 'appointment': appointment})
@@ -70,4 +73,5 @@ def appointment_success(request):
     """
     View to display the appointment success page.
     """
-    return render(request, 'appointments/appointment_success.html')
+    appointments = Appointment.objects.filter(user=request.user)
+    return render(request, 'appointments/appointment_success.html', {'appointments': appointments})
