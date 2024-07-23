@@ -9,7 +9,7 @@
       <h2>Appointment Details</h2>
       <ul class="list-group">
         <li class="list-group-item"><strong>Date:</strong> {{ appointment.date }}</li>
-        <li class="list-group-item"><strong>Time:</strong> {{ appointment.time }}</li>
+        <li class="list-group-item"><strong>Time:</strong> {{ appointment.time|time:"H:i" }}</li>
         <li class="list-group-item"><strong>Treatment:</strong> {{ appointment.treatment }}</li>
         <li class="list-group-item"><strong>Notes:</strong> {{ appointment.notes|default:"N/A" }}</li>
       </ul>
@@ -22,11 +22,7 @@
           <button type="submit" class="btn btn-danger">Delete Appointment</button>
         </form>
       </div>
-    </div>
-  </div>
-  <div class="row mt-5">
-    <div class="col-md-8 offset-md-2">
-      <h2>All Your Appointments</h2>
+      <h2 class="mt-5">All Your Appointments</h2>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -38,15 +34,15 @@
           </tr>
         </thead>
         <tbody>
-          {% for app in appointments %}
+          {% for appointment in appointments %}
           <tr>
-            <td>{{ app.date }}</td>
-            <td>{{ app.time }}</td>
-            <td>{{ app.treatment }}</td>
-            <td>{{ app.notes|default:"N/A" }}</td>
+            <td>{{ appointment.date }}</td>
+            <td>{{ appointment.time|time:"H:i" }}</td>
+            <td>{{ appointment.treatment }}</td>
+            <td>{{ appointment.notes|default:"N/A" }}</td>
             <td>
-              <a href="{% url 'update_appointment' app.id %}" class="btn btn-warning btn-sm">Update</a>
-              <form method="post" action="{% url 'delete_appointment' app.id %}" class="d-inline">
+              <a href="{% url 'update_appointment' appointment.id %}" class="btn btn-warning btn-sm">Update</a>
+              <form method="post" action="{% url 'delete_appointment' appointment.id %}" class="d-inline">
                 {% csrf_token %}
                 <button type="submit" class="btn btn-danger btn-sm">Delete</button>
               </form>

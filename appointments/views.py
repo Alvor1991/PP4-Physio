@@ -6,6 +6,7 @@ from django.contrib import messages
 from .forms import AppointmentForm
 from .models import Appointment
 from .utils import get_available_time_slots
+from django.utils import timezone
 from datetime import datetime
 
 @login_required
@@ -21,6 +22,8 @@ def book_appointment(request):
             appointment = form.save(commit=False)
             appointment.user = request.user
             appointment.time = datetime.strptime(form.cleaned_data['time_slot'], '%H:%M').time()
+            # Combine date and time and then make it aware with correct timezone
+            appointment.time = timezone.make_aware(datetime.combine(appointment.date, appointment.time), timezone.get_current_timezone()).time()
             appointment.save()
             messages.success(request, 'Your appointment has been booked successfully.')
             return redirect('user_appointments')
