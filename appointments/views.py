@@ -8,6 +8,17 @@ from .models import Appointment
 from .utils import get_available_time_slots
 from django.utils import timezone
 from datetime import datetime
+from allauth.account.views import LogoutView
+
+class CustomLogoutView(LogoutView):
+    """
+    Custom logout view to clear the 'You have signed out' message.
+    """
+    def dispatch(self, request, *args, **kwargs):
+        response = super().dispatch(request, *args, **kwargs)
+        storage = messages.get_messages(request)
+        storage.used = True
+        return response
 
 @login_required
 def book_appointment(request):

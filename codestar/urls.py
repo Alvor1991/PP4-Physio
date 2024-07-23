@@ -19,6 +19,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from appointments.views import CustomLogoutView
 from django.views.generic import TemplateView
 
 urlpatterns = [
@@ -26,10 +27,10 @@ urlpatterns = [
     path('about/', include('about.urls'), name='about-urls'),
     path('treatments/', include('treatments.urls'), name='treatments-urls'),
     path('appointments/', include('appointments.urls'), name='appointments'),
+    path('accounts/logout/', CustomLogoutView.as_view(), name='account_logout'),
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
