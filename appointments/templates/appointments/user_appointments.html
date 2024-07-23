@@ -17,7 +17,7 @@
         <tbody>
           {% for appointment in appointments %}
           <tr>
-            <td>{{ appointment.date }}</td>
+            <td>{{ appointment.date|date:"F j, Y" }}</td>
             <td>{{ appointment.time|time:"H:i" }}</td>
             <td>{{ appointment.treatment }}</td>
             <td>{{ appointment.notes|default:"N/A" }}</td>
@@ -36,3 +36,4 @@
   </div>
 </div>
 {% endblock %}
+
