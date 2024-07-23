@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 ]
 
 SITE_ID = 1
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/appointments/my_appointments/'
 LOGOUT_REDIRECT_URL = '/'
 
 CLOUDINARY_STORAGE = {

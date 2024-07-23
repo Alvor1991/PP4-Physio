@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import JsonResponse
 from django.urls import reverse
-from django.contrib import messages  # Add this import
+from django.contrib import messages
 from .forms import AppointmentForm
 from .models import Appointment
 from .utils import get_available_time_slots
@@ -22,8 +22,8 @@ def book_appointment(request):
             appointment.user = request.user
             appointment.time = datetime.strptime(form.cleaned_data['time_slot'], '%H:%M').time()
             appointment.save()
-            appointments = Appointment.objects.filter(user=request.user)
-            return render(request, 'appointments/appointment_success.html', {'appointment': appointment, 'appointments': appointments})
+            messages.success(request, 'Your appointment has been booked successfully.')
+            return redirect('user_appointments')
     else:
         form = AppointmentForm()
     return render(request, 'appointments/book_appointment.html', {'form': form, 'success': False})
@@ -39,8 +39,8 @@ def update_appointment(request, pk):
         form = AppointmentForm(request.POST, instance=appointment)
         if form.is_valid():
             form.save()
-            appointments = Appointment.objects.filter(user=request.user)
-            return render(request, 'appointments/appointment_success.html', {'appointment': appointment, 'appointments': appointments})
+            messages.success(request, 'Your appointment has been updated successfully.')
+            return redirect('user_appointments')
     else:
         form = AppointmentForm(instance=appointment)
     return render(request, 'appointments/update_appointment.html', {'form': form, 'appointment': appointment})
@@ -55,9 +55,10 @@ def delete_appointment(request, pk):
     if request.method == 'POST':
         appointment.delete()
         messages.success(request, 'Your appointment has been deleted successfully.')
-        return redirect('home')
+        return redirect('user_appointments')
     return render(request, 'appointments/delete_appointment.html', {'appointment': appointment})
 
+@login_required
 def get_time_slots(request):
     """
     View to handle AJAX requests for available time slots for a given date.
@@ -69,9 +70,10 @@ def get_time_slots(request):
         return JsonResponse({'available_slots': available_slots})
     return JsonResponse({'available_slots': []})
 
-def appointment_success(request):
+@login_required
+def user_appointments(request):
     """
-    View to display the appointment success page.
+    View to display all appointments for the logged-in user.
     """
     appointments = Appointment.objects.filter(user=request.user)
-    return render(request, 'appointments/appointment_success.html', {'appointments': appointments})
+    return render(request, 'appointments/user_appointments.html', {'appointments': appointments})
