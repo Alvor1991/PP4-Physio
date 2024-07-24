@@ -11,3 +11,4 @@ class CustomAccountAdapter(DefaultAccountAdapter):
             return
         super().add_message(request, level, message_template, message_context, extra_tags)
 
+

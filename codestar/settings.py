@@ -103,6 +103,7 @@ ACCOUNT_FORMS = {
 
 ACCOUNT_ADAPTER = 'home.adapter.CustomAccountAdapter' 
 
+
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Europe/Dublin'
 USE_I18N = True

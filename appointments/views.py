@@ -1,13 +1,24 @@
+# appointments/views.py
+
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponseRedirect
 from django.urls import reverse
 from django.contrib import messages
+from django.contrib.auth import logout
 from .forms import AppointmentForm
 from .models import Appointment
 from .utils import get_available_time_slots
 from django.utils import timezone
 from datetime import datetime
+
+@login_required
+def immediate_logout_view(request):
+    """
+    Log the user out immediately without confirmation.
+    """
+    logout(request)
+    return HttpResponseRedirect(reverse('home'))
 
 @login_required
 def book_appointment(request):
@@ -80,4 +91,3 @@ def user_appointments(request):
     """
     appointments = Appointment.objects.filter(user=request.user)
     return render(request, 'appointments/user_appointments.html', {'appointments': appointments})
-
