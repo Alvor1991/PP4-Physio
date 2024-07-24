@@ -98,7 +98,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 ACCOUNT_FORMS = {
-    'signup': 'home.forms.CustomSignupForm', 
+    'signup': 'home.forms.CustomSignupForm',
 }
 
 LANGUAGE_CODE = 'en-us'
@@ -106,7 +106,6 @@ TIME_ZONE = 'Europe/Dublin'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
-
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]

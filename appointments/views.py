@@ -1,24 +1,22 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponseRedirect
 from django.urls import reverse
 from django.contrib import messages
+from django.contrib.auth import logout
 from .forms import AppointmentForm
 from .models import Appointment
 from .utils import get_available_time_slots
 from django.utils import timezone
 from datetime import datetime
-from allauth.account.views import LogoutView
 
-class CustomLogoutView(LogoutView):
+@login_required
+def immediate_logout_view(request):
     """
-    Custom logout view to clear the 'You have signed out' message.
+    Log the user out immediately without confirmation.
     """
-    def dispatch(self, request, *args, **kwargs):
-        response = super().dispatch(request, *args, **kwargs)
-        storage = messages.get_messages(request)
-        storage.used = True
-        return response
+    logout(request)
+    return HttpResponseRedirect(reverse('home'))
 
 @login_required
 def book_appointment(request):
