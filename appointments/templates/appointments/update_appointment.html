@@ -12,5 +12,31 @@
     </div>
   </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const dateInput = document.querySelector('#id_date');
+    const timeSlotSelect = document.querySelector('#id_time_slot');
+
+    if (dateInput) {
+        dateInput.addEventListener('change', function() {
+            fetch(`/appointments/get_time_slots/?date=${dateInput.value}`)
+                .then(response => response.json())
+                .then(data => {
+                    timeSlotSelect.innerHTML = '';
+                    data.available_slots.forEach(slot => {
+                        const option = document.createElement('option');
+                        option.value = slot;
+                        option.textContent = slot;
+                        timeSlotSelect.appendChild(option);
+                    });
+                });
+        });
+        // Trigger the event on page load if date is already filled
+        if (dateInput.value) {
+            dateInput.dispatchEvent(new Event('change'));
+        }
+    }
+});
+</script>
 {% endblock %}
 

@@ -23,6 +23,11 @@ class AppointmentForm(forms.ModelForm):
                 self.fields['time_slot'].choices = [(slot, slot) for slot in available_slots]
             except (ValueError, TypeError):
                 self.fields['time_slot'].choices = []
+        elif self.instance and self.instance.pk:
+            date = self.instance.date
+            available_slots = get_available_time_slots(date)
+            self.fields['time_slot'].choices = [(slot, slot) for slot in available_slots]
+            self.fields['time_slot'].initial = self.instance.time.strftime('%H:%M')
         else:
             self.fields['time_slot'].choices = []
 
