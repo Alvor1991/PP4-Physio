@@ -101,6 +101,8 @@ ACCOUNT_FORMS = {
     'signup': 'home.forms.CustomSignupForm',
 }
 
+ACCOUNT_ADAPTER = 'home.adapter.CustomAccountAdapter' 
+
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Europe/Dublin'
 USE_I18N = True

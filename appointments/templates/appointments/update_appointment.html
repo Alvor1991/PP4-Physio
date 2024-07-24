@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const dateInput = document.querySelector('#id_date');
     const timeSlotSelect = document.querySelector('#id_time_slot');
 
+    function disablePastDates() {
+        const today = new Date().toISOString().split('T')[0];
+        if (dateInput) {
+            dateInput.setAttribute('min', today);
+        }
+    }
+
     if (dateInput) {
         dateInput.addEventListener('change', function() {
             fetch(`/appointments/get_time_slots/?date=${dateInput.value}`)
@@ -36,7 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
             dateInput.dispatchEvent(new Event('change'));
         }
     }
+
+    // Disable past dates on load
+    disablePastDates();
 });
 </script>
 {% endblock %}
-

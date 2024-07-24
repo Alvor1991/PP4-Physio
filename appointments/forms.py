@@ -1,10 +1,15 @@
 from django import forms
 from .models import Appointment
 from .utils import get_available_time_slots
-from datetime import datetime
+from datetime import datetime, date
 
 class DateInput(forms.DateInput):
     input_type = 'date'
+
+    def __init__(self, *args, **kwargs):
+        # Set the minimum date to today
+        kwargs['attrs'] = {'min': date.today().strftime('%Y-%m-%d')}
+        super().__init__(*args, **kwargs)
 
 class AppointmentForm(forms.ModelForm):
     date = forms.DateField(widget=DateInput)
@@ -38,3 +43,4 @@ class AppointmentForm(forms.ModelForm):
         if commit:
             appointment.save()
         return appointment
+
