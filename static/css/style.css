@@ -133,6 +133,30 @@ p {
     color: #23BBBB;
 }
 
+.btn-update {
+    background-color: #FFD700; 
+    color: #fff;
+    border: none;
+}
+
+.btn-update:hover,
+.btn-update:active {
+    background-color: #FFC300; 
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #FF4500; 
+    color: #fff;
+    border: none;
+}
+
+.btn-delete:hover,
+.btn-delete:active {
+    background-color: #FF0000; 
+    color: #fff;
+}
+
 .link {
     color: #23BBBB;
     text-decoration: none;
@@ -148,11 +172,6 @@ p {
     color: #E84610;
     border: none;
     background: transparent;
-}
-
-.btn-delete {
-    color: #fff;
-    background: #E84610;
 }
 
 .btn-like:hover,
@@ -253,9 +272,8 @@ p {
 
 ul.text-left {
     text-align: left;
-    padding-left: 1.5em;
+    padding-left: 1.5em; 
 }
-
 
 @media (max-width: 767.98px) { 
     .text-md-end {
@@ -265,6 +283,7 @@ ul.text-left {
     .footer .container .row > div {
         margin-bottom: 15px;
     }
+
     .text-center .text-md-left {
         text-align: center !important;
     }
