@@ -1,3 +1,4 @@
+<!-- appointments/templates/appointments/update_appointment.html -->
 {% extends "base.html" %}
 {% block content %}
 <div class="container mt-5">
@@ -8,6 +9,7 @@
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="btn btn-warning mb-5 mt-2">Update Appointment</button>
+        <a href="{% url 'user_appointments' %}" class="btn btn-secondary mb-5 mt-2">Cancel</a>
       </form>
     </div>
   </div>
