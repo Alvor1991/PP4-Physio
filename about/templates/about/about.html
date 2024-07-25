@@ -29,31 +29,23 @@
     </div>
   </div>
 
-  <!-- Call to Action -->
-  <div class="row mt-5">
-    <div class="col-12 text-center">
-      <h2>Ready to Start Your Journey to Wellness?</h2>
-    </div>
-  </div>
-
   <!-- displaying Django messages -->
-  <div class="container msg-container">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-        {% for message in messages %}
-        <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
-          {{ message | safe }}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        {% endfor %}
+  <div class="row mt-5">
+    <div class="col-md-8">
+      {% for message in messages %}
+      <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+        {{ message | safe }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
+      {% endfor %}
     </div>
   </div>
 
   <!-- Contact Form -->
   <div class="row mt-5 contact-form-container">
-    <div class="col-md-8 offset-md-2">
+    <div class="col-md-8">
       <h3>Contact Us</h3>
+      <p>To book an appointment drop us a message using the contact form below or use our online appointment booking system. We guarantee to respond to your message within an hour between 8 am and 6 pm. If you’re unable to attend your physiotherapy appointment, please let us know at least 24 hours before.</p>
       <form method="post" action="{% url 'about' %}">
         {{ contact_form|crispy }}
         {% csrf_token %}
@@ -67,7 +59,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form");
   const formContainer = document.querySelector(".contact-form-container");
-  const msgContainer = document.querySelector(".msg-container");
   
   form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -82,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(data => {
       if (data.success) {
-        formContainer.innerHTML = '<div class="alert alert-success" role="alert">Your message has been sent successfully. I endeavor to respond within 2 working days.</div>';
+        formContainer.innerHTML = '<div class="alert alert-success" role="alert">Your message has been sent successfully!</div>';
       }
     })
     .catch(error => console.error('Error:', error));
