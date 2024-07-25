@@ -14,6 +14,7 @@ class DateInput(forms.DateInput):
 class AppointmentForm(forms.ModelForm):
     date = forms.DateField(widget=DateInput)
     time_slot = forms.ChoiceField(choices=[], required=True, label="Time Slot")
+    notes = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'Please describe your issue'}), required=False)
 
     class Meta:
         model = Appointment
@@ -43,4 +44,3 @@ class AppointmentForm(forms.ModelForm):
         if commit:
             appointment.save()
         return appointment
-
