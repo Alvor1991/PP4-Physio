@@ -291,4 +291,33 @@ ul.text-left {
     .text-md-left ul {
         text-align: left !important;
     }
+
+    .mb-3, .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .mb-md-0 {
+        margin-bottom: 0 !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 3rem !important;
+    }
+
+    .mt-5 {
+        margin-top: 3rem !important;
+    }
+
+    .pb-5 {
+        padding-bottom: 3rem !important;
+    }
+
+    .pt-5 {
+        padding-top: 3rem !important;
+    }
+
+    .container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
