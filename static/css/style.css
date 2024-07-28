@@ -32,10 +32,11 @@ p {
     font-weight: 300;
 }
 
-.navbar-favicon {
-    height: 10px;
-    width: 10px;
+.navbar-brand img {
+    height: 100px; 
+    width: auto;  
 }
+
 
 /* Backgrounds */
 .light-bg {
