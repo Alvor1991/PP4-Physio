@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container mt-5">
-    <h1 class="mb-4">Our Treatments</h1>
+    <h1 class="mb-4 text-center">Our Treatments</h1>
+    
+    <!-- Detailed Services Description -->
     <div class="row">
         {% for treatment in treatments %}
         <div class="col-md-4 mb-4">
@@ -11,37 +13,37 @@
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">{{ treatment.name }}</h5>
-                    <p class="card-text">{{ treatment.description|truncatewords:20 }}</p>
+                    <p class="card-text">{{ treatment.description }}</p>
+                    <p><strong>Benefits:</strong> {{ treatment.benefits }}</p>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer text-center">
+                    <p><strong>Price:</strong> {{ treatment.price }}</p>
                     <a href="{% url 'book_appointment' %}" class="btn btn-primary">Book Appointment</a>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
-</div>
-{% endblock %}
-
-
-<div class="container mt-5">
-    <h1 class="mb-4">Our Treatments</h1>
-    <div class="row">
-        {% for treatment in treatments %}
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                {% if treatment.image %}
-                <img src="{{ treatment.image.url }}" class="card-img-top" alt="{{ treatment.name }}">
-                {% endif %}
-                <div class="card-body">
-                    <h5 class="card-title">{{ treatment.name }}</h5>
-                    <p class="card-text">{{ treatment.description|truncatewords:20 }}</p>
-                </div>
-                <div class="card-footer">
-                    <a href="{% url 'book_appointment' %}" class="btn btn-primary">Learn More</a>
+    
+    <!-- FAQ Section -->
+    <div class="mt-5">
+        <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            {% for faq in faqs %}
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading{{ faq.id }}">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ faq.id }}" aria-expanded="true" aria-controls="collapse{{ faq.id }}">
+                        {{ faq.question }}
+                    </button>
+                </h2>
+                <div id="collapse{{ faq.id }}" class="accordion-collapse collapse" aria-labelledby="heading{{ faq.id }}" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        {{ faq.answer }}
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
+{% endblock %}

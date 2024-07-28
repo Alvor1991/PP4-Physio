@@ -280,6 +280,47 @@ ul.text-left {
     padding: 5px;
 }
 
+/* Additional styles for treatments and FAQs */
+.card {
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.accordion-button {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.accordion-body {
+    font-size: 1rem;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #188181;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #23BBBB;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
 @media (max-width: 767.98px) { 
     .text-md-end {
         text-align: center !important;
