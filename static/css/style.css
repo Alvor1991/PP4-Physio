@@ -132,6 +132,16 @@ p {
 
 
 /* Footer */
+.footer {
+    background-color: #445261;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 4rem; 
+    color: #fff;
+}
+
+
+/* Footer */
 .footer-text {
     font-size: 0.875rem; 
 }
@@ -157,14 +167,6 @@ p {
 
 .image-container {
     position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #188181;
 }
 
 .scale {
