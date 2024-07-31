@@ -1,5 +1,7 @@
-/* General Styles */
-body {
+/* ===================================
+   General Styles
+   =================================== */
+   body {
     background-color: #F9FAFC;
     display: flex;
     flex-direction: column;
@@ -16,7 +18,9 @@ p {
     flex: 1;
 }
 
-/* Header and Branding */
+/* ===================================
+   Header and Branding
+   =================================== */
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -30,7 +34,7 @@ p {
 
 /* Custom Navbar Border */
 .navbar-custom {
-    border-bottom: 4px solid #188181; /* Thicker bottom border */
+    border-bottom: 4px solid #188181; /* Teal */
 }
 
 .navbar-brand img {
@@ -38,20 +42,25 @@ p {
     width: auto;
 }
 
-/* Backgrounds */
+/* ===================================
+   Backgrounds
+   =================================== */
 .light-bg {
     background-color: #fff;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #445261; /* Dark Blue */
 }
 
-/* Cards */
+/* ===================================
+   Cards
+   =================================== */
 .card {
     border: none;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
 }
 
 .card-title {
@@ -67,6 +76,7 @@ p {
 .card-title {
     font-size: 1.2rem;
     font-weight: 700;
+    color: #4a4a4f; /* Dark Gray */
 }
 
 .card-text {
@@ -74,51 +84,53 @@ p {
     color: #666;
 }
 
-/* Buttons */
+/* ===================================
+   Buttons
+   =================================== */
 .btn-book,
 .btn-edit {
-    background-color: #188181;
+    background-color: #188181; /* Teal */
     color: #fff;
 }
 
 .btn-book:hover,
 .btn-book:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: #23BBBB; /* Lighter Teal */
+    color: #fff;
 }
 
 .btn-update {
-    background-color: #FFD700; 
+    background-color: #005f73; /* Navy Blue */
     color: #fff;
     border: none;
 }
 
 .btn-update:hover,
 .btn-update:active {
-    background-color: #FFC300; 
+    background-color: #007f99; /* Slightly lighter Navy Blue */
     color: #fff;
 }
 
 .btn-delete {
-    background-color: #FF4500; 
+    background-color: #FF4500; /* Orange */
     color: #fff;
     border: none;
 }
 
 .btn-delete:hover,
 .btn-delete:active {
-    background-color: #FF0000; 
+    background-color: #FF7300; /* Lighter Orange */
     color: #fff;
 }
 
 .link {
-    color: #23BBBB;
+    color: #23BBBB; /* Lighter Teal */
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #445261; /* Dark Blue */
     text-decoration: underline;
 }
 
@@ -135,23 +147,35 @@ p {
     border: none;
 }
 
+/* Primary Button */
+.btn-primary {
+    background-color: #188181; /* Teal */
+    border: none;
+    transition: background-color 0.3s ease;
+}
 
-/* Footer */
+.btn-primary:hover {
+    background-color: #23BBBB; /* Lighter Teal */
+}
+
+/* ===================================
+   Footer
+   =================================== */
 .footer {
-    background-color: #445261;
+    background-color: #445261; /* Dark Blue */
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 4rem; 
     color: #fff;
 }
 
-
-/* Footer */
 .footer-text {
     font-size: 0.875rem; 
 }
 
-/* Images */
+/* ===================================
+   Images
+   =================================== */
 .img-fluid {
     max-width: 75%;
     height: auto;
@@ -179,18 +203,28 @@ p {
     height: auto;
 }
 
-/* Appointments */
+/* Image Borders */
+.bordered-image {
+    border: 5px solid #188181; /* Teal */
+    padding: 5px;
+}
+
+/* ===================================
+   Appointments
+   =================================== */
 .appointment-link {
     text-decoration: none;
-    color: #445261;
+    color: #445261; /* Dark Blue */
 }
 
 .appointment-link:hover,
 .page-link {
-    color: #E84610;
+    color: #E84610; /* Orange */
 }
 
-/* Service Cards */
+/* ===================================
+   Service Cards
+   =================================== */
 .service-card {
     border: none;
     background-color: #fff;
@@ -209,7 +243,7 @@ p {
 .service-card .card-title {
     font-size: 1.2rem;
     font-weight: 700;
-    margin-bottom: 15px;
+    color: #4a4a4f; /* Dark Gray */
 }
 
 .service-card .card-text {
@@ -218,10 +252,12 @@ p {
 }
 
 .service-card i {
-    color: #188181;
+    color: #188181; /* Teal */
 }
 
-/* Testimonials */
+/* ===================================
+   Testimonials
+   =================================== */
 .testimonial {
     text-align: center;
     padding: 20px;
@@ -237,17 +273,19 @@ p {
     font-size: 1rem;
     font-weight: 700;
     margin-top: 10px;
-    color: #188181;
+    color: #188181; /* Teal */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #188181;
+    background-color: #188181; /* Teal */
     border-radius: 50%;
     padding: 10px;
 }
 
-/* Alignment */
+/* ===================================
+   Alignment
+   =================================== */
 .align-left {
     text-align: left !important;
 }
@@ -257,13 +295,9 @@ ul.text-left {
     padding-left: 1.5em; 
 }
 
-/* Image Borders */
-.bordered-image {
-    border: 5px solid #188181;
-    padding: 5px;
-}
-
-/* FAQ and Treatments */
+/* ===================================
+   FAQ and Treatments
+   =================================== */
 .accordion-button {
     font-size: 1.1rem;
     font-weight: 600;
@@ -274,23 +308,28 @@ ul.text-left {
     color: #333;
 }
 
-/* Buttons Primary */
-.btn-primary {
-    background-color: #188181;
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #23BBBB;
-}
-
-/* Margin and Padding */
+/* ===================================
+   Margin and Padding
+   =================================== */
 .mb-5 {
     margin-bottom: 3rem !important;
 }
 
-/* Scoped Styles for Signup Page */
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 3rem !important;
+}
+
+.pt-5 {
+    padding-top: 3rem !important;
+}
+
+/* ===================================
+   Scoped Styles for Signup Page
+   =================================== */
 .signup-page .card {
     border: none;
     border-radius: 0.5rem; 
@@ -325,7 +364,9 @@ ul.text-left {
     text-decoration: underline;
 }
 
-/* Scoped Styles for Login Page */
+/* ===================================
+   Scoped Styles for Login Page
+   =================================== */
 .login-page .card {
     border: none;
     border-radius: 0.5rem; 
@@ -360,7 +401,62 @@ ul.text-left {
     text-decoration: underline;
 }
 
-/* Media Queries */
+/* ===================================
+   Scoped Styles for User Appointments Page
+   =================================== */
+.user-appointments-page .card {
+    border: none;
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.user-appointments-page .card-title {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #445261;
+}
+
+/* Update Button */
+.user-appointments-page .btn-warning {
+    background-color: #005f73; /* Navy Blue */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-appointments-page .btn-warning:hover,
+.user-appointments-page .btn-warning:focus {
+    background-color: #007f99; /* Slightly lighter Navy Blue */
+    transform: translateY(-2px);
+}
+
+/* Delete Button */
+.user-appointments-page .btn-danger {
+    background-color: #FF4500; /* Orange */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-appointments-page .btn-danger:hover,
+.user-appointments-page .btn-danger:focus {
+    background-color: #FF7300; /* Lighter Orange */
+    transform: translateY(-2px);
+}
+
+.user-appointments-page .link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.user-appointments-page .link:hover,
+.user-appointments-page .link:focus {
+    color: #445261;
+    text-decoration: underline;
+}
+
+/* ===================================
+   Media Queries
+   =================================== */
 @media (max-width: 767.98px) { 
     .text-md-end {
         text-align: center !important;

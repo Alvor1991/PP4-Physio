@@ -13,12 +13,11 @@ def get_available_time_slots(date):
     booked_appointments = Appointment.objects.filter(date=date).values_list('time', flat=True)
     booked_slots = [appointment.strftime("%H:%M") for appointment in booked_appointments]
 
-    start_time = time(9, 0)
-    end_time = time(17, 0)
-    interval = 30
+    start_time = time(8, 0)
+    end_time = time(16, 0) 
+    interval = 60 
 
     all_slots = generate_time_slots(start_time, end_time, interval)
     available_slots = [slot for slot in all_slots if slot not in booked_slots]
 
     return available_slots
-

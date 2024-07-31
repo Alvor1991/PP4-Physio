@@ -12,7 +12,6 @@ class Appointment(models.Model):
         ('physio', 'Physiotherapy'),
         ('massage', 'Massage Therapy'),
         ('acupuncture', 'Acupuncture'),
-        # Add more treatments as needed
     ]
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)

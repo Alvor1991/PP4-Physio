@@ -1,37 +1,41 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-8 offset-md-2">
-      <h2>All Your Appointments</h2>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Treatment</th>
-            <th>Notes</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for appointment in appointments %}
-          <tr>
-            <td>{{ appointment.date|date:"F j, Y" }}</td>
-            <td>{{ appointment.time|time:"H:i" }}</td>
-            <td>{{ appointment.treatment }}</td>
-            <td>{{ appointment.notes|default:"N/A" }}</td>
-            <td>
-              <a href="{% url 'update_appointment' appointment.id %}" class="btn btn-warning btn-sm">Update</a>
-              <form method="post" action="{% url 'delete_appointment' appointment.id %}" class="d-inline">
-                {% csrf_token %}
-                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-              </form>
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+<div class="container mt-5 user-appointments-page">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h2 class="card-title text-center">All Your Appointments</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Treatment</th>
+                <th>Notes</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for appointment in appointments %}
+              <tr>
+                <td>{{ appointment.date|date:"F j, Y" }}</td>
+                <td>{{ appointment.time|time:"H:i" }}</td>
+                <td>{{ appointment.treatment }}</td>
+                <td>{{ appointment.notes|default:"N/A" }}</td>
+                <td>
+                  <a href="{% url 'update_appointment' appointment.id %}" class="btn btn-warning btn-sm">Update</a>
+                  <form method="post" action="{% url 'delete_appointment' appointment.id %}" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                  </form>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </div>
