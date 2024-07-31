@@ -24,19 +24,14 @@ p {
     color: #4A4A4F;
 }
 
-.accent-color {
-    color: #E84610;
-}
-
 .thin {
     font-weight: 300;
 }
 
 .navbar-brand img {
-    height: 100px; 
+    height: 60px; 
     width: auto;  
 }
-
 
 /* Backgrounds */
 .light-bg {
@@ -135,14 +130,6 @@ p {
     border: none;
 }
 
-/* Text Colors */
-.faded {
-    color: rgb(172, 175, 175);
-}
-
-.approval {
-    color: rgb(222, 146, 168);
-}
 
 /* Footer */
 .footer-text {
@@ -183,48 +170,6 @@ p {
 .scale {
     width: 100%;
     height: auto;
-}
-
-/* Author Section */
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
-/* Masthead */
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
 }
 
 /* Appointments */
