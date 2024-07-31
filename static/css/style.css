@@ -28,9 +28,14 @@ p {
     font-weight: 300;
 }
 
+/* Custom Navbar Border */
+.navbar-custom {
+    border-bottom: 4px solid #188181; /* Thicker bottom border */
+}
+
 .navbar-brand img {
-    height: 60px; 
-    width: auto;  
+    height: 60px;
+    width: auto;
 }
 
 /* Backgrounds */
@@ -283,6 +288,76 @@ ul.text-left {
 /* Margin and Padding */
 .mb-5 {
     margin-bottom: 3rem !important;
+}
+
+/* Scoped Styles for Signup Page */
+.signup-page .card {
+    border: none;
+    border-radius: 0.5rem; 
+}
+
+.signup-page .card-title {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #445261;
+}
+
+.signup-page .btn-primary {
+    background-color: #188181;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-page .btn-primary:hover,
+.signup-page .btn-primary:focus {
+    background-color: #23BBBB;
+    transform: translateY(-2px);
+}
+
+.signup-page .link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.signup-page .link:hover,
+.signup-page .link:focus {
+    color: #445261;
+    text-decoration: underline;
+}
+
+/* Scoped Styles for Login Page */
+.login-page .card {
+    border: none;
+    border-radius: 0.5rem; 
+}
+
+.login-page .card-title {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #445261;
+}
+
+.login-page .btn-primary {
+    background-color: #188181;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-page .btn-primary:hover,
+.login-page .btn-primary:focus {
+    background-color: #23BBBB;
+    transform: translateY(-2px);
+}
+
+.login-page .link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.login-page .link:hover,
+.login-page .link:focus {
+    color: #445261;
+    text-decoration: underline;
 }
 
 /* Media Queries */
