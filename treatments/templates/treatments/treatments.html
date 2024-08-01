@@ -17,7 +17,7 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">{{ treatment.name }}</h5>
-                            <p class="card-text"><strong>Description:</strong> {{ treatment.description }}</p>
+                            <p class="card-text"><strong>Description:</strong> {{ treatment.description|safe }}</p>
                             
                             {% if treatment.services_offered %}
                             <h6 class="mt-3"><strong>Services Offered:</strong></h6>

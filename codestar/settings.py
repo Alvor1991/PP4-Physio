@@ -97,12 +97,17 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com"
 ]
 
+# Allauth settings
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = "none" 
+ACCOUNT_USERNAME_REQUIRED = True  
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"  # Allow authentication by username or email
+
 ACCOUNT_FORMS = {
     'signup': 'home.forms.CustomSignupForm',
 }
 
 ACCOUNT_ADAPTER = 'home.adapter.CustomAccountAdapter' 
-
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Europe/Dublin'
