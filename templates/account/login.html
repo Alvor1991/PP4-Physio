@@ -1,10 +1,5 @@
 {% extends "base.html" %}
-
-{% load i18n %}
-{% load account socialaccount %}
 {% load crispy_forms_tags %}
-
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
 <div class="container mt-5 login-page">
@@ -12,11 +7,9 @@
     <div class="col-md-6">
       <div class="card shadow-lg">
         <div class="card-body">
-          <h3 class="card-title text-center">{% trans "Sign In" %}</h3>
+          <h3 class="card-title text-center">Sign In</h3>
           <p class="text-center">
-            {% blocktrans %}
-              Welcome back to PhysioApp. To make a booking, please log in. If you have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a> first.
-            {% endblocktrans %}
+            Welcome back to PhysioApp. To make a booking, please log in. If you have not created an account yet, then <a class="link" href="{% url 'account_signup' %}">sign up</a> first.
           </p>
           <form class="login" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
@@ -24,7 +17,7 @@
             {% if redirect_field_value %}
               <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
-            <button type="submit" class="btn btn-primary w-100 mt-3">{% trans "Sign In" %}</button>
+            <button type="submit" class="btn btn-primary w-100 mt-3">Sign In</button>
           </form>
         </div>
       </div>
