@@ -178,6 +178,24 @@ p {
     font-size: 0.875rem;
 }
 
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.social-icon {
+    color: #23BBBB; 
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #FFFFFF; 
+}
+
 /* ===================================
    Images
    =================================== */
