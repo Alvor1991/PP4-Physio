@@ -1,9 +1,12 @@
 from django.contrib import admin
+from django_summernote.admin import SummernoteModelAdmin
 from .models import Treatment, FAQ
 
 @admin.register(Treatment)
-class TreatmentAdmin(admin.ModelAdmin):
-    # Only include fields that exist in the Treatment model
+class TreatmentAdmin(SummernoteModelAdmin):
+    # Specify which fields should use the Summernote editor
+    summernote_fields = ('description', 'services_offered', 'benefits')
+
     list_display = ('name', 'price', 'description')
     search_fields = ('name', 'description', 'benefits', 'services_offered')
     fieldsets = (

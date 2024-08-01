@@ -12,6 +12,7 @@ urlpatterns = [
     path('accounts/logout/', immediate_logout_view, name='account_logout'),
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
 ]
 
 if settings.DEBUG:
