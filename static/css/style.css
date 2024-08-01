@@ -34,7 +34,7 @@ p {
 
 /* Custom Navbar Border */
 .navbar-custom {
-    border-bottom: 4px solid #188181; /* Teal */
+    border-bottom: 4px solid #188181; 
 }
 
 .navbar-brand img {
@@ -50,7 +50,7 @@ p {
 }
 
 .dark-bg {
-    background-color: #445261; /* Dark Blue */
+    background-color: #445261; 
 }
 
 /* ===================================
@@ -76,7 +76,7 @@ p {
 .card-title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #4a4a4f; /* Dark Gray */
+    color: #4a4a4f; 
 }
 
 .card-text {
@@ -89,48 +89,48 @@ p {
    =================================== */
 .btn-book,
 .btn-edit {
-    background-color: #188181; /* Teal */
+    background-color: #188181; 
     color: #fff;
 }
 
 .btn-book:hover,
 .btn-book:active {
-    background-color: #23BBBB; /* Lighter Teal */
+    background-color: #23BBBB;
     color: #fff;
 }
 
 .btn-update {
-    background-color: #005f73; /* Navy Blue */
+    background-color: #005f73; 
     color: #fff;
     border: none;
 }
 
 .btn-update:hover,
 .btn-update:active {
-    background-color: #007f99; /* Slightly lighter Navy Blue */
+    background-color: #007f99; 
     color: #fff;
 }
 
 .btn-delete {
-    background-color: #FF4500; /* Orange */
+    background-color: #FF4500; 
     color: #fff;
     border: none;
 }
 
 .btn-delete:hover,
 .btn-delete:active {
-    background-color: #FF7300; /* Lighter Orange */
+    background-color: #FF7300; 
     color: #fff;
 }
 
 .link {
-    color: #23BBBB; /* Lighter Teal */
+    color: #23BBBB; 
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261; /* Dark Blue */
+    color: #445261; 
     text-decoration: underline;
 }
 
@@ -149,13 +149,13 @@ p {
 
 /* Primary Button */
 .btn-primary {
-    background-color: #188181; /* Teal */
+    background-color: #188181; 
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #23BBBB; /* Lighter Teal */
+    background-color: #23BBBB; 
 }
 
 /* ===================================
@@ -237,12 +237,12 @@ p {
    =================================== */
 .appointment-link {
     text-decoration: none;
-    color: #445261; /* Dark Blue */
+    color: #445261; 
 }
 
 .appointment-link:hover,
 .page-link {
-    color: #E84610; /* Orange */
+    color: #E84610; 
 }
 
 /* ===================================
@@ -274,15 +274,15 @@ p {
 .service-card .card-title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #4a4a4f; /* Dark Gray */
+    color: #4a4a4f; 
 }
 
 .service-card .card-subtitle {
     font-size: 1rem;
     font-weight: 600;
-    color: #188181; /* Teal */
+    color: #188181; 
     margin-top: 0.5rem;
-    margin-bottom: 1rem; /* Increased margin for better separation */
+    margin-bottom: 1rem; 
 }
 
 .service-card .card-text {
@@ -291,7 +291,7 @@ p {
 }
 
 .service-card i {
-    color: #188181; /* Teal */
+    color: #188181; 
 }
 
 /* ===================================
@@ -312,12 +312,12 @@ p {
     font-size: 1rem;
     font-weight: 700;
     margin-top: 10px;
-    color: #188181; /* Teal */
+    color: #188181; 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #188181; /* Teal */
+    background-color: #188181; 
     border-radius: 50%;
     padding: 10px;
 }
@@ -341,45 +341,45 @@ ul.text-left {
 .accordion-button {
     font-size: 1.1rem;
     font-weight: 600;
-    background-color: #188181; /* Teal */
-    color: #fff; /* White text */
+    background-color: #188181; 
+    color: #fff; 
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .accordion-button:hover, .accordion-button:focus {
-    background-color: #23BBBB; /* Lighter Teal */
+    background-color: #23BBBB; 
     color: #fff;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #445261; /* Dark Blue */
+    background-color: #445261; 
     color: #fff;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 
 .accordion-header {
-    margin-bottom: 0; /* Removes default bottom margin */
+    margin-bottom: 0; 
 }
 
 .accordion-item {
-    background-color: #fff; /* White background for accordion item */
-    border: 1px solid #e3e3e3; /* Light border for better separation */
+    background-color: #fff;
+    border: 1px solid #e3e3e3; 
     border-radius: 0.25rem;
     margin-bottom: 1rem;
 }
 
 .accordion-body {
     font-size: 1rem;
-    color: #333; /* Darker gray for text */
-    background-color: #f9fafc; /* Slightly off-white background for content */
+    color: #333; 
+    background-color: #f9fafc; 
     padding: 1rem;
-    border-top: 1px solid #e3e3e3; /* Top border to separate header and content */
+    border-top: 1px solid #e3e3e3; /
 }
 
 /* Update the icon styles */
 .accordion-button::after {
-    filter: invert(100%); /* Ensures icons are visible on colored backgrounds */
+    filter: invert(100%); 
 }
 
 /* ===================================
@@ -480,7 +480,7 @@ ul.text-left {
    =================================== */
 .user-appointments-page .card {
     border: none;
-    border-radius: 0.5rem; /* Rounded corners */
+    border-radius: 0.5rem; 
 }
 
 .user-appointments-page .card-title {
@@ -491,7 +491,7 @@ ul.text-left {
 
 /* Update Button */
 .user-appointments-page .btn-warning {
-    background-color: #005f73; /* Navy Blue */
+    background-color: #005f73; 
     color: #fff;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -499,13 +499,13 @@ ul.text-left {
 
 .user-appointments-page .btn-warning:hover,
 .user-appointments-page .btn-warning:focus {
-    background-color: #007f99; /* Slightly lighter Navy Blue */
+    background-color: #007f99; 
     transform: translateY(-2px);
 }
 
 /* Delete Button */
 .user-appointments-page .btn-danger {
-    background-color: #FF4500; /* Orange */
+    background-color: #FF4500; 
     color: #fff;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -513,7 +513,7 @@ ul.text-left {
 
 .user-appointments-page .btn-danger:hover,
 .user-appointments-page .btn-danger:focus {
-    background-color: #FF7300; /* Lighter Orange */
+    background-color: #FF7300; 
     transform: translateY(-2px);
 }
 
@@ -526,6 +526,36 @@ ul.text-left {
 .user-appointments-page .link:focus {
     color: #445261;
     text-decoration: underline;
+}
+
+
+.caption {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #188181; /* Teal */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    background-color: #E84610; /* Orange */
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF7300; /* Lighter Orange */
+    transform: translateY(-5px);
+}
+
+/* Call to Action Text */
+.cta-text {
+    font-size: 1.1rem;
+    color: #4A4A4F; /* Dark Gray */
 }
 
 /* ===================================

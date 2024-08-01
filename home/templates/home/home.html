@@ -7,13 +7,13 @@
     <img src="{% static 'images/pysio.jpg' %}" alt="Banner Image">
 </div>
 <div class="container mt-5 content-container text-center text-md-left">
-    <h1>Sports Therapy Managment</h1>
+    <h1>Sports Therapy Management</h1>
     <p>{{ home_content.welcome_message }}</p>
 </div>
 
 <!-- Introduction -->
-<div class="container mt-5 content-container">
-    <p>We don't just help your injury, we help you</p>
+<div class="container mt-5 content-container text-center">
+    <h2 class="caption">We don't just help your injury, we help you</h2>
 </div>
 
 <!-- Services Overview -->
@@ -65,10 +65,10 @@
     </div>
 </div>
 
-<!-- Call to Action (CTA) -->
+<!-- Call to Action -->
 <div class="container mt-5 content-container text-center">
     <a href="{% url 'book_appointment' %}" class="btn btn-primary btn-lg">Book Now</a>
-    <p class="mt-3">Have questions? Reach out to me at <a href="mailto:your-email@example.com">your-email@example.com</a> or follow me on <a href="#">social media platforms</a>.</p>
+    <p class="mt-3">Have questions? Visit our <a href="{% url 'about' %}">About Me</a> page to learn more or use the contact form to get in touch.</p>
 </div>
 
 <!-- Client Testimonials -->
