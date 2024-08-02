@@ -10,5 +10,3 @@ class CustomAccountAdapter(DefaultAccountAdapter):
         if message_template == 'account/messages/logged_out.txt':
             return
         super().add_message(request, level, message_template, message_context, extra_tags)
-
-

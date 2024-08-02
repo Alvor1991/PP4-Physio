@@ -100,9 +100,8 @@ CSRF_TRUSTED_ORIGINS = [
 # Allauth settings
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = "none"
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = "email"
-
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"  # Allow both username and email if desired
 
 ACCOUNT_FORMS = {
     'signup': 'home.forms.CustomSignupForm',
