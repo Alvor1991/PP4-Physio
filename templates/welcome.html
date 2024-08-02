@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5 text-center">
+  <h2>Welcome to PhysioApp!</h2>
+  <p>You have no current appointments.</p>
+  <p>Would you like to book an appointment?</p>
+  <a href="{% url 'book_appointment' %}" class="btn btn-primary">Book Appointment</a>
+</div>
+{% endblock %}
