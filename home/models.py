@@ -8,4 +8,3 @@ class HomePageContent(models.Model):
 
     def __str__(self):
         return "Home Page Content"
-
