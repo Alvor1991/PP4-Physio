@@ -73,6 +73,7 @@
             var appointmentId = button.getAttribute('data-appointment-id');
             var deleteForm = document.getElementById('deleteForm');
             deleteForm.action = '{% url "delete_appointment" 0 %}'.replace('0', appointmentId);
+            console.log('Setting form action to:', deleteForm.action); // Debugging line
         });
     });
 </script>

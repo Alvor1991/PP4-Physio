@@ -61,7 +61,6 @@ def update_appointment(request, pk):
 def delete_appointment(request, pk):
     """
     View to handle the appointment deletion process.
-    Displays an individual instance of :model:`appointments.Appointment`
     """
     appointment = get_object_or_404(Appointment, pk=pk, user=request.user)
     if request.method == 'POST':
@@ -69,6 +68,7 @@ def delete_appointment(request, pk):
         messages.success(request, 'Your appointment has been deleted successfully.')
         return redirect('user_appointments')
     return render(request, 'appointments/delete_appointment.html', {'appointment': appointment})
+
 
 @login_required
 def get_time_slots(request):

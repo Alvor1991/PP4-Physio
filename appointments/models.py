@@ -9,9 +9,9 @@ class Appointment(models.Model):
     Contains client name, client email, date, time, and optional notes fields.
     """
     TREATMENT_CHOICES = [
-        ('physio', 'Physiotherapy'),
-        ('massage', 'Massage Therapy'),
-        ('acupuncture', 'Acupuncture'),
+        ('sports therapy', 'Sports Therapy'),
+        ('orthotics', 'Orthotics'),
+        ('health coaching', 'Health Coaching'),
     ]
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
