@@ -6,6 +6,10 @@ PhysioApp is a dedicated platform created for individuals seeking personalized s
 
 The primary objective of PhysioApp is to deliver individualized care plans that cater to each client's unique needs. Users can easily book appointments and access valuable resources to support their journey toward optimal physical and mental well-being.
 
+Sports Therapy Booking is a personal website designed to help market my skills as a therapist and facilitate clients in scheduling appointments with me. The site provides a professional platform to showcase my expertise, share valuable health tips, and connect with clients seeking sports therapy services.
+
+The main objective of the site is to offer users a seamless way to book therapy sessions, view available treatments, and manage their appointments. In addition to serving as a booking tool, this site will eventually expand to include a blog section where I can share tips and insights on sports therapy, as well as the potential to host profiles for additional therapists as the business grows.
+
 Visit the deployed website [here](https://physioapp.onrender.com).
 
 ## Table of Contents
@@ -55,29 +59,26 @@ Visit the deployed website [here](https://physioapp.onrender.com).
 
 * **Modern and Inviting Design:** The website uses calming colors and clean typography to create a professional and welcoming atmosphere, encouraging users to explore sports therapy services.
 
-* **Responsive Design:** Ensures accessibility on various devices and screen sizes, allowing users to easily access the site from their desktops, tablets, and smartphones whether they are at home or on the go.
+* Provide a user-friendly interface for clients to book therapy appointments.
 
-* **Intuitive Navigation:** Features a clear and logical structure, enabling users to quickly find information about different sports therapy services, therapist profiles, and educational resources.
+* Implement a responsive design to ensure accessibility across various devices.
 
-* **User Registration and Personalization:** Users can create accounts to view, update, and delete appointments, providing flexibility and control over their therapy schedules.
+* Allow clients to manage their bookings easily through a personal dashboard.
 
-* **Community Interaction:** Users can ask questions through a dedicated form, share experiences, and support one another in their sports therapy journeys, fostering a sense of community and shared learning.
+* Ensure secure authentication and data handling.
 
 
 #### User Goals
 
-* As a Site Admin, I want to manage the site content.
+* As a Site Admin, I want to manage site content and appointments.
 
-* As a Site User, I want to be able to interact with the content.
+* As a Client, I want to browse available therapists and treatments.
 
-* As a Site User, I want the information to be easy to find and read.
+* As a Client, I want to book an appointment easily.
 
-* As a Site User, I can create new questions and answers.
+* As a Client, I want to view and manage my appointments.
 
-* As a Site User, I want to manage the content I created.
-
-* As a Site User, I want to be able to help make the content more relevant.
-
+* As a Client, I want the site to be easy to navigate on any device.
 
 #### Strategy Table
 
@@ -85,19 +86,18 @@ Opportunity / Problem | Importance | Viability / Feasibility
 --- | --- | ---
 Responsive design | 5 | 5
 Account registration | 5 | 5
-Ability to add profile picture | 3 | 2
-Social media signup | 3 | 2
-Create, edit and delete questions | 5 | 4
-Create, edit and delete replies | 5 | 4
-Ability to search for questions | 4 | 3
-Add tags to the questions | 3 | 1
-Upvote / downvote question and replies | 4 | 3
-**Total** | **37** | **29**
+Browse treatments | 5 | 5
+Book appointments | 5 | 5
+Manage appointments | 5 | 5
+User dashboard | 5 | 4
+Blog for sharing tips | 4 | 3
+Expand to include more therapists | 4 | 3
+**Total** | **38** | **35**
 
 
 ### Scope
 
-According to the strategy table, not all features can be implemented in the first release of the project. For this reason, the project will be divided in multiple phases. The first phase will include the features that have been identified in order to build the minimum viable product.
+According to the strategy table, the project will focus on delivering essential features for the first release. The project will be divided into phases.
 
 **First Phase**
 
@@ -105,49 +105,51 @@ According to the strategy table, not all features can be implemented in the firs
 
 * Account registration
 
-* Create, edit and delete questions
+* Browse and view treatments
 
-* Create, edit and delete replies
+* Book and manage appointments
 
-* Ability to search for questions
-
-* Upvote / downvote question and replies
+* User dashboard
 
 **Second Phase**
 
-* Ability to add profile picture
+* Integration with payment gateway
 
-* Social media signup
+* Email notifications for booking confirmations
 
-* Add tags to the questions
+* Blog page for sharing tips
+
+* Ability to add more therapists to the site
 
 
 #### User Stories
 
-GitHub projects was used as my project management tool to track user stories. Using a Kanban board helped to focus on specific tasks and track the project progress.
+GitHub projects were used as a project management tool to track user stories. Using a Kanban board helped to focus on specific tasks and track the project's progress.
 
 **Start**
-![User Stories Progress - Start](assets/readme_files/user_stories_start.png)
+![User Stories Progress - Start](assets/readme_files/start.png)
 
 **Week 1**
-![User Stories Progress - Week 1](assets/readme_files/user_stories_week1.png)
+![User Stories Progress - Week 1](assets/readme_files/week1.png)
 
 **Week 2**
-![User Stories Progress - Week 2](assets/readme_files/user_stories_week2.png)
+![User Stories Progress - Week 2](assets/readme_files/week2.png)
 
 **Week 3**
-![User Stories Progress - Week 3](assets/readme_files/user_stories_week3.png)
+![User Stories Progress - Week 3](assets/readme_files/week3.png)
 
 
 ### Structure
 
-The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. Here you can you can find the website map design.
+The website is organized using a Hierarchical Tree Structure to ensure intuitive navigation. The site map is designed to make navigation straightforward.
 
-![Code Buddy website map](assets/readme_files/sitemap.jpg)
+![Sports Therapy Booking website map](assets/readme_files/sitemap.jpg)
 
-* Header, footer and navigation bar are consistent through all pages.
+* Consistent header, footer, and navigation bar across all pages.
 
-* Links and forms provide clear feedback to the site user.
+* Clear feedback is provided through links and forms for enhanced user experience.
+
+* Registered users can manage their appointments via a personalized dashboard.
 
 * The opportunity to add additional content to the website is provided for the site user once they register an account.
 
@@ -156,55 +158,45 @@ The website has been organized in a Hierarchical Tree Structure to ensure the si
 
 #### Database Model
 
-The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used for the is relational database being managed using [PostgreSQL](https://www.postgresql.org/).
+The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used is a relational database managed using [PostgreSQL](https://www.postgresql.org/).
 
-![Code Buddy website map](assets/readme_files/db_model.png)
+![Sports Therapy Management database model](assets/readme_files/db_model.png)
 
-**Question Model**
+**Appointment Model**
 
-* Title: Unique question title provided by the author.
+* **User**: A foreign key from the `User` model that stores the client who has booked the appointment.
 
-* Author: Store the author of the question as a User foreign key.
+* **Date**: The date of the appointment, stored as a `DateField`.
 
-* Content: Question details provided by the author.
+* **Time**: The time of the appointment, stored as a `TimeField`.
 
-* Slug: Store a unique slug to identify the question by.
+* **Notes**: Optional text field allowing the client to add additional notes or information for the appointment.
 
-* Created On: Date and time set automatically at the question's creation.
+* **Treatment**: A `CharField` representing the type of treatment selected for the appointment. It includes choices such as:
+  * Sports Therapy
+  * Orthotics
+  * Health Coaching
 
-* Last updated: Date and time set automatically every time the question is updated.
+Each appointment is associated with a registered user (client), and the model ensures that every booking includes essential details such as date, time, and treatment type. This structure allows for a streamlined management of client appointments, enabling efficient scheduling and updating of therapy sessions.
 
-* Votes score: Calculated score of the question's votes.
+**Treatment Model**
 
-**Reply Model**
+* **Name**: A `CharField` storing the name of the treatment.
+* **Description**: A `TextField` providing a detailed description of the treatment.
+* **Services Offered**: An optional `TextField` detailing the services provided as part of the treatment.
+* **Benefits**: An optional `TextField` outlining the benefits of the treatment.
+* **Price**: A `DecimalField` indicating the price of the treatment, with support for precision up to two decimal places.
+* **Image**: A `CloudinaryField` used to store an optional image associated with the treatment.
+* **Button Text**: A `CharField` providing default text for call-to-action buttons related to booking appointments for the treatment.
 
-* Question: A foreign key from the Question model, storing the question being replied.
+**FAQ Model**
 
-* Author: Store the author of the reply as a User foreign key.
+* **Question**: A `CharField` storing the frequently asked question.
+* **Answer**: A `TextField` containing the answer to the question.
 
-* Body: Reply body with details provided by the author.
+Each treatment offered by the therapist is detailed in the `Treatment` model, which allows clients to view information about various therapies, their benefits, and pricing. The `FAQ` model is used to manage frequently asked questions, providing clients with quick answers to common queries.
 
-* Created On: Date and time set automatically at the reply's creation.
 
-* Last updated: Date and time set automatically every time the reply is updated.
-
-* Votes score: Calculated score of the reply's votes.
-
-**QuestionVote Model**
-
-* Voter: Foreign key from the User model, storing the user voting the question.
-
-* Score: Score provided by the voter. The options are upvote with a value of 1 or downvote with a value of -1.
-
-* Question: A foreign key from the Question model, storing the question being voted.
-
-**ReplyVote Model**
-
-* Voter: Foreign key from the User model, storing the user voting the reply.
-
-* Score: Score provided by the voter. The options are upvote with a value of 1 or downvote with a value of -1.
-
-* Reply: A foreign key from the Reply model, storing the question being voted.
 
 
 ### Skeleton
@@ -215,13 +207,13 @@ The database model has been designed using [drawsql](https://drawsql.app/). The 
 
 Page | Desktop Version | Mobile Version
 --- | --- | ---
-Index / User Logged Out | ![Desktop index / user logged out wireframe image](assets/wireframes/index_dektop_logged_out.png) | ![Mobile index / user logged out wireframe image](assets/wireframes/index_mobile_logged_out.png)
-Sign Up | ![Desktop sign up wireframe image](assets/wireframes/signup_dektop.png) | ![Mobile sign up wireframe image](assets/wireframes/signup_mobile.png)
-Log In | ![Desktop log in wireframe image](assets/wireframes/login_dektop.png) | ![Mobile log in wireframe image](assets/wireframes/login_mobile.png)
-Index / User Logged In | ![Desktop index / user logged in wireframe image](assets/wireframes/index_dektop_logged_in.png) | ![Mobile index / user logged out wireframe image](assets/wireframes/index_mobile_logged_in.png)
-Ask Question | ![Desktop ask question wireframe image](assets/wireframes/ask_question_desktop.png) | ![Mobile ask question wireframe image](assets/wireframes/ask_question_mobile.png)
-Open Question | ![Desktop open question wireframe image](assets/wireframes/question_dektop.png) | ![Mobile open question wireframe image](assets/wireframes/question_mobile.png)
-Leave Reply | ![Desktop leave reply wireframe image](assets/wireframes/leave_reply_desktop.png) | ![Mobile leave reply wireframe image](assets/wireframes/leave_reply_mobile.png)
+Home | ![Desktop Home wireframe image](assets/wireframes/index.png) | ![Mobile Home wireframe image](assets/wireframes/index_mobile.png)
+About | ![Desktop About wireframe image](assets/wireframes/about.png) | ![Mobile About wireframe image](assets/wireframes/about_mobile.png)
+Treatments | ![Desktop Treatments wireframe image](assets/wireframes/treatments.png) | ![Mobile Treatments wireframe image](assets/wireframes/treatments_mobile.png)
+Appointments | ![Desktop Appointments wireframe image](assets/wireframes/appointments.png) | ![Mobile Appointments wireframe image](assets/wireframes/appointments_mobile.png)
+Book Appointment | ![Book Appointment wireframe image](assets/wireframes/book_appointment.png) | ![Mobile Account wireframe image](assets/wireframes/book_appointment_mobile.png)
+View Appointments | ![View Appointments wireframe image](assets/wireframes/view_appointments.png) | ![Mobile Account wireframe image](assets/wireframes/view_appointments_mobile.png)
+
 
 
 ### Surface
@@ -230,124 +222,66 @@ Leave Reply | ![Desktop leave reply wireframe image](assets/wireframes/leave_rep
 
 ![Color scheme image](assets/readme_files/color_scheme.png)
 
-The colors used in the website are a teal blue color (#3F778D) for secondary buttons, navbar links, as well as for main buttons and links transitions. Charcoal (#253A47) is used for the main text, footer background, main buttons and secondary buttons and links transitions.
-
-A platinum (#E9EDE9) for the navigation bar and card footers background, footer and buttons content. A baby powder color (#FFFFFD) is also used in the main background and cards footer as well as for input fields.
-
-The colors are were chosen keeping in mind simplicity but also providing the website a modern design. This in order to keep the focus on the content but also appealing for the users.
-
+The color scheme includes a calming green (#4CAF50) for buttons and highlights, a dark gray (#333333) for text, and a light gray (#F5F5F5) for backgrounds, creating a professional and inviting atmosphere.
 
 #### Typography
 
-The main font being used in the site is Nunito, with sans-serif as a fallback in case Nunito doesn't get imported correctly. Roboto, with sans-serif as a fallback is used mainly for headings and the logo has been given the Quicksand font, with sans-serif as a fallback.
+The primary font used is Open Sans, with sans-serif as a fallback to ensure readability across the site. Roboto is utilized for headings to provide a clear hierarchy.
 
-Nunito and Roboto were chosen after some research on fonts that are better for reading. Specially Nunito which has been used as main font. Quicksand was used for the logo for design purposes.
-
-[Back to top ⇧](#code-buddy)
-
+[Back to top ⇧](#sports-therapy-booking)
 
 ## Features
 
 ### General
 
-* The website has been designed from a mobile first perspective.
+* Mobile-first, responsive design for all devices.
 
-* Responsive design across all device sizes.
+* Consistent navigation across all pages with hover effects for feedback.
 
-* Navigation Bar
-![Code Buddy Navigation Bar image](assets/readme_files/code_buddy_navbar.png)
+* Search bar for clients to find therapists based on specialty or location.
 
-    *  Contains the main logo and section links.
-
-    * The navigation bar contains links to all sections to facilitate navigation across the site. It also has a hover effect that changes color to provide feedback to the Site User for a better user experience.
-
-* Search bar
-![Code Buddy Search Bar image](assets/readme_files/code_buddy_search_bar.png)
-
-    * Provide the Site User an input field and a Search button to be able to search for specific questions.
-
-* Footer
-  ![Code Buddy Footer image](assets/readme_files/code_buddy_footer.png)
-
-    * The footer includes a logo and link to social media channels.
-
+* Footer with social media links.
 
 ### Home Page
 
-* Question list
-![Code Buddy Question List image](assets/readme_files/code_buddy_question_list.png)
+* Overview of services and featured therapists.
 
-    * Display a paginated list of all the question and its relevant information for the user to identify.
+* Quick links to book an appointment or view therapist profiles.
 
-    * Provide the Site User with a link to the detailed question.
-
-    * Question score as well as voting possibilities for registered users is provided next to the question.
-
-    * For registered users, a Ask Question button is provided to allow the user to access the Ask Question Page to create new questions.
-
-    * Edit and Question buttons are provided for the questions the registered Site User has created.
-
+* Client testimonials carousel.
 
 ### About Page
 
-![Code Buddy About Page image](assets/readme_files/code_buddy_about.png)
+* Detailed information about the therapist, their credentials, and philosophy.
 
-* Provide relevant information about the website's objective.
+* Contact form for inquiries.
 
+### Treatments Page
 
-### Search Results Page
-![Code Buddy About Page image](assets/readme_files/code_buddy_search_results.png)
+* List of available treatments with descriptions and pricing.
 
-* Display information about the Search being handled
+* FAQ section to address common client questions.
 
-* Display a paginated list of the questions matching the search and its relevant information for the user to identify.
+### Appointments
 
+#### Booking
 
-### Question Detail Page
-![Code Buddy Question Detail Page image](assets/readme_files/code_buddy_question_detail.png)
+* **Book Appointment**: Users can select a date, time slot, and treatment to book an appointment. The available time slots update based on the selected date.
 
-* Display the full question a well as a list of its replies.
-
-* Question and reply scores as well as voting possibilities for registered users is provided next to each item.
-
-* For registered users, a Leave Reply button is provided to allow the user to access the Leave Reply page to create a new reply to the question.
-
- * Edit and Question buttons are provided for the questions and replies the registered Site User has created.
-
-
-### Ask Question Page
-![Code Buddy Ask Question Page](assets/readme_files/code_buddy_ask_question.png)
-
-* Provide a form to allow registered Site Users to create a new question.
-
-### Leave Reply Page
-![Code Buddy Leave Reply Page](assets/readme_files/code_buddy_leave_reply.png)
-
-* Provide a form to allow registered Site Users to create a new reply to the questions.
+```html
+<form method="post" action="{% url 'book_appointment' %}">
+  {{ form.date|as_crispy_field }}
+  {{ form.time_slot|as_crispy_field }}
+  {{ form.treatment|as_crispy_field }}
+  {{ form.notes|as_crispy_field }}
+  <button type="submit" class="btn btn-primary mb-5 mt-2">Book Appointment</button>
+</form>
 
 
-### Edit Question Page
-![Code Buddy Edit Question Page](assets/readme_files/code_buddy_edit_question.png)
-
-* Provide a prepopulated form to allow the Site User to edit a question they created.
 
 
-### Delete Question Page
-![Code Buddy Edit Question Page](assets/readme_files/code_buddy_delete_question.png)
-
-* Provide a form to allow the Site User to delete a question they created.
 
 
-### Edit Reply Page
-![Code Buddy Edit Question Page](assets/readme_files/code_buddy_edit_reply.png)
-
-* Provide a prepopulated form to allow the Site User to edit a reply they created.
-
-
-### Delete Reply Page
-![Code Buddy Edit Question Page](assets/readme_files/code_buddy_delete_reply.png)
-
-* Provide a form to allow the Site User to delete a reply they created.
 
 
 ### Authentication Pages
