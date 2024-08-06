@@ -8,7 +8,6 @@ class About(models.Model):
     Contains title, updated date, and content fields.
     """
     title = models.CharField(max_length=200)
-    updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
 
     def __str__(self):

@@ -8,7 +8,7 @@
 </div>
 <div class="container mt-5 content-container text-center text-md-left">
     <h1>Sports Therapy Management</h1>
-    <p>{{ home_content.welcome_message }}</p>
+    <p>Welcome to our Sports Therapy Management platform. We offer a range of services to help you recover and perform better.</p>
 </div>
 
 <!-- Introduction -->
@@ -76,24 +76,14 @@
     <h2 class="text-center mb-4">Client Testimonials</h2>
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            {% for testimonial in testimonials %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
                 <div class="testimonial">
-                    <p class="testimonial-text">"The care I received was exceptional. I am now pain-free and back to my favorite activities!"</p>
-                    <p class="testimonial-author">- John Doe</p>
+                    <p class="testimonial-text">"{{ testimonial.testimonial_text }}"</p>
+                    <p class="testimonial-author">- {{ testimonial.client_name }}</p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="testimonial">
-                    <p class="testimonial-text">"I highly recommend this practice. The staff is friendly and the treatments are effective."</p>
-                    <p class="testimonial-author">- Jane Smith</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="testimonial">
-                    <p class="testimonial-text">"Professional and knowledgeable team. They really care about their patients' well-being."</p>
-                    <p class="testimonial-author">- Michael Brown</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
