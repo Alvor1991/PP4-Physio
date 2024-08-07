@@ -17,8 +17,9 @@ def about_me(request):
             messages.add_message(request, messages.SUCCESS, "Your message has been sent successfully. I endeavor to respond within 2 working days.")
             if request.headers.get('x-requested-with') == 'XMLHttpRequest':
                 return JsonResponse({'success': True})
-    
-    about = About.objects.all().order_by('-updated_on').first()
+
+    # Fetch the first About entry, since updated_on doesn't exist
+    about = About.objects.first()
     contact_form = ContactForm()
 
     return render(
@@ -29,4 +30,3 @@ def about_me(request):
             "contact_form": contact_form,
         },
     )
-
