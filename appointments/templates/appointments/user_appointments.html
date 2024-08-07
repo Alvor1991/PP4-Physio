@@ -34,7 +34,7 @@
                 <td>{{ appointment.time|time:"H:i" }}</td>
                 <td>{{ appointment.treatment }}</td>
                 <td>{{ appointment.notes|default:"N/A" }}</td>
-                <td>
+                <td class="d-flex flex-column flex-sm-row gap-2">
                   <a href="{% url 'update_appointment' appointment.id %}" class="btn btn-warning btn-sm">Update</a>
                   <!-- Delete button to trigger modal -->
                   <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal{{ appointment.id }}">

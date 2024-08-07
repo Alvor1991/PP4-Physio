@@ -11,58 +11,64 @@
         <h1>Sports Therapy Management</h1>
     </div>
 </div>
-<div class="container mt-5 content-container text-center text-md-left welcome-section">
-    <p>Welcome to our Sports Therapy Management platform. We offer a range of services to help you recover and perform better.</p>
+<div class="container mt-5 px-sm-3">
+    <div class="content-container text-center text-md-left welcome-section">
+        <p>Welcome to our Sports Therapy Management platform. We offer a range of services to help you recover and perform better.</p>
+    </div>
 </div>
 
 <!-- Introduction -->
-<div class="container mt-5 content-container text-center">
-    <h2 class="caption">We don't just help your injury, we help you</h2>
+<div class="container mt-5 px-sm-3">
+    <div class="content-container text-center">
+        <h2 class="caption">We don't just help your injury, we help you</h2>
+    </div>
 </div>
 
 <!-- Services Overview -->
-<div class="container mt-5 content-container">
-    <h2 class="text-center mb-4">Services We Offer</h2>
-    <div class="row g-4">
-        <!-- Sports Therapy -->
-        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <div class="card service-card">
-                <div class="card-body text-center d-flex flex-column">
-                    <i class="fas fa-running fa-3x mb-3"></i>
-                    <h5 class="card-title">Sports Therapy</h5>
-                    <h6 class="card-subtitle mt-2 mb-3">Recover Faster, Perform Better</h6>
-                    <p class="card-text">
-                        Experience cutting-edge treatments that promote recovery and enhance athletic performance. From hydrotherapy and cryotherapy to personalized assessments, our sports therapy services are tailored to your needs.
-                    </p>
-                    <a href="{% url 'treatments' %}" class="btn btn-primary mt-auto">Learn More</a>
+<div class="container mt-5 px-sm-3">
+    <div class="content-container">
+        <h2 class="text-center mb-4">Services We Offer</h2>
+        <div class="row g-4">
+            <!-- Sports Therapy -->
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card service-card">
+                    <div class="card-body text-center d-flex flex-column">
+                        <i class="fas fa-running fa-3x mb-3"></i>
+                        <h5 class="card-title">Sports Therapy</h5>
+                        <h6 class="card-subtitle mt-2 mb-3">Recover Faster, Perform Better</h6>
+                        <p class="card-text">
+                            Experience cutting-edge treatments that promote recovery and enhance athletic performance. From hydrotherapy and cryotherapy to personalized assessments, our sports therapy services are tailored to your needs.
+                        </p>
+                        <a href="{% url 'treatments' %}" class="btn btn-primary mt-auto">Learn More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Orthotics -->
-        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <div class="card service-card">
-                <div class="card-body text-center d-flex flex-column">
-                    <i class="fas fa-shoe-prints fa-3x mb-3"></i>
-                    <h5 class="card-title">Orthotics</h5>
-                    <h6 class="card-subtitle mt-2 mb-3">Customized Comfort and Support</h6>
-                    <p class="card-text">
-                        Discover the difference of custom orthotics designed to alleviate pain and correct biomechanical issues. Whether you're dealing with plantar fasciitis, Achilles tendinitis, or hip bursitis, our orthotics provide the support you need to move comfortably.
-                    </p>
-                    <a href="{% url 'treatments' %}" class="btn btn-primary mt-auto">Learn More</a>
+            <!-- Orthotics -->
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card service-card">
+                    <div class="card-body text-center d-flex flex-column">
+                        <i class="fas fa-shoe-prints fa-3x mb-3"></i>
+                        <h5 class="card-title">Orthotics</h5>
+                        <h6 class="card-subtitle mt-2 mb-3">Customized Comfort and Support</h6>
+                        <p class="card-text">
+                            Discover the difference of custom orthotics designed to alleviate pain and correct biomechanical issues. Whether you're dealing with plantar fasciitis, Achilles tendinitis, or hip bursitis, our orthotics provide the support you need to move comfortably.
+                        </p>
+                        <a href="{% url 'treatments' %}" class="btn btn-primary mt-auto">Learn More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Health Coaching -->
-        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <div class="card service-card">
-                <div class="card-body text-center d-flex flex-column">
-                    <i class="fas fa-heartbeat fa-3x mb-3"></i>
-                    <h5 class="card-title">Health Coaching</h5>
-                    <h6 class="card-subtitle mt-2 mb-3">Holistic Health and Wellness</h6>
-                    <p class="card-text">
-                        Achieve a balanced lifestyle with our holistic health coaching services. From nutrition guidance and mental health support to lifestyle optimization, we're here to help you succeed both physically and mentally.
-                    </p>
-                    <a href="{% url 'treatments' %}" class="btn btn-primary mt-auto">Learn More</a>
+            <!-- Health Coaching -->
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card service-card">
+                    <div class="card-body text-center d-flex flex-column">
+                        <i class="fas fa-heartbeat fa-3x mb-3"></i>
+                        <h5 class="card-title">Health Coaching</h5>
+                        <h6 class="card-subtitle mt-2 mb-3">Holistic Health and Wellness</h6>
+                        <p class="card-text">
+                            Achieve a balanced lifestyle with our holistic health coaching services. From nutrition guidance and mental health support to lifestyle optimization, we're here to help you succeed both physically and mentally.
+                        </p>
+                        <a href="{% url 'treatments' %}" class="btn btn-primary mt-auto">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,33 +76,37 @@
 </div>
 
 <!-- Call to Action -->
-<div class="container mt-5 content-container text-center">
-    <a href="{% url 'book_appointment' %}" class="btn btn-primary btn-lg">Book Now</a>
-    <p class="mt-3">Have questions? Visit our <a href="{% url 'about' %}">About Me</a> page to learn more or use the contact form to get in touch.</p>
+<div class="container mt-5 px-sm-3">
+    <div class="content-container text-center">
+        <a href="{% url 'book_appointment' %}" class="btn btn-primary btn-lg">Book Now</a>
+        <p class="mt-3">Have questions? Visit our <a href="{% url 'about' %}">About Me</a> page to learn more or use the contact form to get in touch.</p>
+    </div>
 </div>
 
 <!-- Client Testimonials -->
-<div class="container mt-5 content-container">
-    <h2 class="text-center mb-4">Client Testimonials</h2>
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            {% for testimonial in testimonials %}
-            <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <div class="testimonial">
-                    <p class="testimonial-text">"{{ testimonial.testimonial_text }}"</p>
-                    <p class="testimonial-author">- {{ testimonial.client_name }}</p>
+<div class="container mt-5 px-sm-3">
+    <div class="content-container">
+        <h2 class="text-center mb-4">Client Testimonials</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                {% for testimonial in testimonials %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"{{ testimonial.testimonial_text }}"</p>
+                        <p class="testimonial-author">- {{ testimonial.client_name }}</p>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 </div>
 
