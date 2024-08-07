@@ -2,237 +2,220 @@
    General Styles
    =================================== */
    body {
-    background-color: #F9FAFC;
+    background-color: #f9fafc;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     line-height: 1.6;
-}
-
-p {
+  }
+  
+  p {
     margin-bottom: 1.5em;
-}
-
-.banner-container {
-
+  }
+  
+  .banner-container {
     position: relative; /* Position relative to enable absolute positioning of child elements */
-
+  
     width: 100%;
-
+  
     max-height: 300px; /* Adjust based on your design */
-
+  
     overflow: hidden;
-
-}
-
-
-
-.banner-image img {
-
+  }
+  
+  .banner-image img {
     width: 100%;
-
+  
     height: auto;
-
+  
     object-fit: cover;
-
-}
-
-
-
-.banner-text {
-
+  }
+  
+  .banner-text {
     position: absolute;
-
+  
     top: 50%;
-
+  
     left: 50%;
-
-    transform: translate(-50%, -50%); 
-
-    color: white; 
-
-    font-size: 2rem; 
-
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-
+  
+    transform: translate(-50%, -50%);
+  
+    color: white;
+  
+    font-size: 2rem;
+  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  
     text-align: center;
-
+  
     width: 100%;
-
-    padding: 10px; 
-
-    background-color: rgba(0, 0, 0, 0.5); 
-
-}
-
-/* ===================================
-   Header and Branding
-   =================================== */
-.brand {
-    font-family: 'Lato', sans-serif;
+  
+    padding: 10px;
+  
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* ===================================
+     Header and Branding
+     =================================== */
+  .brand {
+    font-family: "Lato", sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
-}
-
-.navbar-custom {
-    border-bottom: 4px solid #188181; 
-}
-
-.navbar-brand img {
+    color: #4a4a4f;
+  }
+  
+  .navbar-custom {
+    border-bottom: 4px solid #188181;
+  }
+  
+  .navbar-brand img {
     height: 60px;
     width: auto;
-}
-
-.welcome-section {
-
-    background-color: #F0F8FF; /* Light blue background */
-
+  }
+  
+  .welcome-section {
+    background-color: #f0f8ff; /* Light blue background */
+  
     padding: 20px; /* Add padding around the text */
-
+  
     border-radius: 10px; /* Rounded corners */
-
+  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-
+  
     margin-bottom: 2rem; /* Space below the section */
-
-}
-
-
-
-.welcome-section p {
-
+  }
+  
+  .welcome-section p {
     font-size: 1.5rem; /* Larger font size for prominence */
-
+  
     font-weight: 600; /* Bold text */
-
+  
     color: #188181; /* Teal color to match branding */
-
+  
     margin: 0; /* Remove default margins */
-
+  
     line-height: 1.4; /* Adjust line height for readability */
-
-}
-
-/* ===================================
-   Cards
-   =================================== */
-.card {
+  }
+  
+  /* ===================================
+     Cards
+     =================================== */
+  .card {
     border: none;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-}
-
-.card-title {
+  }
+  
+  .card-title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #4a4a4f; 
+    color: #4a4a4f;
     margin-top: 10%;
     margin-left: 5%;
-}
-
-.card-subtitle {
+  }
+  
+  .card-subtitle {
     font-size: 1rem;
     color: lightgray;
     margin-left: 5%;
-}
-
-.card-text {
+  }
+  
+  .card-text {
     font-size: 1rem;
     color: #666;
-}
-
-/* ===================================
-   Buttons
-   =================================== */
-/* Removed classes that are not used: .btn-book, .btn-edit, .btn-update, .btn-delete */
-
-.link {
-    color: #23BBBB; 
+  }
+  
+  /* ===================================
+     Buttons
+     =================================== */
+  /* Removed classes that are not used: .btn-book, .btn-edit, .btn-update, .btn-delete */
+  
+  .link {
+    color: #23bbbb;
     text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261; 
+  }
+  
+  .link:hover,
+  .link:active {
+    color: #445261;
     text-decoration: underline;
-}
-
-
-/* Primary Button */
-.btn-primary {
-    background-color: #188181; 
+  }
+  
+  /* Primary Button */
+  .btn-primary {
+    background-color: #188181;
     border: none;
     transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #23BBBB; 
-}
-
-/* ===================================
-   Footer
-   =================================== */
-.footer {
+  }
+  
+  .btn-primary:hover {
+    background-color: #23bbbb;
+  }
+  
+  /* ===================================
+     Footer
+     =================================== */
+  .footer {
     background-color: #445261; /* Dark Blue */
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 4rem;
     color: #fff;
     flex-shrink: 0;
-}
-
-.halfway-footer {
+  }
+  
+  .halfway-footer {
     margin-top: auto;
-}
-
-.footer-text {
+  }
+  
+  .footer-text {
     font-size: 0.875rem;
-}
-
-.social-icons {
+  }
+  
+  .social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
     padding-top: 10px;
-}
-
-.social-icon {
-    color: #FFFFFF; 
+  }
+  
+  .social-icon {
+    color: #ffffff;
     font-size: 1.5rem;
     transition: color 0.3s ease;
-}
-
-/* ===================================
-   Images
-   =================================== */
-.img-fluid {
+  }
+  
+  /* ===================================
+     Images
+     =================================== */
+  .img-fluid {
     max-width: 75%;
     height: auto;
-}
-
-.banner-image {
+  }
+  
+  .banner-image {
     width: 100%;
     height: auto;
     overflow: hidden;
-}
-
-.banner-image img {
+  }
+  
+  .banner-image img {
     width: 100%;
     height: auto;
     max-height: 300px;
     object-fit: cover;
-}
-
-.image-container {
+  }
+  
+  .image-container {
     position: relative;
-}
-
-/* ===================================
-   Service Cards
-   =================================== */
-.service-card {
+  }
+  
+  /* ===================================
+     Service Cards
+     =================================== */
+  .service-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -241,211 +224,212 @@ p {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-}
-
-.service-card:hover {
+  }
+  
+  .service-card:hover {
     transform: translateY(-10px);
-}
-
-.service-card .card-body {
+  }
+  
+  .service-card .card-body {
     padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.service-card i {
-    color: #188181; 
-}
-
-/* ===================================
-   Testimonials
-   =================================== */
-.testimonial {
+  }
+  
+  .service-card i {
+    color: #188181;
+  }
+  
+  /* ===================================
+     Testimonials
+     =================================== */
+  .testimonial {
     text-align: center;
     padding: 20px;
-    max-width: 600px; 
-    margin: 0 auto; 
-}
-
-.testimonial-text {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-text {
     font-size: 1.2rem;
     font-style: italic;
     color: #333;
-}
-
-.testimonial-author {
+  }
+  
+  .testimonial-author {
     font-size: 1rem;
     font-weight: 700;
     margin-top: 10px;
-    color: #188181; 
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #188181; 
+    color: #188181;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #188181;
     border-radius: 50%;
     padding: 10px;
-}
-
-/* ===================================
-   Alignment
-   =================================== */
-
-ul.text-left {
+  }
+  
+  /* ===================================
+     Alignment
+     =================================== */
+  
+  ul.text-left {
     text-align: left;
     padding-left: 1.5em;
-}
-
-/* ===================================
-   FAQ and Treatments
-   =================================== */
-
-.accordion-button {
+  }
+  
+  /* ===================================
+     FAQ and Treatments
+     =================================== */
+  
+  .accordion-button {
     font-size: 1.1rem;
     font-weight: 600;
-    background-color: #188181; 
-    color: #fff; 
+    background-color: #188181;
+    color: #fff;
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.accordion-button:hover, .accordion-button:focus {
-    background-color: #23BBBB; 
+  }
+  
+  .accordion-button:hover,
+  .accordion-button:focus {
+    background-color: #23bbbb;
     color: #fff;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: #445261; 
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #445261;
     color: #fff;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
-}
-
-.accordion-header {
-    margin-bottom: 0; 
-}
-
-.accordion-item {
+  }
+  
+  .accordion-header {
+    margin-bottom: 0;
+  }
+  
+  .accordion-item {
     background-color: #fff;
-    border: 1px solid #e3e3e3; 
+    border: 1px solid #e3e3e3;
     border-radius: 0.25rem;
     margin-bottom: 1rem;
-}
-
-.accordion-body {
+  }
+  
+  .accordion-body {
     font-size: 1rem;
-    color: #333; 
-    background-color: #f9fafc; 
+    color: #333;
+    background-color: #f9fafc;
     padding: 1rem;
-    border-top: 1px solid #e3e3e3; 
-}
-
-.accordion-button::after {
-    filter: invert(100%); 
-}
-
-/* ===================================
-   Margin and Padding
-   =================================== */
-.mb-5 {
+    border-top: 1px solid #e3e3e3;
+  }
+  
+  .accordion-button::after {
+    filter: invert(100%);
+  }
+  
+  /* ===================================
+     Margin and Padding
+     =================================== */
+  .mb-5 {
     margin-bottom: 3rem !important;
-}
-
-.mt-5 {
+  }
+  
+  .mt-5 {
     margin-top: 3rem !important;
-}
-
-.mt-3 {
+  }
+  
+  .mt-3 {
     margin-top: 3rem !important;
-}
-
-.pb-5 {
+  }
+  
+  .pb-5 {
     padding-bottom: 3rem !important;
-}
-
-.pt-5 {
+  }
+  
+  .pt-5 {
     padding-top: 3rem !important;
-}
-
-/* ===================================
-   Scoped Styles for Signup Page
-   =================================== */
-.signup-page .card,
-.login-page .card,
-.user-appointments-page .card {
+  }
+  
+  /* ===================================
+     Scoped Styles for Signup Page
+     =================================== */
+  .signup-page .card,
+  .login-page .card,
+  .user-appointments-page .card {
     border: none;
     border-radius: 0.5rem;
-}
-
-.signup-page .card-title,
-.login-page .card-title,
-.user-appointments-page .card-title {
+  }
+  
+  .signup-page .card-title,
+  .login-page .card-title,
+  .user-appointments-page .card-title {
     margin-bottom: 1rem;
     font-weight: 700;
     color: #445261;
-}
-
-.signup-page .btn-primary,
-.login-page .btn-primary {
+  }
+  
+  .signup-page .btn-primary,
+  .login-page .btn-primary {
     background-color: #188181;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.signup-page .btn-primary:hover,
-.signup-page .btn-primary:focus,
-.login-page .btn-primary:hover,
-.login-page .btn-primary:focus {
-    background-color: #23BBBB;
+  }
+  
+  .signup-page .btn-primary:hover,
+  .signup-page .btn-primary:focus,
+  .login-page .btn-primary:hover,
+  .login-page .btn-primary:focus {
+    background-color: #23bbbb;
     transform: translateY(-2px);
-}
-
-.signup-page .link,
-.login-page .link,
-.user-appointments-page .link {
-    color: #23BBBB;
+  }
+  
+  .signup-page .link,
+  .login-page .link,
+  .user-appointments-page .link {
+    color: #23bbbb;
     text-decoration: none;
-}
-
-.signup-page .link:hover,
-.signup-page .link:focus,
-.login-page .link:hover,
-.login-page .link:focus,
-.user-appointments-page .link:hover,
-.user-appointments-page .link:focus {
+  }
+  
+  .signup-page .link:hover,
+  .signup-page .link:focus,
+  .login-page .link:hover,
+  .login-page .link:focus,
+  .user-appointments-page .link:hover,
+  .user-appointments-page .link:focus {
     color: #445261;
     text-decoration: underline;
-}
-
-/* Scoped Styles for User Appointments Page */
-.user-appointments-page .btn-warning {
-    background-color: #005f73; 
+  }
+  
+  /* Scoped Styles for User Appointments Page */
+  .user-appointments-page .btn-warning {
+    background-color: #005f73;
     color: #fff;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.user-appointments-page .btn-warning:hover,
-.user-appointments-page .btn-warning:focus {
-    background-color: #007f99; 
+  }
+  
+  .user-appointments-page .btn-warning:hover,
+  .user-appointments-page .btn-warning:focus {
+    background-color: #007f99;
     transform: translateY(-2px);
-}
-
-.user-appointments-page .btn-danger {
-    background-color: #FF4500; 
+  }
+  
+  .user-appointments-page .btn-danger {
+    background-color: #ff4500;
     color: #fff;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.user-appointments-page .btn-danger:hover,
-.user-appointments-page .btn-danger:focus {
-    background-color: #FF7300; 
+  }
+  
+  .user-appointments-page .btn-danger:hover,
+  .user-appointments-page .btn-danger:focus {
+    background-color: #ff7300;
     transform: translateY(-2px);
-}
-
-.caption {
+  }
+  
+  .caption {
     font-size: 1.5rem;
     font-weight: 500;
     color: #188181; /* Teal */
@@ -453,48 +437,38 @@ ul.text-left {
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-/* ===================================
-   Media Queries
-   =================================== */
-@media (max-width: 767.98px) {
+  }
+  
+  /* ===================================
+     Media Queries
+     =================================== */
+  @media (max-width: 767.98px) {
     .text-md-end {
-        text-align: center !important;
+      text-align: center !important;
     }
-
+  
     .footer .container .row > div {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
-
+  
     .text-center .text-md-left {
-        text-align: center !important;
+      text-align: center !important;
     }
-
+  
     .text-md-left ul {
-        text-align: left !important;
+      text-align: left !important;
     }
-
+  
     .mb-3,
     .mb-4 {
-        margin-bottom: 1.5rem !important;
+      margin-bottom: 1.5rem !important;
     }
-
+  
     .mb-md-0 {
-        margin-bottom: 0 !important;
+      margin-bottom: 0 !important;
     }
-
-    .container,
-    .container-fluid,
-    .container-xl,
-    .container-lg,
-    .container-md,
-    .container-sm {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
+  
     .about-content {
-        text-align: center !important;
+      text-align: center !important;
     }
-}
+  }  
