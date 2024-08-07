@@ -18,6 +18,24 @@ p {
     flex: 1;
 }
 
+/* Add spacing between the heading and paragraph */
+.container .content-container h1 {
+    margin-bottom: 1.5rem; /* Increase margin below the heading */
+}
+
+.container .content-container p {
+    margin-top: 1.5rem; /* Increase margin above the paragraph */
+}
+
+/* Add spacing between the Book Now button and paragraph */
+.container .content-container .btn-lg {
+    margin-bottom: 1.5rem; /* Increase margin below the button */
+}
+
+.container .content-container .mt-3 {
+    margin-top: 1.5rem; /* Ensure margin above the paragraph */
+}
+
 /* ===================================
    Header and Branding
    =================================== */
