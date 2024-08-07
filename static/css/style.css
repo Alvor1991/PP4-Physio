@@ -200,15 +200,38 @@ p {
 }
 
 /* ===================================
+   About Page Image Styling
+   =================================== */
+   .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Ensures the image is circular if it's a square */
+}
+
+.bordered-image {
+    border: 5px solid #445261; /* Steel Blue border for consistency */
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 1.5rem; /* Space below the image */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for images */
+.bordered-image:hover {
+    border-color: #188181; /* Teal border on hover */
+    transform: scale(1.05); /* Slight scaling for emphasis */
+}
+
+/* ===================================
    Service Cards
    =================================== */
-.service-card {
+   .service-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     border: none;
-    background-color: #FFFACD; /* Lemon Yellow */
+    background-color: #F5F5DC; /* Soft Beige */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -235,6 +258,8 @@ p {
 .testimonial {
     text-align: center;
     padding: 20px;
+    max-width: 600px; /* Limit the width of the testimonial */
+    margin: 0 auto; /* Center the testimonial horizontally */
 }
 
 .testimonial-text {
