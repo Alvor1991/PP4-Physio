@@ -18,22 +18,31 @@ p {
     flex: 1;
 }
 
-/* Add spacing between the heading and paragraph */
-.container .content-container h1 {
-    margin-bottom: 1.5rem; /* Increase margin below the heading */
+.banner-container {
+    position: relative; /* Position relative to enable absolute positioning of child elements */
+    width: 100%;
+    max-height: 300px; /* Adjust based on your design */
+    overflow: hidden;
 }
 
-.container .content-container p {
-    margin-top: 1.5rem; /* Increase margin above the paragraph */
+.banner-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-/* Add spacing between the Book Now button and paragraph */
-.container .content-container .btn-lg {
-    margin-bottom: 1.5rem; /* Increase margin below the button */
-}
-
-.container .content-container .mt-3 {
-    margin-top: 1.5rem; /* Ensure margin above the paragraph */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    text-align: center;
+    width: 100%;
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 /* ===================================
@@ -44,10 +53,6 @@ p {
     font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F; /* Dark Gray */
-}
-
-.thin {
-    font-weight: 300;
 }
 
 .navbar-custom {
@@ -111,18 +116,6 @@ p {
 .link:active {
     color: #445261; /* Dark Blue */
     text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610; /* Orange */
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #FF7300; /* Lighter Orange */
-    background: transparent;
 }
 
 /* Primary Button */
@@ -223,15 +216,15 @@ p {
    .img-fluid {
     max-width: 100%;
     height: auto;
-    border-radius: 50%; /* Ensures the image is circular if it's a square */
+    border-radius: 50%; 
 }
 
 .bordered-image {
-    border: 5px solid #445261; /* Steel Blue border for consistency */
+    border: 5px solid #445261; 
     padding: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-bottom: 1.5rem; /* Space below the image */
-    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 1.5rem; 
+    transition: transform 0.3s ease, border-color 0.3s ease; 
 }
 
 /* Hover effect for images */
@@ -276,8 +269,8 @@ p {
 .testimonial {
     text-align: center;
     padding: 20px;
-    max-width: 600px; /* Limit the width of the testimonial */
-    margin: 0 auto; /* Center the testimonial horizontally */
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
 .testimonial-text {
@@ -367,6 +360,10 @@ ul.text-left {
 }
 
 .mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mt-3 {
     margin-top: 3rem !important;
 }
 
