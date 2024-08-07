@@ -2,7 +2,7 @@
    General Styles
    =================================== */
    body {
-    background-color: #F9FAFC; /* Light Gray Background */
+    background-color: #F9FAFC;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -14,30 +14,55 @@ p {
 }
 
 .banner-container {
-    position: relative;
+
+    position: relative; /* Position relative to enable absolute positioning of child elements */
+
     width: 100%;
-    max-height: 300px;
+
+    max-height: 300px; /* Adjust based on your design */
+
     overflow: hidden;
+
 }
+
+
 
 .banner-image img {
+
     width: 100%;
+
     height: auto;
+
     object-fit: cover;
+
 }
 
+
+
 .banner-text {
+
     position: absolute;
+
     top: 50%;
+
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+    transform: translate(-50%, -50%); 
+
+    color: white; 
+
+    font-size: 2rem; 
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+
     text-align: center;
+
     width: 100%;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 10px; 
+
+    background-color: rgba(0, 0, 0, 0.5); 
+
 }
 
 /* ===================================
@@ -47,11 +72,11 @@ p {
     font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F; /* Dark Gray */
+    color: #4A4A4F;
 }
 
 .navbar-custom {
-    border-bottom: 4px solid #188181; /* Teal */
+    border-bottom: 4px solid #188181; 
 }
 
 .navbar-brand img {
@@ -60,41 +85,49 @@ p {
 }
 
 .welcome-section {
+
     background-color: #F0F8FF; /* Light blue background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+
+    padding: 20px; /* Add padding around the text */
+
+    border-radius: 10px; /* Rounded corners */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+    margin-bottom: 2rem; /* Space below the section */
+
 }
 
+
+
 .welcome-section p {
-    font-size: 1.5rem;
-    font-weight: 600;
+
+    font-size: 1.5rem; /* Larger font size for prominence */
+
+    font-weight: 600; /* Bold text */
+
     color: #188181; /* Teal color to match branding */
-    margin: 0;
-    line-height: 1.4;
+
+    margin: 0; /* Remove default margins */
+
+    line-height: 1.4; /* Adjust line height for readability */
+
 }
 
 /* ===================================
    Cards
    =================================== */
-.card, .service-card {
+.card {
     border: none;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin-bottom: 1rem;
 }
 
 .card-title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #4a4a4f;
+    color: #4a4a4f; 
     margin-top: 10%;
     margin-left: 5%;
 }
@@ -110,81 +143,32 @@ p {
     color: #666;
 }
 
-.service-card .card-body {
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.service-card i {
-    color: #188181; /* Teal */
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-}
-
 /* ===================================
    Buttons
    =================================== */
+/* Removed classes that are not used: .btn-book, .btn-edit, .btn-update, .btn-delete */
+
 .link {
-    color: #23BBBB; /* Lighter Teal */
+    color: #23BBBB; 
     text-decoration: none;
 }
 
-.link:hover, .link:active {
-    color: #445261; /* Dark Blue */
+.link:hover,
+.link:active {
+    color: #445261; 
     text-decoration: underline;
 }
 
+
 /* Primary Button */
 .btn-primary {
-    background-color: #188181; /* Teal */
+    background-color: #188181; 
     border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #23BBBB; /* Lighter Teal */
-    transform: translateY(-2px);
-}
-
-.page .btn-warning {
-    background-color: #005f73;
-    color: #fff;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.page .btn-warning:hover, .page .btn-warning:focus {
-    background-color: #007f99;
-    transform: translateY(-2px);
-}
-
-.page .btn-danger {
-    background-color: #FF4500;
-    color: #fff;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.page .btn-danger:hover, .page .btn-danger:focus {
-    background-color: #FF7300;
-    transform: translateY(-2px);
-}
-
-/* CTA Button with New Color */
-.cta-button {
-    font-size: 1.25rem;
-    padding: 1rem 2rem;
-    background-color: #98FB98; /* Soft Green */
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #32CD32; /* Lime Green */
-    transform: translateY(-5px);
+    background-color: #23BBBB; 
 }
 
 /* ===================================
@@ -199,6 +183,10 @@ p {
     flex-shrink: 0;
 }
 
+.halfway-footer {
+    margin-top: auto;
+}
+
 .footer-text {
     font-size: 0.875rem;
 }
@@ -211,22 +199,17 @@ p {
 }
 
 .social-icon {
-    color: #fff;
+    color: #FFFFFF; 
     font-size: 1.5rem;
     transition: color 0.3s ease;
-}
-
-.social-icon:hover {
-    color: #FFFFFF;
 }
 
 /* ===================================
    Images
    =================================== */
 .img-fluid {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
-    border-radius: 50%;
 }
 
 .banner-image {
@@ -242,21 +225,38 @@ p {
     object-fit: cover;
 }
 
-.bordered-image {
-    border: 5px solid #445261;
-    padding: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.bordered-image:hover {
-    border-color: #188181; /* Teal border on hover */
-    transform: scale(1.05); /* Slight scaling for emphasis */
-}
-
 .image-container {
     position: relative;
+}
+
+/* ===================================
+   Service Cards
+   =================================== */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card .card-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card i {
+    color: #188181; 
 }
 
 /* ===================================
@@ -265,8 +265,8 @@ p {
 .testimonial {
     text-align: center;
     padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
 .testimonial-text {
@@ -279,108 +279,70 @@ p {
     font-size: 1rem;
     font-weight: 700;
     margin-top: 10px;
-    color: #188181; /* Teal */
+    color: #188181; 
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #188181; /* Teal */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #188181; 
     border-radius: 50%;
     padding: 10px;
 }
 
 /* ===================================
+   Alignment
+   =================================== */
+
+ul.text-left {
+    text-align: left;
+    padding-left: 1.5em;
+}
+
+/* ===================================
    FAQ and Treatments
    =================================== */
+
 .accordion-button {
     font-size: 1.1rem;
     font-weight: 600;
-    background-color: #188181; /* Teal */
-    color: #fff;
+    background-color: #188181; 
+    color: #fff; 
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .accordion-button:hover, .accordion-button:focus {
-    background-color: #23BBBB; /* Lighter Teal */
+    background-color: #23BBBB; 
     color: #fff;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #445261; /* Dark Blue */
+    background-color: #445261; 
     color: #fff;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 
 .accordion-header {
-    margin-bottom: 0;
+    margin-bottom: 0; 
 }
 
 .accordion-item {
-    background-color: #FFFACD; /* Lemon Yellow */
-    border: 1px solid #e3e3e3;
+    background-color: #fff;
+    border: 1px solid #e3e3e3; 
     border-radius: 0.25rem;
     margin-bottom: 1rem;
 }
 
 .accordion-body {
     font-size: 1rem;
-    color: #333;
-    background-color: #f9fafc;
+    color: #333; 
+    background-color: #f9fafc; 
     padding: 1rem;
-    border-top: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3; 
 }
 
 .accordion-button::after {
-    filter: invert(100%);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.card {
-    border: none;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #188181; /* Teal */
-    margin-bottom: 10px;
-}
-
-.card-text {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.card-footer {
-    background-color: #f9fafc; /* Light Gray */
-    padding: 15px;
-    border-top: 1px solid #eee;
-}
-
-.btn-primary {
-    background-color: #188181; /* Teal */
-    border: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #23BBBB; /* Lighter Teal */
+    filter: invert(100%); 
 }
 
 /* ===================================
@@ -406,7 +368,83 @@ p {
     padding-top: 3rem !important;
 }
 
-/* CTA Text */
+/* ===================================
+   Scoped Styles for Signup Page
+   =================================== */
+.signup-page .card,
+.login-page .card,
+.user-appointments-page .card {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.signup-page .card-title,
+.login-page .card-title,
+.user-appointments-page .card-title {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #445261;
+}
+
+.signup-page .btn-primary,
+.login-page .btn-primary {
+    background-color: #188181;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-page .btn-primary:hover,
+.signup-page .btn-primary:focus,
+.login-page .btn-primary:hover,
+.login-page .btn-primary:focus {
+    background-color: #23BBBB;
+    transform: translateY(-2px);
+}
+
+.signup-page .link,
+.login-page .link,
+.user-appointments-page .link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.signup-page .link:hover,
+.signup-page .link:focus,
+.login-page .link:hover,
+.login-page .link:focus,
+.user-appointments-page .link:hover,
+.user-appointments-page .link:focus {
+    color: #445261;
+    text-decoration: underline;
+}
+
+/* Scoped Styles for User Appointments Page */
+.user-appointments-page .btn-warning {
+    background-color: #005f73; 
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-appointments-page .btn-warning:hover,
+.user-appointments-page .btn-warning:focus {
+    background-color: #007f99; 
+    transform: translateY(-2px);
+}
+
+.user-appointments-page .btn-danger {
+    background-color: #FF4500; 
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-appointments-page .btn-danger:hover,
+.user-appointments-page .btn-danger:focus {
+    background-color: #FF7300; 
+    transform: translateY(-2px);
+}
+
 .caption {
     font-size: 1.5rem;
     font-weight: 500;
@@ -417,19 +455,11 @@ p {
     letter-spacing: 1px;
 }
 
-/* Call to Action Text */
-.cta-text {
-    font-size: 1.1rem;
-    color: #4A4A4F; /* Dark Gray */
-}
-
 /* ===================================
    Media Queries
    =================================== */
 @media (max-width: 767.98px) {
-    .text-md-end,
-    .text-center .text-md-left,
-    .about-content {
+    .text-md-end {
         text-align: center !important;
     }
 
@@ -437,26 +467,12 @@ p {
         margin-bottom: 15px;
     }
 
-    .container,
-    .container-fluid,
-    .container-xl,
-    .container-lg,
-    .container-md,
-    .container-sm {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    .content-container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+    .text-center .text-md-left {
+        text-align: center !important;
     }
 
     .text-md-left ul {
         text-align: left !important;
-        padding-left: 1.5em;
     }
 
     .mb-3,
@@ -468,8 +484,17 @@ p {
         margin-bottom: 0 !important;
     }
 
-    /* Additional spacing between stacked cards */
-    .row > .col-md-4 {
-        margin-bottom: 2rem;
+    .container,
+    .container-fluid,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .about-content {
+        text-align: center !important;
     }
 }
