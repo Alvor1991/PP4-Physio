@@ -97,30 +97,14 @@ Expand to include more therapists | 4 | 3
 
 ### Scope
 
-According to the strategy table, the project will focus on delivering essential features for the first release. The project will be divided into phases.
+The project will focus on delivering essential features for the first release, before moving on to the second phase.
 
-**First Phase**
-
-* Responsive design
-
-* Account registration
-
-* Browse and view treatments
-
-* Book and manage appointments
-
-* User dashboard
-
-**Second Phase**
-
-* Integration with payment gateway
-
-* Email notifications for booking confirmations
-
-* Blog page for sharing tips
-
-* Ability to add more therapists to the site
-
+| **First Phase**                   | **Second Phase**                                     |
+|-----------------------------------|------------------------------------------------------|
+| Responsive design                 | Integration with payment gateway                     |
+| Account registration              | Email notifications for booking confirmations        |
+| Browse and view treatments        | Blog page for sharing tips                           |
+| Book and manage appointments      | Ability to add more therapists to the site           |
 
 #### User Stories
 
