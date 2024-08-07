@@ -32,7 +32,6 @@ p {
     font-weight: 300;
 }
 
-/* Custom Navbar Border */
 .navbar-custom {
     border-bottom: 4px solid #188181; 
 }
@@ -64,19 +63,17 @@ p {
 }
 
 .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4a4a4f; 
     margin-top: 10%;
     margin-left: 5%;
 }
 
 .card-subtitle {
-    margin-left: 5%;
+    font-size: 1rem;
     color: lightgray;
-}
-
-.card-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #4a4a4f; 
+    margin-left: 5%;
 }
 
 .card-text {
@@ -87,41 +84,7 @@ p {
 /* ===================================
    Buttons
    =================================== */
-.btn-book,
-.btn-edit {
-    background-color: #188181; 
-    color: #fff;
-}
-
-.btn-book:hover,
-.btn-book:active {
-    background-color: #23BBBB;
-    color: #fff;
-}
-
-.btn-update {
-    background-color: #005f73; 
-    color: #fff;
-    border: none;
-}
-
-.btn-update:hover,
-.btn-update:active {
-    background-color: #007f99; 
-    color: #fff;
-}
-
-.btn-delete {
-    background-color: #FF4500; 
-    color: #fff;
-    border: none;
-}
-
-.btn-delete:hover,
-.btn-delete:active {
-    background-color: #FF7300; 
-    color: #fff;
-}
+/* Removed classes that are not used: .btn-book, .btn-edit, .btn-update, .btn-delete */
 
 .link {
     color: #23BBBB; 
@@ -144,7 +107,6 @@ p {
 .btn-like:active {
     color: #E84610;
     background: transparent;
-    border: none;
 }
 
 /* Primary Button */
@@ -178,7 +140,6 @@ p {
     font-size: 0.875rem;
 }
 
-/* Social Media Icons */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -226,29 +187,10 @@ p {
     height: auto;
 }
 
-/* Image Borders */
-.bordered-image {
-    border: 5px solid #188181; /* Teal */
-    padding: 5px;
-}
-
-/* ===================================
-   Appointments
-   =================================== */
-.appointment-link {
-    text-decoration: none;
-    color: #445261; 
-}
-
-.appointment-link:hover,
-.page-link {
-    color: #E84610; 
-}
-
 /* ===================================
    Service Cards
    =================================== */
-   .service-card {
+.service-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -269,25 +211,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.service-card .card-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #4a4a4f; 
-}
-
-.service-card .card-subtitle {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #188181; 
-    margin-top: 0.5rem;
-    margin-bottom: 1rem; 
-}
-
-.service-card .card-text {
-    font-size: 1rem;
-    color: #666;
 }
 
 .service-card i {
@@ -374,10 +297,9 @@ ul.text-left {
     color: #333; 
     background-color: #f9fafc; 
     padding: 1rem;
-    border-top: 1px solid #e3e3e3; /
+    border-top: 1px solid #e3e3e3; 
 }
 
-/* Update the icon styles */
 .accordion-button::after {
     filter: invert(100%); 
 }
@@ -404,92 +326,54 @@ ul.text-left {
 /* ===================================
    Scoped Styles for Signup Page
    =================================== */
-.signup-page .card {
-    border: none;
-    border-radius: 0.5rem;
-}
-
-.signup-page .card-title {
-    margin-bottom: 1rem;
-    font-weight: 700;
-    color: #445261;
-}
-
-.signup-page .btn-primary {
-    background-color: #188181;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.signup-page .btn-primary:hover,
-.signup-page .btn-primary:focus {
-    background-color: #23BBBB;
-    transform: translateY(-2px);
-}
-
-.signup-page .link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.signup-page .link:hover,
-.signup-page .link:focus {
-    color: #445261;
-    text-decoration: underline;
-}
-
-/* ===================================
-   Scoped Styles for Login Page
-   =================================== */
-.login-page .card {
-    border: none;
-    border-radius: 0.5rem;
-}
-
-.login-page .card-title {
-    margin-bottom: 1rem;
-    font-weight: 700;
-    color: #445261;
-}
-
-.login-page .btn-primary {
-    background-color: #188181;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.login-page .btn-primary:hover,
-.login-page .btn-primary:focus {
-    background-color: #23BBBB;
-    transform: translateY(-2px);
-}
-
-.login-page .link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.login-page .link:hover,
-.login-page .link:focus {
-    color: #445261;
-    text-decoration: underline;
-}
-
-/* ===================================
-   Scoped Styles for User Appointments Page
-   =================================== */
+.signup-page .card,
+.login-page .card,
 .user-appointments-page .card {
     border: none;
-    border-radius: 0.5rem; 
+    border-radius: 0.5rem;
 }
 
+.signup-page .card-title,
+.login-page .card-title,
 .user-appointments-page .card-title {
     margin-bottom: 1rem;
     font-weight: 700;
     color: #445261;
 }
 
-/* Update Button */
+.signup-page .btn-primary,
+.login-page .btn-primary {
+    background-color: #188181;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-page .btn-primary:hover,
+.signup-page .btn-primary:focus,
+.login-page .btn-primary:hover,
+.login-page .btn-primary:focus {
+    background-color: #23BBBB;
+    transform: translateY(-2px);
+}
+
+.signup-page .link,
+.login-page .link,
+.user-appointments-page .link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.signup-page .link:hover,
+.signup-page .link:focus,
+.login-page .link:hover,
+.login-page .link:focus,
+.user-appointments-page .link:hover,
+.user-appointments-page .link:focus {
+    color: #445261;
+    text-decoration: underline;
+}
+
+/* Scoped Styles for User Appointments Page */
 .user-appointments-page .btn-warning {
     background-color: #005f73; 
     color: #fff;
@@ -503,7 +387,6 @@ ul.text-left {
     transform: translateY(-2px);
 }
 
-/* Delete Button */
 .user-appointments-page .btn-danger {
     background-color: #FF4500; 
     color: #fff;
@@ -516,18 +399,6 @@ ul.text-left {
     background-color: #FF7300; 
     transform: translateY(-2px);
 }
-
-.user-appointments-page .link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.user-appointments-page .link:hover,
-.user-appointments-page .link:focus {
-    color: #445261;
-    text-decoration: underline;
-}
-
 
 .caption {
     font-size: 1.5rem;
@@ -585,22 +456,6 @@ ul.text-left {
 
     .mb-md-0 {
         margin-bottom: 0 !important;
-    }
-
-    .mb-5 {
-        margin-bottom: 3rem !important;
-    }
-
-    .mt-5 {
-        margin-top: 3rem !important;
-    }
-
-    .pb-5 {
-        padding-bottom: 3rem !important;
-    }
-
-    .pt-5 {
-        padding-top: 3rem !important;
     }
 
     .container,
