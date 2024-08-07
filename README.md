@@ -151,9 +151,9 @@ The database model has been designed using [drawsql](https://drawsql.app/). The 
 **ClientTestimonial Model**
 
 * **Client Name**: A `CharField` that stores the name of the client providing the testimonial.
-* **Testimonial Text**: A `TextField` containing the testimonial provided by the client, describing their experience and satisfaction with the services.
+* **Testimonial Text**: A `TextField` containing the testimonial provided by the client, describing their experience and satisfaction.
 * **Active**: A `BooleanField` indicating whether the testimonial is currently active and displayed on the website. Defaults to `True`.
-* **Date Added**: A `DateTimeField` that records the timestamp of when the testimonial was added to the database, allowing for tracking and organization of client feedback over time.
+* **Date Added**: A `DateTimeField` of when the testimonial was added, allowing for tracking and organization of client feedback.
 
 The `ClientTestimonial` model is used to manage and display client feedback on the website, showcasing positive experiences and building credibility for the services offered. This model supports the website's goal of providing authentic client testimonials to potential clients.
 
@@ -172,7 +172,7 @@ The `About` model is designed to manage and present detailed information about t
 * **Email**: An `EmailField` for capturing the email address of the requester.
 * **Message**: A `TextField` containing the message or inquiry sent by the individual.
 * **Read**: A `BooleanField` indicating whether the message has been read. Defaults to `False`.
-* **Created On**: A `DateTimeField` that records the timestamp of when the contact request was created, providing a record of when inquiries were made.
+* **Created On**: A `DateTimeField` that records when the contact request was created, providing a record of inquiries.
 
 The `ContactRequest` model allows for efficient handling of client inquiries and communication, supporting responsive interaction and client engagement with the therapist.
 
@@ -220,13 +220,14 @@ The `Appointment` model facilitates the scheduling and management of therapy ses
 
 Page | Desktop Version | Mobile Version
 --- | --- | ---
+Login | ![Desktop Login wireframe image](assets/wireframes/login.png) | ![Mobile Login wireframe image](assets/wireframes/login_mobile.png)
+Sign Up | ![Desktop Sign Up wireframe image](assets/wireframes/signup.png) | ![Mobile Sign Up wireframe image](assets/wireframes/signup_mobile.png)
 Home | ![Desktop Home wireframe image](assets/wireframes/index.png) | ![Mobile Home wireframe image](assets/wireframes/index_mobile.png)
 About | ![Desktop About wireframe image](assets/wireframes/about.png) | ![Mobile About wireframe image](assets/wireframes/about_mobile.png)
 Treatments | ![Desktop Treatments wireframe image](assets/wireframes/treatments.png) | ![Mobile Treatments wireframe image](assets/wireframes/treatments_mobile.png)
 Appointments | ![Desktop Appointments wireframe image](assets/wireframes/appointments.png) | ![Mobile Appointments wireframe image](assets/wireframes/appointments_mobile.png)
-Book Appointment | ![Book Appointment wireframe image](assets/wireframes/book_appointment.png) | ![Mobile Account wireframe image](assets/wireframes/book_appointment_mobile.png)
-View Appointments | ![View Appointments wireframe image](assets/wireframes/view_appointments.png) | ![Mobile Account wireframe image](assets/wireframes/view_appointments_mobile.png)
-
+Book Appointment | ![Book Appointment wireframe image](assets/wireframes/book_appointment.png) | ![Mobile Book Appointment wireframe image](assets/wireframes/book_appointments_mobile.png)
+View Appointments | ![View Appointments wireframe image](assets/wireframes/your_appointments.png) | ![Mobile View Appointments wireframe image](assets/wireframes/your_appointments_mobile.png)
 
 
 ### Surface
