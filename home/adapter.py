@@ -6,13 +6,21 @@ class CustomAccountAdapter(DefaultAccountAdapter):
         """
         Return the URL to redirect to after a successful signup.
         """
-        return reverse('welcome')  # Use the name of your welcome page URL pattern
+        return reverse('user_appointments')  # Redirect to the appointments page
 
     def add_message(self, request, level, message_template, message_context=None, extra_tags=''):
-        # Suppress the "Confirmation email sent" message
-        if message_template == 'account/messages/email_confirmation_sent.txt':
+        # List of messages to suppress
+        suppressed_messages = [
+            'account/messages/email_confirmation_sent.txt',  
+            'account/messages/logged_out.txt',              
+            'account/messages/logged_in.txt',                
+            'account/messages/signed_up.txt',                
+            'account/messages/email_verified.txt',           
+        ]
+
+        # Suppress specific messages by checking against the list
+        if message_template in suppressed_messages:
             return
-        # Suppress the "You have successfully signed out" message
-        if message_template == 'account/messages/logged_out.txt':
-            return
+
+        # Call the superclass method for other messages
         super().add_message(request, level, message_template, message_context, extra_tags)

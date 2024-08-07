@@ -23,34 +23,39 @@ def book_appointment(request):
     """
     View to handle the appointment booking process, including form submission and validation.
     If the form is valid, the appointment is saved, and a success message is displayed.
-    Displays an individual instance of :model:`appointments.Appointment`
     """
     if request.method == 'POST':
         form = AppointmentForm(request.POST)
         if form.is_valid():
             appointment = form.save(commit=False)
             appointment.user = request.user
+            # Convert the selected time slot to a time object
             appointment.time = datetime.strptime(form.cleaned_data['time_slot'], '%H:%M').time()
-            # Combine date and time and then make it aware with correct timezone
-            appointment.time = timezone.make_aware(datetime.combine(appointment.date, appointment.time), timezone.get_current_timezone()).time()
+            # Combine date and time and then make it aware with the correct timezone
+            appointment.time = timezone.make_aware(
+                datetime.combine(appointment.date, appointment.time),
+                timezone.get_current_timezone()
+            ).time()
             appointment.save()
+            # Display success message
             messages.success(request, 'Your appointment has been booked successfully.')
             return redirect('user_appointments')
     else:
         form = AppointmentForm()
-    return render(request, 'appointments/book_appointment.html', {'form': form, 'success': False})
+    return render(request, 'appointments/book_appointment.html', {'form': form})
 
 @login_required
 def update_appointment(request, pk):
     """
     View to handle the appointment update process.
-    Displays an individual instance of :model:`appointments.Appointment`
+    Allows users to update the details of an existing appointment.
     """
     appointment = get_object_or_404(Appointment, pk=pk, user=request.user)
     if request.method == 'POST':
         form = AppointmentForm(request.POST, instance=appointment)
         if form.is_valid():
             form.save()
+            # Display success message
             messages.success(request, 'Your appointment has been updated successfully.')
             return redirect('user_appointments')
     else:
@@ -61,14 +66,15 @@ def update_appointment(request, pk):
 def delete_appointment(request, pk):
     """
     View to handle the appointment deletion process.
+    Allows users to delete an existing appointment.
     """
     appointment = get_object_or_404(Appointment, pk=pk, user=request.user)
     if request.method == 'POST':
         appointment.delete()
+        # Display success message
         messages.success(request, 'Your appointment has been deleted successfully.')
         return redirect('user_appointments')
     return render(request, 'appointments/delete_appointment.html', {'appointment': appointment})
-
 
 @login_required
 def get_time_slots(request):
@@ -86,6 +92,12 @@ def get_time_slots(request):
 def user_appointments(request):
     """
     View to display all appointments for the logged-in user.
+    Displays a list of appointments, or a message if no appointments exist.
     """
     appointments = Appointment.objects.filter(user=request.user)
+    
+    # Check if no appointments exist and add a message
+    if not appointments.exists():
+        messages.info(request, 'You have no appointments yet. Click below to book your first appointment.')
+    
     return render(request, 'appointments/user_appointments.html', {'appointments': appointments})

@@ -6,6 +6,17 @@
       <div class="card shadow-lg">
         <div class="card-body">
           <h2 class="card-title text-center">All Your Appointments</h2>
+          
+          <!-- Display messages if there are any -->
+          {% if messages %}
+          {% for message in messages %}
+          <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          {% endfor %}
+          {% endif %}
+          
           <table class="table table-striped">
             <thead>
               <tr>
@@ -60,6 +71,12 @@
               {% endfor %}
             </tbody>
           </table>
+          
+          {% if not appointments %}
+          <div class="text-center mt-4">
+            <a href="{% url 'book_appointment' %}" class="btn btn-primary">Book Appointment</a>
+          </div>
+          {% endif %}
         </div>
       </div>
     </div>

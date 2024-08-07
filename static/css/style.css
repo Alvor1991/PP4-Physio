@@ -2,7 +2,7 @@
    General Styles
    =================================== */
    body {
-    background-color: #F9FAFC;
+    background-color: #F9FAFC; /* Light Gray Background */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,7 +25,7 @@ p {
     font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #4A4A4F; /* Dark Gray */
 }
 
 .thin {
@@ -33,7 +33,7 @@ p {
 }
 
 .navbar-custom {
-    border-bottom: 4px solid #188181; 
+    border-bottom: 4px solid #188181; /* Teal */
 }
 
 .navbar-brand img {
@@ -45,11 +45,11 @@ p {
    Backgrounds
    =================================== */
 .light-bg {
-    background-color: #fff;
+    background-color: #FFFACD; /* Lemon Yellow */
 }
 
 .dark-bg {
-    background-color: #445261; 
+    background-color: #445261; /* Dark Blue */
 }
 
 /* ===================================
@@ -84,40 +84,52 @@ p {
 /* ===================================
    Buttons
    =================================== */
-/* Removed classes that are not used: .btn-book, .btn-edit, .btn-update, .btn-delete */
-
 .link {
-    color: #23BBBB; 
+    color: #23BBBB; /* Lighter Teal */
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261; 
+    color: #445261; /* Dark Blue */
     text-decoration: underline;
 }
 
 .btn-like {
-    color: #E84610;
+    color: #E84610; /* Orange */
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #FF7300; /* Lighter Orange */
     background: transparent;
 }
 
 /* Primary Button */
 .btn-primary {
-    background-color: #188181; 
+    background-color: #188181; /* Teal */
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #23BBBB; 
+    background-color: #23BBBB; /* Lighter Teal */
+}
+
+/* CTA Button with New Color */
+.cta-button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    background-color: #98FB98; /* Soft Green */
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #32CD32; /* Lime Green */
+    transform: translateY(-5px);
 }
 
 /* ===================================
@@ -148,7 +160,7 @@ p {
 }
 
 .social-icon {
-    color: #23BBBB; 
+    color: #23BBBB; /* Lighter Teal */
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
@@ -196,7 +208,7 @@ p {
     justify-content: space-between;
     height: 100%;
     border: none;
-    background-color: #fff;
+    background-color: #FFFACD; /* Lemon Yellow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -214,7 +226,7 @@ p {
 }
 
 .service-card i {
-    color: #188181; 
+    color: #188181; /* Teal */
 }
 
 /* ===================================
@@ -235,12 +247,12 @@ p {
     font-size: 1rem;
     font-weight: 700;
     margin-top: 10px;
-    color: #188181; 
+    color: #188181; /* Teal */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #188181; 
+    background-color: #188181; /* Teal */
     border-radius: 50%;
     padding: 10px;
 }
@@ -264,19 +276,19 @@ ul.text-left {
 .accordion-button {
     font-size: 1.1rem;
     font-weight: 600;
-    background-color: #188181; 
+    background-color: #188181; /* Teal */
     color: #fff; 
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .accordion-button:hover, .accordion-button:focus {
-    background-color: #23BBBB; 
+    background-color: #23BBBB; /* Lighter Teal */
     color: #fff;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #445261; 
+    background-color: #445261; /* Dark Blue */
     color: #fff;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
@@ -286,7 +298,7 @@ ul.text-left {
 }
 
 .accordion-item {
-    background-color: #fff;
+    background-color: #FFFACD; /* Lemon Yellow */
     border: 1px solid #e3e3e3; 
     border-radius: 0.25rem;
     margin-bottom: 1rem;
@@ -338,7 +350,7 @@ ul.text-left {
 .user-appointments-page .card-title {
     margin-bottom: 1rem;
     font-weight: 700;
-    color: #445261;
+    color: #445261; /* Dark Blue */
 }
 
 .signup-page .btn-primary,
@@ -369,7 +381,7 @@ ul.text-left {
 .login-page .link:focus,
 .user-appointments-page .link:hover,
 .user-appointments-page .link:focus {
-    color: #445261;
+    color: #445261; /* Dark Blue */
     text-decoration: underline;
 }
 
@@ -408,19 +420,6 @@ ul.text-left {
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-.cta-button {
-    font-size: 1.25rem;
-    padding: 1rem 2rem;
-    background-color: #E84610; /* Orange */
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #FF7300; /* Lighter Orange */
-    transform: translateY(-5px);
 }
 
 /* Call to Action Text */
