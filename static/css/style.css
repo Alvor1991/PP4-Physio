@@ -13,15 +13,10 @@ p {
     margin-bottom: 1.5em;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
-    flex: 1;
-}
-
 .banner-container {
-    position: relative; /* Position relative to enable absolute positioning of child elements */
+    position: relative;
     width: 100%;
-    max-height: 300px; /* Adjust based on your design */
+    max-height: 300px;
     overflow: hidden;
 }
 
@@ -35,14 +30,14 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    color: white; 
-    font-size: 2rem; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
-    padding: 10px; 
-    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* ===================================
@@ -64,31 +59,42 @@ p {
     width: auto;
 }
 
-/* ===================================
-   Backgrounds
-   =================================== */
-.light-bg {
-    background-color: #FFFACD; /* Lemon Yellow */
+.welcome-section {
+    background-color: #F0F8FF; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-.dark-bg {
-    background-color: #445261; /* Dark Blue */
+.welcome-section p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #188181; /* Teal color to match branding */
+    margin: 0;
+    line-height: 1.4;
 }
 
 /* ===================================
    Cards
    =================================== */
-.card {
+.card, .service-card {
     border: none;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 1rem;
 }
 
 .card-title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #4a4a4f; 
+    color: #4a4a4f;
     margin-top: 10%;
     margin-left: 5%;
 }
@@ -104,6 +110,22 @@ p {
     color: #666;
 }
 
+.service-card .card-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card i {
+    color: #188181; /* Teal */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
 /* ===================================
    Buttons
    =================================== */
@@ -112,8 +134,7 @@ p {
     text-decoration: none;
 }
 
-.link:hover,
-.link:active {
+.link:hover, .link:active {
     color: #445261; /* Dark Blue */
     text-decoration: underline;
 }
@@ -122,11 +143,34 @@ p {
 .btn-primary {
     background-color: #188181; /* Teal */
     border: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-primary:hover {
     background-color: #23BBBB; /* Lighter Teal */
+    transform: translateY(-2px);
+}
+
+.page .btn-warning {
+    background-color: #005f73;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.page .btn-warning:hover, .page .btn-warning:focus {
+    background-color: #007f99;
+    transform: translateY(-2px);
+}
+
+.page .btn-danger {
+    background-color: #FF4500;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.page .btn-danger:hover, .page .btn-danger:focus {
+    background-color: #FF7300;
+    transform: translateY(-2px);
 }
 
 /* CTA Button with New Color */
@@ -155,10 +199,6 @@ p {
     flex-shrink: 0;
 }
 
-.halfway-footer {
-    margin-top: auto;
-}
-
 .footer-text {
     font-size: 0.875rem;
 }
@@ -171,21 +211,22 @@ p {
 }
 
 .social-icon {
-    color: #23BBBB; /* Lighter Teal */
+    color: #fff;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 /* ===================================
    Images
    =================================== */
 .img-fluid {
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
 .banner-image {
@@ -201,66 +242,21 @@ p {
     object-fit: cover;
 }
 
-.image-container {
-    position: relative;
-}
-
-.scale {
-    width: 100%;
-    height: auto;
-}
-
-/* ===================================
-   About Page Image Styling
-   =================================== */
-   .img-fluid {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%; 
-}
-
 .bordered-image {
-    border: 5px solid #445261; 
+    border: 5px solid #445261;
     padding: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-bottom: 1.5rem; 
-    transition: transform 0.3s ease, border-color 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-/* Hover effect for images */
 .bordered-image:hover {
     border-color: #188181; /* Teal border on hover */
     transform: scale(1.05); /* Slight scaling for emphasis */
 }
 
-/* ===================================
-   Service Cards
-   =================================== */
-   .service-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    border: none;
-    background-color: #F5F5DC; /* Soft Beige */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-}
-
-.service-card .card-body {
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.service-card i {
-    color: #188181; /* Teal */
+.image-container {
+    position: relative;
 }
 
 /* ===================================
@@ -269,8 +265,8 @@ p {
 .testimonial {
     text-align: center;
     padding: 20px;
-    max-width: 600px; 
-    margin: 0 auto; 
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .testimonial-text {
@@ -286,34 +282,20 @@ p {
     color: #188181; /* Teal */
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: #188181; /* Teal */
     border-radius: 50%;
     padding: 10px;
 }
 
 /* ===================================
-   Alignment
-   =================================== */
-.align-left {
-    text-align: left !important;
-}
-
-ul.text-left {
-    text-align: left;
-    padding-left: 1.5em;
-}
-
-/* ===================================
    FAQ and Treatments
    =================================== */
-
 .accordion-button {
     font-size: 1.1rem;
     font-weight: 600;
     background-color: #188181; /* Teal */
-    color: #fff; 
+    color: #fff;
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -330,26 +312,75 @@ ul.text-left {
 }
 
 .accordion-header {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .accordion-item {
     background-color: #FFFACD; /* Lemon Yellow */
-    border: 1px solid #e3e3e3; 
+    border: 1px solid #e3e3e3;
     border-radius: 0.25rem;
     margin-bottom: 1rem;
 }
 
 .accordion-body {
     font-size: 1rem;
-    color: #333; 
-    background-color: #f9fafc; 
+    color: #333;
+    background-color: #f9fafc;
     padding: 1rem;
-    border-top: 1px solid #e3e3e3; 
+    border-top: 1px solid #e3e3e3;
 }
 
 .accordion-button::after {
-    filter: invert(100%); 
+    filter: invert(100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card {
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #188181; /* Teal */
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    background-color: #f9fafc; /* Light Gray */
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.btn-primary {
+    background-color: #188181; /* Teal */
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #23BBBB; /* Lighter Teal */
 }
 
 /* ===================================
@@ -375,83 +406,7 @@ ul.text-left {
     padding-top: 3rem !important;
 }
 
-/* ===================================
-   Scoped Styles for Signup Page
-   =================================== */
-.signup-page .card,
-.login-page .card,
-.user-appointments-page .card {
-    border: none;
-    border-radius: 0.5rem;
-}
-
-.signup-page .card-title,
-.login-page .card-title,
-.user-appointments-page .card-title {
-    margin-bottom: 1rem;
-    font-weight: 700;
-    color: #445261; /* Dark Blue */
-}
-
-.signup-page .btn-primary,
-.login-page .btn-primary {
-    background-color: #188181;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.signup-page .btn-primary:hover,
-.signup-page .btn-primary:focus,
-.login-page .btn-primary:hover,
-.login-page .btn-primary:focus {
-    background-color: #23BBBB;
-    transform: translateY(-2px);
-}
-
-.signup-page .link,
-.login-page .link,
-.user-appointments-page .link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.signup-page .link:hover,
-.signup-page .link:focus,
-.login-page .link:hover,
-.login-page .link:focus,
-.user-appointments-page .link:hover,
-.user-appointments-page .link:focus {
-    color: #445261; /* Dark Blue */
-    text-decoration: underline;
-}
-
-/* Scoped Styles for User Appointments Page */
-.user-appointments-page .btn-warning {
-    background-color: #005f73; 
-    color: #fff;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.user-appointments-page .btn-warning:hover,
-.user-appointments-page .btn-warning:focus {
-    background-color: #007f99; 
-    transform: translateY(-2px);
-}
-
-.user-appointments-page .btn-danger {
-    background-color: #FF4500; 
-    color: #fff;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.user-appointments-page .btn-danger:hover,
-.user-appointments-page .btn-danger:focus {
-    background-color: #FF7300; 
-    transform: translateY(-2px);
-}
-
+/* CTA Text */
 .caption {
     font-size: 1.5rem;
     font-weight: 500;
@@ -472,7 +427,9 @@ ul.text-left {
    Media Queries
    =================================== */
 @media (max-width: 767.98px) {
-    .text-md-end {
+    .text-md-end,
+    .text-center .text-md-left,
+    .about-content {
         text-align: center !important;
     }
 
@@ -480,12 +437,26 @@ ul.text-left {
         margin-bottom: 15px;
     }
 
-    .text-center .text-md-left {
-        text-align: center !important;
+    .container,
+    .container-fluid,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .content-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .text-md-left ul {
         text-align: left !important;
+        padding-left: 1.5em;
     }
 
     .mb-3,
@@ -497,17 +468,8 @@ ul.text-left {
         margin-bottom: 0 !important;
     }
 
-    .container,
-    .container-fluid,
-    .container-xl,
-    .container-lg,
-    .container-md,
-    .container-sm {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .about-content {
-        text-align: center !important;
+    /* Additional spacing between stacked cards */
+    .row > .col-md-4 {
+        margin-bottom: 2rem;
     }
 }
