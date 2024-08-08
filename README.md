@@ -2,13 +2,7 @@
 
 ![PhysioApp mockup images](assets/readme_files/mockup_image.jpg)
 
-PhysioApp is a dedicated platform created for individuals seeking personalized sports therapy and wellness solutions. Run by a sole practitioner, the website emphasizes a holistic approach to health, offering specialized services including sports therapy, orthotics, and health coaching. Whether you're aiming to enhance your athletic performance, recovering from an injury, or interested in improving your overall health, PhysioApp is here to provide tailored support and expert guidance.
-
-The primary objective of PhysioApp is to deliver individualized care plans that cater to each client's unique needs. Users can easily book appointments and access valuable resources to support their journey toward optimal physical and mental well-being.
-
-Sports Therapy Booking is a personal website designed to help market my skills as a therapist and facilitate clients in scheduling appointments with me. The site provides a professional platform to showcase my expertise, share valuable health tips, and connect with clients seeking sports therapy services.
-
-The main objective of the site is to offer users a seamless way to book therapy sessions, view available treatments, and manage their appointments. In addition to serving as a booking tool, this site will eventually expand to include a blog section where I can share tips and insights on sports therapy, as well as the potential to host profiles for additional therapists as the business grows.
+PhysioApp is a dedicated platform for individuals seeking personalized sports therapy and wellness solutions. Run by a sole practitioner, PhysioApp emphasizes a holistic approach to health, offering specialized services including sports therapy, orthotics, and health coaching. Whether you're aiming to enhance your athletic performance, recovering from an injury, or interested in improving your overall health, PhysioApp is here to provide tailored support and expert guidance.
 
 Visit the deployed website [here](https://physioapp.onrender.com).
 
@@ -47,7 +41,6 @@ Visit the deployed website [here](https://physioapp.onrender.com).
 9. [Acknowledgements](#acknowledgements)
 
 
-
 ***
 
 
@@ -56,8 +49,6 @@ Visit the deployed website [here](https://physioapp.onrender.com).
 ### Strategy
 
 #### Project Goals
-
-* **Modern and Inviting Design:** The website uses calming colors and clean typography to create a professional and welcoming atmosphere, encouraging users to explore sports therapy services.
 
 * Provide a user-friendly interface for clients to book therapy appointments.
 
@@ -70,15 +61,16 @@ Visit the deployed website [here](https://physioapp.onrender.com).
 
 #### User Goals
 
-* As a Site Admin, I want to manage site content and appointments.
+* As an Admin, I want to manage site content and appointments.
 
-* As a Client, I want to browse available therapists and treatments.
+* As a User, I want to browse available therapists and treatments.
 
-* As a Client, I want to book an appointment easily.
+* As a User, I want to book an appointment easily.
 
-* As a Client, I want to view and manage my appointments.
+* As a User, I want to view and manage my appointments.
 
-* As a Client, I want the site to be easy to navigate on any device.
+* As a User, I want the site to be easy to navigate on any device.
+
 
 #### Strategy Table
 
@@ -129,15 +121,14 @@ The website is organized using a Hierarchical Tree Structure to ensure intuitive
 
 ![Sports Therapy Booking website map](assets/readme_files/sitemap.jpg)
 
-* Consistent header, footer, and navigation bar across all pages.
+* Consistent header, footer, and navigation bar across all pages, ensuring a uniform and professional look.
 
-* Clear feedback is provided through links and forms for enhanced user experience.
+* Clear feedback is provided through links and forms, enhancing the user experience by confirming actions.
 
-* Registered users can manage their appointments via a personalized dashboard.
+* Users have the opportunity to book and manage appointments online, providing seamless & convenient scheduling.
 
-* The opportunity to add additional content to the website is provided for the site user once they register an account.
+* A 404-error page is available, ensuring users are informed & redirected if they encounter a broken link.
 
-* A 404-error page is available.
 
 
 #### Database Model
@@ -236,11 +227,7 @@ View Appointments | ![View Appointments wireframe image](assets/wireframes/your_
 
 ![Color scheme image](assets/readme_files/color_scheme.png)
 
-The color scheme includes a calming green (#4CAF50) for buttons and highlights, a dark gray (#333333) for text, and a light gray (#F5F5F5) for backgrounds, creating a professional and inviting atmosphere.
-
 #### Typography
-
-The primary font used is Open Sans, with sans-serif as a fallback to ensure readability across the site. Roboto is utilized for headings to provide a clear hierarchy.
 
 [Back to top ⇧](#sports-therapy-booking)
 
@@ -248,46 +235,44 @@ The primary font used is Open Sans, with sans-serif as a fallback to ensure read
 
 ### General
 
-* Mobile-first, responsive design for all devices.
-
-* Consistent navigation across all pages with hover effects for feedback.
-
-* Search bar for clients to find therapists based on specialty or location.
-
-* Footer with social media links.
+* Mobile-first, responsive design for all devices, ensuring a seamless experience across desktops, tablets, and smartphones.
+* Consistent navigation across all pages with hover effects for feedback, enhancing usability and user experience.
+* Footer with contact info and social media links, providing easy access to contact details and social media profiles.
 
 ### Home Page
 
-* Overview of services and featured therapists.
-
-* Quick links to book an appointment or view therapist profiles.
-
-* Client testimonials carousel.
+* Overview of services and featured therapists, giving visitors a quick insight into the offerings and expertise.
+* Quick links to book an appointment or view therapist profiles, facilitating easy navigation and action.
+* Client testimonials carousel, showcasing positive feedback from clients to build trust and credibility.
 
 ### About Page
 
-* Detailed information about the therapist, their credentials, and philosophy.
-
-* Contact form for inquiries.
+* Detailed information about the therapist, their credentials, and philosophy, helping clients understand the expertise and approach.
+* Contact form for inquiries, allowing visitors to reach out with questions or requests for more information.
 
 ### Treatments Page
 
-* List of available treatments with descriptions and pricing.
-
-* FAQ section to address common client questions.
+* List of available treatments with descriptions and pricing, providing clear and detailed information about services offered.
+* FAQ section to address common client questions, helping to answer typical inquiries and provide quick information.
 
 ### Appointments
 
-#### Booking
+* Book Appointment: Easy-to-use booking form allowing users to select dates, times, and treatment types.
+* View Appointments: Personalized dashboard for registered users to view their scheduled appointments.
+* Update Appointment: Options for users to edit their appointments, providing flexibility to manage their schedules.
+* Delete Appointment: Options for users to cancel their appointments if no longer needed.
+* Confirmation messages after successful bookings, updates, or deletions to inform users of their appointment status.
 
+### Error Handling
+
+* Custom 404-error page to inform users and redirect them appropriately if they encounter a broken link or incorrect URL.
 
 ### Authentication Pages
 
 Page | Purpose | Image |
 --- | --- | --- |
-Register | Allow the Site User to sign up an account for the website. | ![Code Buddy Sign Up Page](assets/readme_files/code_buddy_sing_up.png) |
-Login | Allow the Site User to sign in with their account. | ![Code Buddy Sign In Page](assets/readme_files/code_buddy_sign_in.png) |
-Logout | Allow the Site User to sign out from their account. | ![Code Buddy Sign Out Page](assets/readme_files/code_buddy_sign_out.png) |
+Register | Allows the User to sign up for an account on the website. | ![Sign Up Page](assets/readme_files/sign_up.png) |
+Login | Allows the User to sign in with their account. | ![Sign In Page](assets/readme_files/sign_in.png) |
 
 
 [Back to top ⇧](#code-buddy)
@@ -305,96 +290,48 @@ Logout | Allow the Site User to sign out from their account. | ![Code Buddy Sign
 
 ### Libraries and Frameworks
 
-* [Django](https://www.djangoproject.com/)   
-    * Django was used as web framework.
+* [Django](https://www.djangoproject.com/) - Django was used as web framework.
+* [Django Template](https://jinja.palletsprojects.com) - Django Template was used as a templating language for Django to display backend data to HTML.
+* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Bootstrap 5 was used throughout the website to help with styling and responsiveness.
+* [Google Fonts](https://fonts.google.com) - Google fonts was used to import the fonts into the html file, and were used on all parts of the site.
+* [Font Awesome](https://fontawesome.com) - Font Awesome was used throughout the website to add icons for aesthetic and UX purposes.
+* [jQuery 3.6.0](https://jquery.com/) - jQuery was used as a JavaScript library to help writing less JavaScript code.
 
-* [Django Template](https://jinja.palletsprojects.com)  
-    * Django Template was used as a templating language for Django to display backend data to HTML.
-   
-* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)  
-    * Bootstrap 5 was used throughout the website to help with styling and responsiveness.
+### Packages / Dependencies Installed
 
-* [Google Fonts](https://fonts.google.com)  
-    * Google fonts was used to import the fonts into the html file, and were used on all parts of the site.
-
-* [Font Awesome](https://fontawesome.com)  
-    * Font Awesome was used throughout the website to add icons for aesthetic and UX purposes. 
-
-* [jQuery 3.6.0](https://jquery.com/)  
-    * jQuery was used as a JavaScript library to help writing less JavaScript code.  
-
-
-### Packages / Dependecies Installed
-
-* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/)  
-    * Django Allauth was used for user authentication, registration, and account management.
-
-* [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/)   
-    * Django Crispy Form was used to control the rendering of the forms. 
- 
-* [Gunicorn](https://gunicorn.org/)  
-    * Gunicorn was used as Python WSGI HTTP Server for UNIX to support the deployment of Django application.  
-
-* [Summernote](https://summernote.org/) 
-    * Summernote has been used as WYSIWYG editor.
-
-* [Cloudinary](https://cloudinary.com/)
-    * Cloudinary has been used as image management solution
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Django Allauth was used for user authentication, registration, and account management.
+* [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/) - Django Crispy Form was used to control the rendering of the forms.
+* [Summernote](https://summernote.org/) - Summernote has been used as WYSIWYG editor.
+* [Cloudinary](https://cloudinary.com/) - Cloudinary has been used as image management solution.
 
 ### Database Management
-* [Heroku Postgres](https://www.heroku.com/postgres)   
-    * Heroku Postgres database was used in production, as a service based on PostgreSQL provided by Heroku.
 
+* [Heroku Postgres](https://www.heroku.com/postgres) - Heroku Postgres database was used in production, as a service based on PostgreSQL provided by Heroku.
 
 ### Tools and Programs
 
-* [Git](https://git-scm.com)  
-    * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub. 
+* [GitPod](https://gitpod.io/) - GitPod was used for writing code, committing, and then pushing to GitHub.
+* [GitHub](https://github.com) - GitHub was used to store the project's code after being pushed from Git.
+* [Heroku](https://www.heroku.com) - Heroku was used to deploy the website.
+* [Am I Responsive](ami.responsivedesign.is) - Am I Responsive was used to preview the website across a variety of popular devices.
+* [Tiny PNG](https://tinypng.com) - Tiny PNG was used to reduce the file size of the images.
+* [Coolors](https://coolors.co) - Coolors was used to create a color scheme for the website.
+* [Balsamiq](https://balsamiq.com/) - Balsamiq was used to create the wireframes during the design phase of the project.
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used during development process for code review and to test responsiveness.
+* [W3C Markup Validator](https://validator.w3.org/) - W3C Markup Validator was used to validate the HTML code.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - W3C CSS Validator was used to validate the CSS code.
+* [JSHint](https://jshint.com/) - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
+* [Favicon.cc](https://www.favicon.cc/) - Favicon.cc was used to create the site favicon.
 
-* [GitPod](https://gitpod.io/)
-     * GitPod was used for writing code, committing, and then pushing to GitHub.
 
-* [GitHub](https://github.com)  
-   GitHub was used to store the projects code after being pushed from Git. 
-
-* [Heroku](https://www.heroku.com)   
-    * Heroku was used to deploy the website.
-
-* [Am I Responsive](ami.responsivedesign.is)  
-    * Am I Responsive was used to preview the website across a variety of popular devices.
-
-* [Tiny PNG](https://tinypng.com)    
-    * Tiny PNG was used to reduce the file size of the images.
-
-* [Coolors](https://coolors.co)  
-    * Coolors was used to create a color scheme for the website.
-
-* [Balsamiq](https://balsamiq.com/)
-     * Balsamiq was used to create the wireframes during the design phase of the project
-
-* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
-    * Chrome DevTools was used during development process for code review and to test responsiveness.
-
-* [W3C Markup Validator](https://validator.w3.org/)
-    * W3C Markup Validator was used to validate the HTML code.
-
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-    * W3C CSS Validator was used to validate the CSS code.
-
-* [JSHint](https://jshint.com/) 
-    * The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
-
-* [Favicon.cc](https://www.favicon.cc/) 
-    * Favicon.cc was used to create the site favicon.
-
-[Back to top ⇧](#code-buddy)
+[Back to top ⇧](#sports-therapy)
 
 ## Testing
 
 The testing documentation can be found [here](https://github.com/josswe26/code-buddy/blob/main/TESTING.md#code-buddy-testing).
 
 
-[Back to top ⇧](#code-buddy)
+[Back to top ⇧](#sports-therapy)
 
 ## Deployment
 
@@ -470,29 +407,25 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 
 
-[Back to top ⇧](#code-buddy)
+[Back to top ⇧](#sports-therapy)
 
 ## Finished Product
 
 Page | Desktop | Mobile |
 --- | --- | --- |
-| Home | ![Desktop Home Page image](assets/readme_files/desktop_home.png) | ![Mobile Home Page image ](assets/readme_files/mobile_home.png) |
+| Home | ![Desktop Home Page image](assets/readme_files/desktop_home.png) | ![Mobile Home Page image](assets/readme_files/mobile_home.png) |
 | About | ![Desktop About Page image](assets/readme_files/desktop_about.png) | ![Mobile About Page image](assets/readme_files/mobile_about.png) |
-| Search Results | ![Desktop Search Results Page image](assets/readme_files/desktop_search_results.png) | ![Mobile Search Results Page image](assets/readme_files/mobile_search_results.png) |
-| Question Detail |![Desktop Question Detail Page image](assets/readme_files/desktop_question_detail.png) | ![Mobile Question Detail Page image](assets/readme_files/mobile_question_detail.png) |
-| Ask Question |![Desktop Ask Question Page image](assets/readme_files/desktop_ask_question.png) | ![Mobile Ask Question Page image](assets/readme_files/mobile_ask_question.png) |
-| Leave Reply |![Desktop Leave Reply Page image](assets/readme_files/desktop_leave_reply.png) | ![Mobile Leave Reply Page image](assets/readme_files/mobile_leave_reply.png) |
-| Edit Question | ![Desktop Edit Question Page image](assets/readme_files/desktop_edit_question.png) | ![Mobile Edit Question Page image](assets/readme_files/mobile_edit_question.png) |
-| Delete Question |![Desktop Delete Question Page image](assets/readme_files/desktop_delete_question.png) | ![Mobile Delete Question Page image](assets/readme_files/mobile_delete_question.png) |
-| Edit Reply |![Desktop Edit Reply Page image](assets/readme_files/desktop_edit_reply.png) | ![Mobile Edit Reply Page image](assets/readme_files/mobile_edit_reply.png) |
-| Delete Reply |![Desktop Delete Reply Page image](assets/readme_files/desktop_delete_reply.png) | ![Mobile Delete Reply Page imag](assets/readme_files/mobile_delete_reply.png) |
-| Sign Up |![Desktop Sign Up Page image](assets/readme_files/desktop_sign_up.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_sign_up.png) |
-| Sign In |![Desktop Sing In Page image](assets/readme_files/desktop_login.png) | ![](assets/readme_files/mobile_login.png) |
-| Sign Out |![Desktop Sign Out Page image](assets/readme_files/desktop_logout.png) | ![Mobile Sign Out Page image](assets/readme_files/mobile_logout.png) |
-| 404 Error |![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |
+| Book Appointment | ![Desktop Book Appointment Page image](assets/readme_files/desktop_book_appointment.png) | ![Mobile Book Appointment Page image](assets/readme_files/mobile_book_appointment.png) |
+| User Appointments | ![Desktop User Appointments Page image](assets/readme_files/desktop_user_appointments.png) | ![Mobile User Appointments Page image](assets/readme_files/mobile_user_appointments.png) |
+| Update Appointment | ![Desktop Update Appointment Page image](assets/readme_files/desktop_update_appointment.png) | ![Mobile Update Appointment Page image](assets/readme_files/mobile_update_appointment.png) |
+| Delete Appointment | ![Desktop Delete Appointment Page image](assets/readme_files/desktop_delete_appointment.png) | ![Mobile Delete Appointment Page image](assets/readme_files/mobile_delete_appointment.png) |
+| Sign Up | ![Desktop Sign Up Page image](assets/readme_files/desktop_sign_up.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_sign_up.png) |
+| Sign In | ![Desktop Sign In Page image](assets/readme_files/desktop_login.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_login.png) |
+| Sign Out | ![Desktop Sign Out Page image](assets/readme_files/desktop_logout.png) | ![Mobile Sign Out Page image](assets/readme_files/mobile_logout.png) |
+| 404 Error | ![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |
 
 
-[Back to top ⇧](#code-buddy)
+[Back to top ⇧](#sports-therapy)
 
 ## Credits
 
@@ -517,26 +450,12 @@ Page | Desktop | Mobile |
 
 * Message implementation an dismissal code is taken from [Code Institute](https://codeinstitute.net/)'s django-blog project.
 
-[Back to top ⇧](#code-buddy)
+[Back to top ⇧](#sports-therapy)
 
 ## Known Bugs
 
-* Upvote/downvote button selection stay the same for all users. This do to an error in the logic. Even though the developer has an idea on how to solve the issue. The solution is yet to be implemented due lack of time.
-
-* The same applies for pagination is Search Results page which is currently not working.
-
-* A known issue with Summernote field validation is present in the project. An invalid form will be posted if the field is empty. A message will however be displayed, informing the user that there has been a problem with the submission.
-
-[Back to top ⇧](#code-buddy)
+[Back to top ⇧](#sports-therapy)
 
 ## Acknowledgements
 
-* My partner, for her unconditional love, help and continued support in all aspects of life, specially when I did not have time for anything else than to work with this project. You made it possible!
-
-* My friend, Miguel, for being always there to help, no matter what time of the day.
-
-* My tutor, Marcel, for his invaluable support, feedback and guidance through the whole process.
-
-* Code Institute and its amazing Slack community for their support and providing me with the necessary knowledge to complete this project.
-
-[Back to top ⇧](#code-buddy)
+[Back to top ⇧](#sports-therapy)
