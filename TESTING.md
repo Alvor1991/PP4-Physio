@@ -20,53 +20,74 @@
 
 ## Testing User Stories
 
-### 1. As a Site Admin, I can create, read, update, and delete bookings so that I can manage appointments effectively.
+### 1. As a User, I Can Register an Account So That I Can Book and Manage My Appointments Online
 
-* An admin panel is available for the Site Admin to manage appointments.
-* Appointments can be created, read, updated, and deleted through the admin interface.
-* Key fields of appointments are displayed to help the Site Admin identify them easily.
-* Appointments can be filtered and searched to find specific entries quickly.
+* AC1: Given a registration form, when I fill in my details and submit, my account is created.
+* AC2: When I enter a valid username and password, my account is successfully registered.
+* AC3: Then I am redirected to the "My Profile" page, where I see a message indicating that I have no bookings.
 
-### 2. As a Site User, I can register an account so that I can access personalized features.
 
-* User registration functionality is provided for Site Users.
-* Registered Site Users can access additional features like booking appointments and submitting contact forms.
-* Users can view their booking history and upcoming appointments.
+### 2. As an Admin, I Can Manage Website Content So That I Can Keep Information Up-To-Date and Relevant for Users
 
-### 3. As a Site User, I can book therapy sessions online so that I can schedule appointments conveniently.
+* AC1: Given an admin dashboard, when I log in, I can access tools to edit and update the content on various pages.
+* AC2: When I update a treatment description, it is immediately reflected on the public site.
+* AC3: Then I can edit treatment content and prices to ensure accurate information is displayed.
 
-* An online booking system is available for registered Site Users.
-* Users can book appointments directly from the website by date, time and session type. 
 
-### 4. As a Site User, I can contact the owner so that I can inquire about services or get assistance.
+### 3. As a User, I Can Access the Website on Any Device So That I Have a Seamless Experience Regardless of Screen Size
 
-* A contact form is provided for users to send inquiries .
-* The admin receives the inquiry details through the admin panel.
-* A FAQ section is available to provide immediate answers to common questions.
+* AC1: Given a mobile device, the website layout adjusts to fit the screen.
+* AC2: When I resize the browser window, content remains readable and navigable.
+* AC3: Then the navigation menu collapses into a mobile-friendly version.
 
-### 5. As a Site Admin, I can manage user accounts so that I can assist users and maintain the site's integrity.
 
-* The admin panel includes features for managing user accounts, including viewing, editing, and deleting accounts.
-* Admins can reset passwords and update user roles.
-* User activities can be monitored to ensure compliance with site policies.
+### 4. As a User, I Can View the Home Page to Get an Overview of the Services So That I Learn More About the Website
 
-### 6. As a Site User, I can update or cancel my appointments so that I have flexibility in managing my schedule.
+* AC1: Given the home page, when I visit it, I see a welcoming introduction and an overview of available services.
+* AC2: When I scroll down, I see user testimonials that highlight the effectiveness of the services.
+* AC3: Then I see call-to-action buttons that direct me to book an appointment or learn more about treatments.
 
-* Users can log in to their accounts to view, update, or cancel their appointments.
-* The booking system displays available time slots for rescheduling appointments.
 
-### 7. As a Site Admin, I can view reports on appointments and user activities so that I can make informed decisions.
+### 5. As a User, I Can View Information About the Therapist So That I Can Learn About Their Credentials and Expertise
 
-* The admin panel provides reports on appointment bookings, cancellations, and user activities.
-* Admins can filter and export reports for further analysis.
-* Metrics such as the number of active users, popular time slots, and therapist performance are available.
+* AC1: Given the about page, when I visit it, I can see the therapist’s biography and credentials.
+* AC2: When I read the content, I understand the services offered and the therapist’s experience.
+* AC3: Then I can use the contact form to ask questions or request more information.
 
-### 8. As a Site User, I can leave feedback on the therapy sessions so that I can share my experience.
 
-* A feedback form is available for users to rate and review their therapy sessions.
-* Feedback can be submitted anonymously if preferred.
-* Admins can view and respond to user feedback to improve services.
+### 6. As a User, I Can View a List of Available Treatments So That I Can Choose the Appropriate Therapy Session
 
+* AC1: Given the treatments page, when I visit it, I see a list of available therapy services.
+* AC2: When I click on a treatment, I see a detailed description.
+* AC3: Then I understand the benefits and pricing of each treatment.
+
+
+### 7. As a User, I Can Create an Appointment So That I Can Schedule a Therapy Session
+
+* AC1: Given a booking form, when I select a date and time, available slots are shown.
+* AC2: When I select a treatment type, it is added to my booking.
+* AC3: Then I receive a confirmation on the website once the appointment is created.
+
+
+### 8. As a User, I Can View a List of My Appointments So That I Can See My Scheduled Therapy Sessions
+
+* AC1: Given a list of appointments, when I log in, I can see upcoming and past bookings.
+* AC2: When I view the list, I can see details such as date, time, and treatment.
+* AC3: Then I can navigate to detailed appointment information if needed.
+
+
+### 9. As a User, I Can Update My Appointments So That I Can Change the Details of a Scheduled Session
+
+* AC1: Given an appointment, when I choose to edit it, a form with current details is displayed.
+* AC2: When I update the date, time, or treatment, the appointment reflects these changes.
+* AC3: Then I receive confirmation on the website that the appointment has been updated.
+
+
+### 10. As a User, I Can Delete My Appointments So That I Can Cancel a Session I No Longer Need
+
+* AC1: Given an appointment, when I choose to delete it, I am prompted for confirmation.
+* AC2: When I confirm the deletion, the appointment is removed from my list.
+* AC3: Then I see a message confirming that the appointment has been canceled.
 
 
 ## Code Validation
