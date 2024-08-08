@@ -182,8 +182,8 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>N/A</td>
-        <td>N/A</td>
+        <td>Hover effect working as expected.</td>
+        <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>Home link</td>
@@ -308,6 +308,95 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
 </table>
 
+#### Base HTML Page
+
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td>Navigation Bar</td>
+        <td>All</td>
+        <td>Functionality</td>
+        <td>Navigation bar renders correctly with all links visible and accessible.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Navigation Bar</td>
+        <td>All</td>
+        <td>Style</td>
+        <td>Navigation bar is styled correctly and is responsive across all devices.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Navigation Links</td>
+        <td>All</td>
+        <td>Functionality</td>
+        <td>Links redirect to the correct pages when clicked.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Navigation Links</td>
+        <td>All</td>
+        <td>Style</td>
+        <td>Links have hover effects and are styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Active Link Highlight</td>
+        <td>All</td>
+        <td>Functionality</td>
+        <td>Current page link is highlighted correctly.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Brand Logo</td>
+        <td>All</td>
+        <td>Functionality</td>
+        <td>Brand logo renders correctly and links to the home page.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Brand Logo</td>
+        <td>All</td>
+        <td>Style</td>
+        <td>Brand logo is styled correctly and is responsive across all devices.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Footer</td>
+        <td>All</td>
+        <td>Functionality</td>
+        <td>Footer renders correctly with contact, social media, and opening hours information.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Footer</td>
+        <td>All</td>
+        <td>Style</td>
+        <td>Footer is styled correctly and is responsive across all devices.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Main Content Area</td>
+        <td>All</td>
+        <td>Functionality</td>
+        <td>Main content area renders correctly and displays the page-specific content.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Main Content Area</td>
+        <td>All</td>
+        <td>Style</td>
+        <td>Main content area is styled correctly and is responsive across all devices.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
 #### Home Page 
 
 <table>
@@ -408,7 +497,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
 </table>
 
-
 #### About Page 
 
 <table>
@@ -480,7 +568,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
-
 
 #### Treatments Page
 
@@ -565,7 +652,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
-
 
 #### Book Appointments Page
 
@@ -675,7 +761,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
 </table>
 
-
 #### User Appointments Page
 
 <table>
@@ -690,7 +775,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>General</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>User appointments page renders correctly and displays user's appointments.</td>
+        <td>User appointments page renders correctly and displays the list of appointments.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -699,22 +784,34 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Appointment List</td>
+        <td rowspan=2>Appointments Table</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Appointments are listed with correct details including date, time, treatment, and notes.</td>
+        <td>The table displays appointment details such as date, time, treatment, and notes correctly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Appointments are displayed in a table format with clear separation and readability.</td>
+        <td>The table is styled consistently with the overall design and is responsive.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Update Appointment Button</td>
+        <td rowspan=2>Update Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the button redirects to the update appointment page for the correct appointment.</td>
+        <td>Clicking the update button redirects to the update appointment page for the correct appointment.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button has a hover effect and is styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Delete Button</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Clicking the delete button triggers a confirmation modal for the correct appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -723,34 +820,142 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Delete Appointment Button</td>
+        <td rowspan=2>Delete Confirmation Modal</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the button opens a confirmation modal, and deleting the appointment updates the list correctly.</td>
+        <td>The modal displays the correct appointment details and allows the user to confirm or cancel the deletion.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
+        <td>Modal is styled consistently with the overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>No Appointments Message</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>A message is displayed if no appointments are found, prompting the user to book an appointment.</td>
+        <td>If no appointments are found, a message is displayed with a link to book an appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>The message is styled to be noticeable and clear.</td>
+        <td>Message is styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### Update Appointments Page
+
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=2>General</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Update appointments page renders correctly and displays the update form.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Book Appointment Button</td>
+        <td>Style</td>
+        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Update Form</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the button redirects to the booking page.</td>
+        <td>The form allows users to update the date, time slot, treatment, and notes for an appointment.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>The form fields are styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Update Button</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Clicking the update button successfully updates the appointment and redirects to the user appointments page.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button has a hover effect and is styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Cancel Button</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Clicking the cancel button redirects back to the user appointments page without making any changes.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button is styled in red to indicate cancellation and has a hover effect.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
+
+#### Delete Appointments Page
+
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=2>General</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Delete appointments page renders correctly and displays the confirmation message.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Confirmation Message</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Confirmation message displays the correct appointment date and time.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Message is styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Delete Button</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Clicking the delete button successfully deletes the appointment and redirects to the user appointments page.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Button has a hover effect and is styled in red to indicate danger.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Cancel Button</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>Clicking the cancel button redirects back to the home page without deleting the appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -760,225 +965,146 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
 </table>
 
-
-#### Contact Page
+#### Signup Page
 
 <table>
     <tr>
-        <th colspan=2>Feature</th>
+        <th>Feature</th>
         <th>Users</th>
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=10>Contact Form</td>
-        <td rowspan=2>Name input</td>
+        <td rowspan=2>General</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Text can be entered in the field.<br>Field validates input to be present.</td>
+        <td>Signup page renders correctly and displays the signup form.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Focus effect working as expected.</td>
+        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Email input</td>
+        <td rowspan=2>Signup Form</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Text can be entered in the field.<br>Field validates input to be a valid email address.</td>
+        <td>Form fields render correctly and accept user input.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Focus effect working as expected.</td>
+        <td>Form fields are styled consistently with the overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Message input</td>
+        <td rowspan=2>Sign Up Button</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Text can be entered in the field.<br>Field validates input to be present.</td>
+        <td>Clicking the button submits the form and attempts to register the user.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Focus effect working as expected.</td>
+        <td>Button has a hover effect and is styled consistently with the overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Submit button</td>
+        <td rowspan=2>Redirect Field</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the button submits the form and sends an email to the admin.<br>Confirmation email is sent to the user.</td>
+        <td>Hidden redirect field retains the URL the user was attempting to access before signup.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Field is hidden from view and does not affect the layout.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Reset button</td>
+        <td rowspan=2>Signin Link</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the button clears all input fields.</td>
+        <td>Clicking the link redirects to the signin page.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Link has a hover effect and is styled consistently with the overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
-
-#### Sign Up Page
-
-<table>
-    <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=10>Sign Up Form</td>
-        <td rowspan=2>Username input</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Text can be entered in the field.<br>Field validates input to be present.<br>Displays message if the username already exists.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Focus effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Email input</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Text can be entered in the field.<br>Optional field. Allows to be left empty.<br>Validates input as an email address.<br>Displays message if the email already exists.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Focus effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Password input</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Text can be entered in the field.<br>Field validates input to be present.<br>Validates input as a valid password.<br>Displays message if password is not valid.<br>Displays message if both passwords are not equal.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Focus effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Password Repeat input</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Text can be entered in the field.<br>Field validates input to be present.<br>Validates input as a valid password.<br>Displays message if password is not valid.<br>Displays message if both passwords are not equal.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Focus effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Sign Up button</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Clicking the button submits the form and redirects to the Home page.<br>Creates user if form is valid.<br>Displays message if user is successfully created.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
 
 #### Login Page
 
 <table>
     <tr>
-        <th colspan=2>Feature</th>
+        <th>Feature</th>
         <th>Users</th>
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=6>Login Form</td>
-        <td rowspan=2>Username input</td>
+        <td rowspan=2>General</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Text can be entered in the field.<br>Field validates input to be present.<br>Displays message if the username doesn't exist.</td>
+        <td>Login page renders correctly and displays the login form.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Focus effect working as expected.</td>
+        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Password input</td>
+        <td rowspan=2>Login Form</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Text can be entered in the field.<br>Field validates input to be present.<br>Displays message if password is not valid.</td>
+        <td>Form fields render correctly and accept user input.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Focus effect working as expected.</td>
+        <td>Form fields are styled consistently with the overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Login button</td>
+        <td rowspan=2>Sign In Button</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the button authenticates the user and redirects to the Home page.<br>Displays message if credentials are not valid.<br>Displays message if user login successfully.</td>
+        <td>Clicking the button submits the form and attempts to log the user in.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Button has a hover effect and is styled consistently with the overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
-</table>
-
-
-#### Logout Page
-
-<table>
     <tr>
-        <th colspan=2>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>Logout Form</td>
-        <td rowspan=2>Submit button</td>
-        <td rowspan=2>Registered</td>
+        <td rowspan=2>Redirect Field</td>
+        <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the button logs out the user and redirects to the Home page.<br>Displays message if user logs out successfully.</td>
+        <td>Hidden redirect field retains the URL the user was attempting to access before login.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Field is hidden from view and does not affect the layout.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Signup Link</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Clicking the link redirects to the signup page.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Link has a hover effect and is styled consistently with the overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
