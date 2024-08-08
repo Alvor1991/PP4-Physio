@@ -100,7 +100,7 @@ The project will focus on delivering essential features for the first release, b
 
 #### User Stories
 
-GitHub projects were used as a project management tool to track user stories. Using a Kanban board helped to focus on specific tasks and track the project's progress.
+GitHub projects were used as a project management tool with a Kanban board to track user stories, focus on tasks, and monitor progress.
 
 **Start**
 ![User Stories Progress - Start](assets/readme_files/start.png)
@@ -117,7 +117,7 @@ GitHub projects were used as a project management tool to track user stories. Us
 
 ### Structure
 
-The website is organized using a Hierarchical Tree Structure to ensure intuitive navigation. The site map is designed to make navigation straightforward.
+The website is organized using a Hierarchical Tree Structure to ensure intuitive navigation.
 
 ![Sports Therapy Booking website map](assets/readme_files/sitemap.jpg)
 
@@ -130,10 +130,9 @@ The website is organized using a Hierarchical Tree Structure to ensure intuitive
 * A 404-error page is available, ensuring users are informed & redirected if they encounter a broken link.
 
 
-
 #### Database Model
 
-The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used is a relational database managed using [PostgreSQL](https://www.postgresql.org/).
+The database model was designed using [drawsql](https://drawsql.app/) and is managed with [PostgreSQL](https://www.postgresql.org/), a relational database.
 
 ![Sports Therapy Management database model](assets/readme_files/db_model.png)
 
@@ -146,7 +145,7 @@ The database model has been designed using [drawsql](https://drawsql.app/). The 
 * **Active**: A `BooleanField` indicating whether the testimonial is currently active and displayed on the website. Defaults to `True`.
 * **Date Added**: A `DateTimeField` of when the testimonial was added, allowing for tracking and organization of client feedback.
 
-The `ClientTestimonial` model is used to manage and display client feedback on the website, showcasing positive experiences and building credibility for the services offered. This model supports the website's goal of providing authentic client testimonials to potential clients.
+The `ClientTestimonial` model model manages and displays client feedback on the website, showcasing positive experiences and building credibility to attract potential clients
 
 ### About App
 
@@ -201,7 +200,7 @@ The `FAQ` model is used to manage frequently asked questions, providing clients 
   * Orthotics
   * Health Coaching
 
-The `Appointment` model facilitates the scheduling and management of therapy sessions, allowing clients to book treatments at their convenience.
+The `Appointment` model facilitates the scheduling & management of therapy sessions, allowing clients to book treatments at convenience.
 
 ### Skeleton
 
