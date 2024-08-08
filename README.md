@@ -141,9 +141,9 @@ The database model was designed using [drawsql](https://drawsql.app/) and is man
 **ClientTestimonial Model**
 
 * **Client Name**: A `CharField` that stores the name of the client providing the testimonial.
-* **Testimonial Text**: A `TextField` containing the testimonial provided by the client, describing their experience and satisfaction.
-* **Active**: A `BooleanField` indicating whether the testimonial is currently active and displayed on the website. Defaults to `True`.
-* **Date Added**: A `DateTimeField` of when the testimonial was added, allowing for tracking and organization of client feedback.
+* **Testimonial Text**: A `TextField` containing testimonials provided by users, describing their experience and satisfaction.
+* **Active**: A `BooleanField` indicating whether the testimonial is currently active and displayed on the website. 
+* **Date Added**: A `DateTimeField` of when the testimonial was added, allowing for tracking & organization of user feedback.
 
 The `ClientTestimonial` model model manages and displays client feedback on the website, showcasing positive experiences and building credibility to attract potential clients
 
@@ -288,38 +288,37 @@ Login | Allows the User to sign in with their account. | ![Sign In Page](assets/
 
 ### Libraries and Frameworks
 
-* [Django](https://www.djangoproject.com/) - Django was used as web framework.
-* [Django Template](https://jinja.palletsprojects.com) - Django Template was used as a templating language for Django to display backend data to HTML.
-* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Bootstrap 5 was used throughout the website to help with styling and responsiveness.
-* [Google Fonts](https://fonts.google.com) - Google fonts was used to import the fonts into the html file, and were used on all parts of the site.
-* [Font Awesome](https://fontawesome.com) - Font Awesome was used throughout the website to add icons for aesthetic and UX purposes.
-* [jQuery 3.6.0](https://jquery.com/) - jQuery was used as a JavaScript library to help writing less JavaScript code.
+* [Django](https://www.djangoproject.com/) - was used as web framework.
+* [Django Template](https://jinja.palletsprojects.com) - was used as a templating language for Django to display backend data to HTML.
+* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - was used to help with styling and responsiveness.
+* [Google Fonts](https://fonts.google.com) - was used to import the fonts into the html file.
+* [Font Awesome](https://fontawesome.com) - was used throughout the website to add icons for aesthetic and UX purposes.
+* [jQuery 3.6.0](https://jquery.com/) - was used as a JavaScript library to help writing less JavaScript code.
 
 ### Packages / Dependencies Installed
 
-* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - Django Allauth was used for user authentication, registration, and account management.
-* [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/) - Django Crispy Form was used to control the rendering of the forms.
-* [Summernote](https://summernote.org/) - Summernote has been used as WYSIWYG editor.
-* [Cloudinary](https://cloudinary.com/) - Cloudinary has been used as image management solution.
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - was used for user authentication, registration, and account management.
+* [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/) - was used to control the rendering of the forms.
+* [Summernote](https://summernote.org/) - was used as a WYSIWYG editor.
+* [Cloudinary](https://cloudinary.com/) - was used as an image management solution.
 
 ### Database Management
 
-* [Heroku Postgres](https://www.heroku.com/postgres) - Heroku Postgres database was used in production, as a service based on PostgreSQL provided by Heroku.
+* [Heroku Postgres](https://www.heroku.com/postgres) - was used in production, as a service based on PostgreSQL provided by Heroku.
 
 ### Tools and Programs
 
-* [GitPod](https://gitpod.io/) - GitPod was used for writing code, committing, and then pushing to GitHub.
-* [GitHub](https://github.com) - GitHub was used to store the project's code after being pushed from Git.
-* [Heroku](https://www.heroku.com) - Heroku was used to deploy the website.
-* [Am I Responsive](ami.responsivedesign.is) - Am I Responsive was used to preview the website across a variety of popular devices.
-* [Tiny PNG](https://tinypng.com) - Tiny PNG was used to reduce the file size of the images.
-* [Coolors](https://coolors.co) - Coolors was used to create a color scheme for the website.
-* [Balsamiq](https://balsamiq.com/) - Balsamiq was used to create the wireframes during the design phase of the project.
+* [GitPod](https://gitpod.io/) - was used for writing code, committing, and then pushing to GitHub.
+* [GitHub](https://github.com) - was used to store the project's code after being pushed from Git.
+* [Heroku](https://www.heroku.com) - was used to deploy the website.
+* [Am I Responsive](ami.responsivedesign.is) - was used to preview the website across a variety of popular devices.
+* [Coolors](https://coolors.co) - was used to create a color scheme for the website.
+* [Balsamiq](https://balsamiq.com/) - was used to create the wireframes during the design phase of the project.
 * [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used during development process for code review and to test responsiveness.
-* [W3C Markup Validator](https://validator.w3.org/) - W3C Markup Validator was used to validate the HTML code.
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - W3C CSS Validator was used to validate the CSS code.
-* [JSHint](https://jshint.com/) - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
-* [Favicon.cc](https://www.favicon.cc/) - Favicon.cc was used to create the site favicon.
+* [W3C Markup Validator](https://validator.w3.org/) - was used to validate the HTML code.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - was used to validate the CSS code.
+* [JSHint](https://jshint.com/) - was used to validate the site's JavaScript code.
+* [Favicon.cc](https://www.favicon.cc/) - was used to create the site favicon.
 
 
 [Back to top ⇧](#sports-therapy)
