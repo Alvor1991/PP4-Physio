@@ -258,10 +258,14 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Hamburger Menu button </td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
         <td>Clicking the button toggles the navigation menu.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Responsive navigation menu on smaller screens.<br>Hover effect working as expected.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -508,18 +512,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>General</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>About page renders correctly</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
         <td rowspan=2>Profile Image</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
@@ -580,18 +572,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>General</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Treatments page renders correctly.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
         <td rowspan=2>Card Display</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
@@ -624,14 +604,14 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
+        <td>Button has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>FAQ Section</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>FAQ section displays correctly and each FAQ can be expanded to show the answer.</td>
+        <td>FAQ section displays correctly and each FAQ can be expanded to show answer.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -662,18 +642,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>General</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Book appointments page renders correctly and displays the booking form.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>Booking Form</td>
@@ -708,7 +676,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
+        <td>Button has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -772,18 +740,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>General</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>User appointments page renders correctly and displays the list of appointments.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
         <td rowspan=2>Appointments Table</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
@@ -804,7 +760,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
+        <td>Button has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -816,7 +772,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
+        <td>Button has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -856,18 +812,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>General</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Update appointments page renders correctly and displays the update form.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
         <td rowspan=2>Update Form</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
@@ -888,7 +832,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
+        <td>Button has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -914,18 +858,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>General</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Delete appointments page renders correctly and displays the confirmation message.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>Confirmation Message</td>
@@ -960,7 +892,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
+        <td>Button has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
@@ -974,18 +906,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>General</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Signup page renders correctly and displays the signup form.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>Signup Form</td>
@@ -1008,19 +928,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Redirect Field</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Hidden redirect field retains the URL the user was attempting to access before signup.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Field is hidden from view and does not affect the layout.</td>
+        <td>Button has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -1032,7 +940,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Link has a hover effect and is styled consistently with the overall design.</td>
+        <td>Link has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
@@ -1046,18 +954,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Test</th>
         <th>Outcome</th>
         <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>General</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Login page renders correctly and displays the login form.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>General styling is applied correctly, and the layout is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>Login Form</td>
@@ -1080,19 +976,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Redirect Field</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Hidden redirect field retains the URL the user was attempting to access before login.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Field is hidden from view and does not affect the layout.</td>
+        <td>Button has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -1104,7 +988,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Link has a hover effect and is styled consistently with the overall design.</td>
+        <td>Link has a hover effect and is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
