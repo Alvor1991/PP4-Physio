@@ -4,7 +4,7 @@
 
 PhysioApp is a dedicated platform for individuals seeking personalized sports therapy and wellness solutions. Run by a sole practitioner, PhysioApp emphasizes a holistic approach to health, offering specialized services including sports therapy, orthotics, and health coaching. Whether you're aiming to enhance your athletic performance, recovering from an injury, or interested in improving your overall health, PhysioApp is here to provide tailored support and expert guidance.
 
-Visit the deployed website [here](https://physioapp.onrender.com).
+Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/).
 
 ## Table of Contents
 
