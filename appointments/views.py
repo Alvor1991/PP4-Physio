@@ -73,6 +73,8 @@ def delete_appointment(request, pk):
         appointment.delete()
         # Display success message
         messages.success(request, 'Your appointment has been deleted successfully.')
+        # Set a flag in session to indicate an appointment was deleted
+        request.session['appointment_deleted'] = True
         return redirect('user_appointments')
     return render(request, 'appointments/delete_appointment.html', {'appointment': appointment})
 
@@ -96,8 +98,11 @@ def user_appointments(request):
     """
     appointments = Appointment.objects.filter(user=request.user)
     
-    # Check if no appointments exist and add a message
-    if not appointments.exists():
+    # Check if the session flag is set
+    appointment_deleted = request.session.pop('appointment_deleted', False)
+    
+    # Check if no appointments exist and add a message only if not redirected from a deletion
+    if not appointments.exists() and not appointment_deleted:
         messages.info(request, 'You have no appointments yet. Click below to book your first appointment.')
     
     return render(request, 'appointments/user_appointments.html', {'appointments': appointments})

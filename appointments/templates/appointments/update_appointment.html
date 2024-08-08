@@ -11,8 +11,8 @@
         {{ form.time_slot|as_crispy_field }}
         {{ form.treatment|as_crispy_field }}
         {{ form.notes|as_crispy_field }}
-        <button type="submit" class="btn btn-update mb-5 mt-2">Update Appointment</button>
-        <a href="{% url 'user_appointments' %}" class="btn btn-secondary mb-5 mt-2">Cancel</a>
+        <button type="submit" class="btn btn-primary mb-5 mt-2">Update Appointment</button>
+        <a href="{% url 'user_appointments' %}" class="btn btn-danger mb-5 mt-2">Cancel</a>
       </form>
     </div>
   </div>

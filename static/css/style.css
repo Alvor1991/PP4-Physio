@@ -166,7 +166,7 @@
      Images
      =================================== */
   .img-fluid {
-    max-width: 75%;
+    max-width: 50%;
     height: auto;
   }
   
@@ -338,7 +338,8 @@
   .signup-page .card-title,
   .login-page .card-title,
   .user-appointments-page .card-title {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     font-weight: 700;
     color: #445261;
   }
@@ -388,20 +389,7 @@
     background-color: #007f99;
     transform: translateY(-2px);
   }
-  
-  .user-appointments-page .btn-danger {
-    background-color: #ff4500;
-    color: #fff;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .user-appointments-page .btn-danger:hover,
-  .user-appointments-page .btn-danger:focus {
-    background-color: #ff7300;
-    transform: translateY(-2px);
-  }
-  
+    
   .caption {
     font-size: 1.5rem;
     font-weight: 500;
@@ -430,19 +418,6 @@
   
     .text-md-left ul {
       text-align: left !important;
-    }
-  
-    .mb-3,
-    .mb-4 {
-      margin-bottom: 1.5rem !important;
-    }
-  
-    .mb-md-0 {
-      margin-bottom: 0 !important;
-    }
-  
-    .about-content {
-      text-align: center !important;
     }
   
     /* Add padding to the container for mobile devices */

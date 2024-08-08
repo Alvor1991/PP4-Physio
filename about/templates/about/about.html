@@ -4,11 +4,10 @@
 {% load crispy_forms_tags %}
 
 <div class="container mt-5 pb-5">
-
     <!-- Professional Journey and Mission -->
-    <div class="row mb-4 about-content align-items-center">
+    <div class="row mb-4 align-items-center">
         <div class="col-md-4 text-center mb-3 mb-md-0">
-            <img src="{% static 'images/profile.png' %}" class="img-fluid rounded-circle bordered-image profile-img" alt="Physiotherapist Image">
+            <img src="{% static 'images/profile.png' %}" class="img-fluid rounded-circle" alt="Physiotherapist Image">
         </div>
         <div class="col-md-8">
             <h2>{{ about.title }}</h2>
@@ -21,7 +20,7 @@
     </div>
 
     <!-- Credentials and Philosophy -->
-    <div class="row mb-4 about-content">
+    <div class="row mb-4">
         <div class="col-md-6 mb-3 mb-md-0">
             <h2>Credentials</h2>
             <ul class="list-unstyled mt-3">
@@ -46,8 +45,8 @@
     </div>
 
     <!-- displaying Django messages -->
-    <div class="row mb-4 about-content">
-        <div class="col-md-8">
+    <div class="row mb-4">
+        <div class="col-12">
             {% for message in messages %}
             <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
                 {{ message | safe }}
@@ -58,8 +57,8 @@
     </div>
 
     <!-- Contact Form -->
-    <div class="row mb-4 contact-form-container about-content">
-        <div class="col-md-8">
+    <div class="row mb-4">
+        <div class="col-12">
             <h3>Contact Me</h3>
             <p>To book an appointment, drop us a message using the contact form below or use our online appointment
                 <a href="{% url 'book_appointment' %}">booking system</a>.
@@ -72,31 +71,5 @@
         </div>
     </div>
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
-    const formContainer = document.querySelector(".contact-form-container");
-
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
-        const formData = new FormData(form);
-        fetch(form.action, {
-            method: "POST",
-            body: formData,
-            headers: {
-                "X-Requested-With": "XMLHttpRequest"
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                formContainer.innerHTML = '<div class="alert alert-success" role="alert">Your message has been sent successfully!</div>';
-            }
-        })
-        .catch(error => console.error('Error:', error));
-    });
-});
-</script>
 
 {% endblock content %}
