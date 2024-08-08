@@ -162,7 +162,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
 
 ### Test Results
 
-#### General
+#### Base HTML Page
 
 <table>
     <tr>
@@ -308,81 +308,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     <tr>
         <td>Style</td>
         <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
-#### Base HTML Page
-
-<table>
-    <tr>
-        <th>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td>Navigation Bar</td>
-        <td>All</td>
-        <td>Functionality</td>
-        <td>Navigation bar renders correctly with all links visible and accessible.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Navigation Bar</td>
-        <td>All</td>
-        <td>Style</td>
-        <td>Navigation bar is styled correctly and is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Navigation Links</td>
-        <td>All</td>
-        <td>Functionality</td>
-        <td>Links redirect to the correct pages when clicked.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Navigation Links</td>
-        <td>All</td>
-        <td>Style</td>
-        <td>Links have hover effects and are styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Active Link Highlight</td>
-        <td>All</td>
-        <td>Functionality</td>
-        <td>Current page link is highlighted correctly.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Brand Logo</td>
-        <td>All</td>
-        <td>Functionality</td>
-        <td>Brand logo renders correctly and links to the home page.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Brand Logo</td>
-        <td>All</td>
-        <td>Style</td>
-        <td>Brand logo is styled correctly and is responsive across all devices.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Footer</td>
-        <td>All</td>
-        <td>Functionality</td>
-        <td>Footer renders correctly with contact, social media, and opening hours information.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Footer</td>
-        <td>All</td>
-        <td>Style</td>
-        <td>Footer is styled correctly and is responsive across all devices.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
