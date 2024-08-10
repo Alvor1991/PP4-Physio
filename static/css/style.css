@@ -18,6 +18,11 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #0a5d61;
+    margin-bottom: 25px;
+}
+
+h6 {
+  margin-bottom: 10px; 
 }
 
 h1 {
@@ -37,10 +42,19 @@ h3 {
   
 p, a, span, li {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 450;
   font-size: 16px;
-  line-height: 1.6;
-  color: #666;
+  line-height: 2;
+  color: #333;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}  
+
+ul {
+  padding-left: 0;
 }
 
 a {
@@ -59,6 +73,15 @@ a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #f7f6e5;
+}
+
+.cta-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card img {
+  border-bottom: 3px solid #0a5d61; /* Stylish border between image and content */
 }
 
   .banner-container {
@@ -91,14 +114,15 @@ a {
   /* ===================================
      Header and Branding
      =================================== */  
-  .navbar-custom {
-    border-bottom: 4px solid #0a5d61; /* Teal-like color */
-  }
-  
   .navbar-brand img {
     height: 60px;
     width: auto;
   }
+
+  .navbar {
+    border-bottom: 2px solid #0a5d61; /* Adjust color and thickness as needed */
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1); /* Adjust shadow intensity as needed */
+}
   
   .welcome-section {
     background-color: #f7f6e5; /* Lighter beige color */
@@ -136,7 +160,7 @@ a {
   
   .card-subtitle {
     font-size: 1rem;
-    color: lightgray;
+    color: #445261;
     margin-left: 5%;
   }
   
@@ -183,18 +207,10 @@ a {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 4rem;
-    color: #f7f6e5; /* Lighter beige color */
+    color: #ffffff; /* Lighter beige color */
     flex-shrink: 0;
   }
-  
-  .halfway-footer {
-    margin-top: auto;
-  }
-  
-  .footer-text {
-    font-size: 0.875rem;
-  }
-  
+    
   .social-icons {
     display: flex;
     justify-content: center;
@@ -206,7 +222,6 @@ a {
     font-size: 1.5rem;
     transition: color 0.3s ease;
   }
-  
   /* ===================================
      Images
      =================================== */
@@ -354,6 +369,10 @@ a {
      Margin and Padding
      =================================== */
   .mb-5 {
+    margin-bottom: 3rem !important;
+  }
+
+  .mb-4 {
     margin-bottom: 3rem !important;
   }
   

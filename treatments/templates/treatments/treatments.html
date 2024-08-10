@@ -4,24 +4,24 @@
     <h1 class="mb-4 text-center">Our Treatments</h1>
     
     <!-- Detailed Services Description -->
-    <div class="row">
+    <div class="row g-4">
         {% for treatment in treatments %}
-        <div class="col-md-4 mb-4"> 
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch"> 
             <div class="card h-100">
                 {% if treatment.image %}
                 <img src="{{ treatment.image.url }}" class="card-img-top" alt="{{ treatment.name }}"> 
                 {% endif %}
                 <div class="card-body d-flex flex-column"> 
                     <h6 class="card-title">{{ treatment.name }}</h6>
-                    <p class="card-text"> {{ treatment.description|safe }}</p>
+                    <p class="card-text">{{ treatment.description|safe }}</p>
                     
                     {% if treatment.services_offered %}
-                    <div>{{ treatment.services_offered|safe }}</div>
+                    <p class="card-text">{{ treatment.services_offered|safe }}</p>
                     {% endif %}
                     
                     {% if treatment.benefits %}
-                    <h6 class="mt-3"><strong>Benefits:</strong></h6>
-                    <div>{{ treatment.benefits|safe }}</div>
+                    <h6><strong>Benefits:</strong></h6>
+                    <p class="card-text">{{ treatment.benefits|safe }}</p>
                     {% endif %}
                 </div>
                 <div class="card-footer text-center mt-auto">
@@ -32,7 +32,7 @@
         </div>
         {% endfor %}
     </div>
-    
+
     <!-- FAQ Section -->
     <div class="mt-5">
         <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
