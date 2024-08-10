@@ -477,7 +477,4 @@ a {
     .mb-4 {
       margin-bottom: 0.5rem !important;
     }
-    .section-gap {
-      margin-bottom: 2rem !important; /* Increase the bottom margin to 2rem (32px) on smaller screens */
-    }
   } 
