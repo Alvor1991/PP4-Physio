@@ -496,4 +496,9 @@ a {
     .mb-4 {
       margin-bottom: 0.5rem !important;
     }
+
+    .alert-success {
+      margin-top: 30px;
+    }
+
   } 

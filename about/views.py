@@ -9,10 +9,13 @@ def about_me(request):
     and handling the contact form submission.
     Displays an individual instance of :model:`about.About`
     """
+    success = False  # Initialize the success flag
+
     if request.method == "POST":
         contact_form = ContactForm(data=request.POST)
         if contact_form.is_valid():
             contact_form.save()
+            success = True  # Set the success flag to True after saving
             if request.headers.get('x-requested-with') == 'XMLHttpRequest':
                 return JsonResponse({'success': True})
 
@@ -26,5 +29,6 @@ def about_me(request):
         {
             "about": about,
             "contact_form": contact_form,
+            "success": success,  # Pass the success flag to the template
         },
     )
