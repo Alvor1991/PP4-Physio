@@ -1,28 +1,32 @@
 /* ===================================
    General Styles
    =================================== */
-   body {
-    background-color: #fdfdfb;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    line-height: 1.6;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
+body {
+  background-color: #fdfdfb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #0a5d61;
-    margin-bottom: 25px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #0a5d61;
+  margin-bottom: 25px;
 }
 
 h6 {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -39,8 +43,11 @@ h3 {
   font-size: 28px;
   line-height: 1.4;
 }
-  
-p, a, span, li {
+
+p,
+a,
+span,
+li {
   font-family: 'Roboto', sans-serif;
   font-weight: 450;
   font-size: 16px;
@@ -51,7 +58,7 @@ p, a, span, li {
 ul li {
   list-style: none;
   margin-bottom: 10px;
-}  
+}
 
 ul {
   padding-left: 0;
@@ -75,423 +82,391 @@ a {
   color: #f7f6e5;
 }
 
+.card img {
+  border-bottom: 3px solid #0a5d61;
+}
+
+.banner-container {
+  position: relative;
+
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f7f6e5;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Header and Branding */
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+
+.navbar {
+  background-color: #fdfdfb;
+  border-bottom: 2px solid #0a5d61;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #f7f6e5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  color: #ffffff;
+  flex-shrink: 0;
+  border-top: 2px solid #0a5d61;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Margin and Padding */
+.mb-4 {
+  margin-bottom: 3rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mt-3 {
+  margin-top: 3rem !important;
+}
+
+.pb-5 {
+  padding-bottom: 3rem !important;
+}
+
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
+/* ===================================
+   Home Page
+=================================== */
+
+.welcome-section {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.welcome-section p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Cards */
+.card {
+  border: none;
+  background-color: #f7f6e5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0a5d61;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #445261;
+  margin-left: 5%;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #0a5d61;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #23bbbb;
+}
+
+.btn-secondary {
+  background-color: #f7f6e5;
+  color: #0a5d61;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card .card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card i {
+  color: #0a5d61;
+}
+
 .cta-text {
   font-size: 18px;
   font-weight: 600;
 }
 
-.card img {
-  border-bottom: 3px solid #0a5d61; /* Stylish border between image and content */
+.testimonial {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-  .banner-container {
-    position: relative; /* Position relative to enable absolute positioning of child elements */
-    width: 100%;
-    max-height: 300px; /* Adjust based on your design */
-    overflow: hidden;
-  }
-  
-  .banner-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #f7f6e5; /* Lighter beige color */
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  /* ===================================
-     Header and Branding
-     =================================== */  
-  .navbar-brand img {
-    height: 60px;
-    width: auto;
-  }
-
-  .navbar {
-    background-color: #fdfdfb;
-    border-bottom: 2px solid #0a5d61; /* Adjust color and thickness as needed */
-    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1); /* Adjust shadow intensity as needed */
-}
-  
-  .welcome-section {
-    padding: 20px; /* Add padding around the text */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-bottom: 2rem; /* Space below the section */
-  }
-  
-  .welcome-section p {
-    font-size: 1.5rem; /* Larger font size for prominence */
-    font-weight: 600; /* Bold text */
-    margin: 0; /* Remove default margins */
-    line-height: 1.4; /* Adjust line height for readability */
-  }
-  
-  /* ===================================
-     Cards
-     =================================== */
-  .card {
-    border: none;
-    background-color: #f7f6e5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-  }
-  
-  .card-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #0a5d61; /* Teal-like color */
-    margin-top: 10%;
-    margin-left: 5%;
-  }
-  
-  .card-subtitle {
-    font-size: 1rem;
-    color: #445261;
-    margin-left: 5%;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  /* ===================================
-     Buttons
-     =================================== */
-  .link {
-    color: #0a5d61; /* Teal-like color */
-    text-decoration: none;
-  }
-  
-  .link:hover,
-  .link:active {
-    color: #445261;
-    text-decoration: underline;
-  }
-  
-  /* Primary Button */
-  .btn-primary {
-    background-color: #0a5d61; /* Teal-like color */
-    border: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background-color: #23bbbb;
-  }
-  
-  .btn-secondary {
-    background-color: #f7f6e5; /* Lighter beige color */
-    color: #0a5d61; /* Teal-like color */
-  }
-  
-  /* ===================================
-     Footer
-     =================================== */
-  .footer {
-    background-color:  #f7f6e5; /* Dark Blue */
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 4rem;
-    color: #ffffff; /* Lighter beige color */
-    flex-shrink: 0;
-    border-top: 2px solid #0a5d61;
-  }
-    
-  .social-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icon {
-    color: #ffffff;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-  }
-  /* ===================================
-     Images
-     =================================== */
-  
-  .banner-image {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  
-  .banner-image img {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-  }
-  
-  .small-profile-image {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height to maintain a square aspect ratio */
-    object-fit: cover; /* Ensures the image fits within the defined dimensions */
+.testimonial-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
 }
 
-  
-  /* ===================================
-     Service Cards
-     =================================== */
-  .service-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    border: none;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .service-card .card-body {
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .service-card i {
-    color: #0a5d61; /* Teal-like color */
-  }
-  
-  /* ===================================
-     Testimonials
-     =================================== */
-  .testimonial {
-    text-align: center;
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .testimonial-text {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #333;
-  }
-  
-  .testimonial-author {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 10px;
-    color: #0a5d61; /* Teal-like color */
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #0a5d61; /* Teal-like color */
-    border-radius: 50%;
-    padding: 10px;
-  }
-  
-  /* ===================================
-     Alignment
-     =================================== */
-  ul.text-left {
-    text-align: left;
-    padding-left: 1.5em;
-  }
-  
-  /* ===================================
-     FAQ and Treatments
-     =================================== */
-  .accordion-button {
-    font-size: 1.1rem;
-    font-weight: 600;
-    background-color: #0a5d61; /* Teal-like color */
-    color: #f7f6e5; /* Lighter beige color */
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .accordion-button:hover,
-  .accordion-button:focus {
-    background-color: #23bbbb;
-    color: #fff;
-  }
-  
-  .accordion-button:not(.collapsed) {
-    background-color: #445261;
-    color: #f7f6e5; /* Lighter beige color */
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
-  }
-  
-  .accordion-header {
-    margin-bottom: 0;
-  }
-  
-  .accordion-item {
-    background-color: #fff;
-    border: 1px solid #e3e3e3;
-    border-radius: 0.25rem;
-    margin-bottom: 1rem;
-  }
-  
-  .accordion-body {
-    font-size: 1rem;
-    color: #333;
-    background-color: #f9fafc;
-    padding: 1rem;
-    border-top: 1px solid #e3e3e3;
-  }
-  
-  .accordion-button::after {
-    filter: invert(100%);
-  }
-  
-  /* ===================================
-     Margin and Padding
-     =================================== */
+.testimonial-author {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #0a5d61;
+}
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0a5d61;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* ===================================
+About Page
+=================================== */
+
+.small-profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* ===================================
+Treatments Page
+=================================== */
+
+/* FAQ */
+.accordion-button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #0a5d61;
+  color: #f7f6e5;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+  background-color: #23bbbb;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #445261;
+  color: #f7f6e5;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.accordion-header {
+  margin-bottom: 0;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.accordion-body {
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9fafc;
+  padding: 1rem;
+  border-top: 1px solid #e3e3e3;
+}
+
+.accordion-button::after {
+  filter: invert(100%);
+}
+
+/* ===================================
+Signup Page
+=================================== */
+
+.signup-page .card,
+.login-page .card,
+.user-appointments-page .card {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.signup-page .card-title,
+.login-page .card-title,
+.user-appointments-page .card-title {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #445261;
+}
+
+.signup-page .btn-primary,
+.login-page .btn-primary {
+  background-color: #0a5d61;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-page .btn-primary:hover,
+.signup-page .btn-primary:focus,
+.login-page .btn-primary:hover,
+.login-page .btn-primary:focus {
+  background-color: #23bbbb;
+  transform: translateY(-2px);
+}
+
+.signup-page .link,
+.login-page .link,
+.user-appointments-page .link {
+  color: #0a5d61;
+  text-decoration: none;
+}
+
+.signup-page .link:hover,
+.signup-page .link:focus,
+.login-page .link:hover,
+.login-page .link:focus,
+.user-appointments-page .link:hover,
+.user-appointments-page .link:focus {
+  color: #445261;
+  text-decoration: underline;
+}
+
+/* ===================================
+Appointments Page
+=================================== */
+
+.user-appointments-page .btn-warning {
+  background-color: #005f73;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-appointments-page .btn-warning:hover,
+.user-appointments-page .btn-warning:focus {
+  background-color: #007f99;
+  transform: translateY(-2px);
+}
+
+.caption {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0a5d61;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Media Queries */
+@media (max-width: 767.98px) {
+  .text-md-end {
+    text-align: center !important;
+  }
+
+  .footer .container .row>div {
+    margin-bottom: 15px;
+  }
+
+  .text-center .text-md-left {
+    text-align: center !important;
+  }
+
+  .text-md-left ul {
+    text-align: left !important;
+  }
+
+  .container {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
 
   .mb-4 {
-    margin-bottom: 3rem !important;
+    margin-bottom: 0.5rem !important;
   }
-  
-  .mt-5 {
-    margin-top: 3rem !important;
-  }
-  
-  .mt-3 {
-    margin-top: 3rem !important;
-  }
-  
-  .pb-5 {
-    padding-bottom: 3rem !important;
-  }
-  
-  .pt-5 {
-    padding-top: 3rem !important;
-  }
-  
-  /* ===================================
-     Scoped Styles for Signup Page
-     =================================== */
-  .signup-page .card,
-  .login-page .card,
-  .user-appointments-page .card {
-    border: none;
-    border-radius: 0.5rem;
-  }
-  
-  .signup-page .card-title,
-  .login-page .card-title,
-  .user-appointments-page .card-title {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    font-weight: 700;
-    color: #445261;
-  }
-  
-  .signup-page .btn-primary,
-  .login-page .btn-primary {
-    background-color: #0a5d61; 
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .signup-page .btn-primary:hover,
-  .signup-page .btn-primary:focus,
-  .login-page .btn-primary:hover,
-  .login-page .btn-primary:focus {
-    background-color: #23bbbb;
-    transform: translateY(-2px);
-  }
-  
-  .signup-page .link,
-  .login-page .link,
-  .user-appointments-page .link {
-    color: #0a5d61; /* Teal-like color */
-    text-decoration: none;
-  }
-  
-  .signup-page .link:hover,
-  .signup-page .link:focus,
-  .login-page .link:hover,
-  .login-page .link:focus,
-  .user-appointments-page .link:hover,
-  .user-appointments-page .link:focus {
-    color: #445261;
-    text-decoration: underline;
-  }
-  
-  /* Scoped Styles for User Appointments Page */
-  .user-appointments-page .btn-warning {
-    background-color: #005f73;
-    color: #fff;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .user-appointments-page .btn-warning:hover,
-  .user-appointments-page .btn-warning:focus {
-    background-color: #007f99;
-    transform: translateY(-2px);
-  }
-    
-  .caption {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #0a5d61; /* Teal-like color */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  /* ===================================
-     Media Queries
-     =================================== */
-  @media (max-width: 767.98px) {
-    .text-md-end {
-      text-align: center !important;
-    }
-  
-    .footer .container .row > div {
-      margin-bottom: 15px;
-    }
-  
-    .text-center .text-md-left {
-      text-align: center !important;
-    }
-  
-    .text-md-left ul {
-      text-align: left !important;
-    }
-  
-    /* Add padding to the container for mobile devices */
-    .container {
-      padding-left: 5rem !important;
-      padding-right: 5rem !important;
-    }
 
-    .mb-4 {
-      margin-bottom: 0.5rem !important;
-    }
-
-    .alert-success {
-      margin-top: 30px;
-    }
-
-  } 
+  .alert-success {
+    margin-top: 30px;
+  }
+}

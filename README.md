@@ -124,19 +124,19 @@ The website is organized using a Flowchart to illustrate the user journey and in
 #### User Flow
 
 #### Non-Logged-In Users:
-**Home Page**: Provides an overview of the services offered, client testimonials, and quick links to book an appointment or view the therapist’s profile.
-**About Page**: Contains detailed information about the therapist, their credentials, and philosophy. It also includes a contact form that non-logged-in users can use to submit inquiries.
-**Treatments Page**: Lists the available treatments with descriptions and pricing, along with a FAQ section to address common questions.
-**Login Page**: Allows users to log in to access personalized features like appointment management.
-**Book Appointment**: Prominently displayed for easy access; redirects non-logged-in users to log in before booking an appointment.
+* **Home Page**: an overview of the services offered, client testimonials, and quick links to book an appointment
+* **About Page**: detailed information about the therapist, their credentials, and philosophy. It also includes a contact form.
+* **Treatments Page**: all available treatments with descriptions and pricing, along with a FAQ section.
+* **Login Page**: allows users to log in to access personalized features like appointment management.
+* **Book Appointment**: prominently displayed for easy access; redirects non-logged-in users to log in before booking an appointment.
 
 #### Logged-In Users:
-**Home Page**: Same as for non-logged-in users, but with access to additional features.
-**About Page**: Same content as for non-logged-in users, including the ability to submit a contact form.
-**Treatments Page**: Same for non-logged-in users, listing treatments & providing detailed descriptions and pricing.
-**My Appointments Page**: Allows logged-in users to view, edit, or delete their scheduled appointments.
-**Logout**: Allows users to securely log out of their account.
-**Book Appointment**: Directly accesses the booking form where users can schedule their appointments.
+* **Home Page**: Same as for non-logged-in users, but with access to additional features.
+* **About Page**: Same content as for non-logged-in users, including the ability to submit a contact form.
+* **Treatments Page**: Same for non-logged-in users, listing treatments & providing detailed descriptions and pricing.
+* **My Appointments Page**: Allows logged-in users to view, edit, or delete their scheduled appointments.
+* **Logout**: Allows users to securely log out of their account.
+* **Book Appointment**: Directly accesses the booking form where users can schedule their appointments.
 
 #### Database Model
 
@@ -446,9 +446,13 @@ Page | Desktop | Mobile |
 
 ### Media
 
-* [Pexels](https://www.pexels.com/)
+* [iStock](https://www.istockphoto.com/)
 
-    * About Page image: Taken by [Buro Millennial](https://www.pexels.com/@buro-millennial-636760/).
+    * Health Coaching image: taken by [designer491](https://www.pexels.com/@buro-millennial-636760/).
+
+    * Orthotics image: taken by [Andrey Popov](https://www.pexels.com/@buro-millennial-636760/).
+
+    * Ort image: taken by [Andrey Popov](https://www.pexels.com/@buro-millennial-636760/).
 
 * [Unsplash](https://unsplash.com/)
 

@@ -9,7 +9,7 @@
         <div class="col-md-6 mb-4 text-center">
             <img src="{% static 'images/profile.png' %}" class="img-fluid rounded-circle small-profile-image" alt="Physiotherapist Image">
         </div>
-        <div class="col-md-6 mb-4"> <!-- Add mb-4 for consistent spacing -->
+        <div class="col-md-6 mb-4"> 
             <h3>About Me</h3>
             <p>I am Ryan Nolan, a certified sports therapist with over 10 years of experience in helping athletes and active individuals recover from injuries and enhance their performance. My approach is personalized and evidence-based, ensuring you receive the best care possible.</p>
         </div>
@@ -34,7 +34,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-6 mb-4"> <!-- Add mb-4 for consistent spacing -->
+        <div class="col-md-6 mb-4"> 
             <h3>My Philosophy</h3>
             <p>I believe in a holistic approach to health and well-being, focusing on individualized treatment plans for each patient. My goal is to help you achieve optimal health through a combination of hands-on therapy, exercise, and education.</p>
         </div>
@@ -45,7 +45,7 @@
         <div class="col-md-6 mb-4 text-center text-md-start">
             <h3>Contact Me</h3>
             <p>To book an appointment, drop us a message using the contact form below or use our online appointment
-                <a href="{% url 'book_appointment' %}">booking system</a>.
+                <a href="{% url 'book_appointment' %}" class="font-weight-bold">booking system</a>.
             </p>
             <hr>
             <h5>Other Ways to Reach Me</h5>
@@ -62,7 +62,7 @@
         </div>
 
         <!-- Contact Form or Success Message -->
-        <div class="col-md-6 mb-4"> <!-- Add mb-4 for consistent spacing -->
+        <div class="col-md-6 mb-4"> 
             {% if success %}
                 <div class="alert alert-success" role="alert">
                     Your booking has been successful. We will get back to you shortly!
@@ -74,7 +74,7 @@
                     <form method="post" action="{% url 'about' %}">
                         {{ contact_form|crispy }}
                         {% csrf_token %}
-                        <button class="btn btn-secondary mt-3" type="submit">Submit</button>
+                        <button class="btn btn-primary mt-3" type="submit">Submit</button>
                     </form>
                 </div>
             {% else %}
