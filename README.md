@@ -63,7 +63,7 @@ Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/
 
 * As an Admin, I want to manage site content and appointments.
 
-* As a User, I want to browse available therapists and treatments.
+* As a User, I want to browse therapist info and treatments.
 
 * As a User, I want to book an appointment easily.
 
@@ -117,7 +117,7 @@ GitHub projects were used as a project management tool with a Kanban board to tr
 
 #### Structure
 
-The website is organized using a Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features
+The website is organized using a Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features.
 
 ![Sports Therapy Booking website map](assets/readme_files/flowchart.png)
 
@@ -241,16 +241,16 @@ View Appointments | ![View Appointments wireframe image](assets/wireframes/your_
 
 ### General
 
-* Mobile-first, responsive design for all devices, ensuring a seamless experience across desktops, tablets, and smartphones.
-* Consistent navigation across all pages with hover effects for feedback, enhancing usability and user experience.
-* **Dynamic Navbar:** The navbar adapts based on user authentication status, providing relevant links and actions for both logged-in and guest users.
-    - **Home Link:** Redirects to the home page for easy navigation back to the main site.
-    - **About Link:** Provides access to detailed information about the therapist, their credentials, and philosophy.
-    - **Treatments Link:** Directs users to a page listing available treatments with descriptions and pricing.
-    - **My Appointments Link:** (Visible only to logged-in users) Allows users to view their scheduled appointments through a personalized dashboard.
-    - **Login/Logout Link:** Displays the login option for guests and a logout option for authenticated users, ensuring smooth session management.
-    - **Book Appointment Button:** Prominently displayed, this button redirects users to the appointment booking page. If the user is not logged in, it prompts them to sign up first.
-* Footer with contact info and social media links, providing easy access to contact details and social media profiles.
+* Mobile-first, responsive design for all devices, ensuring a seamless experience.
+* Consistent navigation across all pages with hover effects for feedback, enhancing usability.
+* The navbar adapts based on user authentication status;
+    - **Home:** Redirects to the home page for easy navigation back to the main site.
+    - **About:** Provides access to detailed information about the therapist, their credentials, and philosophy.
+    - **Treatments:** Directs users to a page listing available treatments with descriptions and pricing.
+    - **My Appointments:** (Visible only to logged-in users) Allows users to view their scheduled appointments.
+    - **Login/Logout Link:** Displays the login option for guests and a logout option for authenticated users.
+    - **Book Appointment Button:** redirects users to the appointment booking page. If the user is not logged in.
+* Footer with contact info and social media links.
 
 ### Home Page
 
@@ -260,25 +260,25 @@ View Appointments | ![View Appointments wireframe image](assets/wireframes/your_
 
 ### About Page
 
-* Detailed info about the therapist, their credentials, and philosophy, helping clients understand the expertise and approach.
+* Detailed info about the therapist, credentials, and philosophy, helping clients understand expertise & approach.
 * Contact form for inquiries, allowing visitors to reach out with questions or requests for more information.
 
 ### Treatments Page
 
-* List of available treatments with descriptions and pricing, providing clear and detailed info about services offered.
-* FAQ section to address common client questions, helping to answer typical inquiries and provide quick information.
+* List of available treatments with descriptions & pricing, providing clear & detailed info about services offered.
+* FAQ section to address common client questions, providing quick information.
 
 ### Appointments
 
 * Book Appointment: Easy-to-use booking form allowing users to select dates, times, and treatment types.
-* View Appointments: Personalized dashboard for registered users to view their scheduled appointments.
-* Update Appointment: Options for users to edit their appointments, providing flexibility to manage their schedules.
-* Delete Appointment: Options for users to cancel their appointments if no longer needed.
-* Confirmation messages after successful bookings, updates, or deletions to inform users of their appointment status.
+* View Appointments: dashboard for registered users to view their scheduled appointments.
+* Update Appointment: users can edit appointments, providing flexibility to manage their schedules.
+* Delete Appointment: user casn cancel appointments if no longer needed.
+* Confirmation messages after successful bookings, updates, or deletions to inform users of appointment status.
 
 ### Error Handling
 
-* Custom 404-error page to inform users and redirect them appropriately if they encounter a broken link or incorrect URL.
+* Custom 404-error page to inform users and redirect them appropriately if they encounter a broken link.
 
 ### Authentication Pages
 
@@ -312,8 +312,8 @@ Login | Allows the User to sign in with their account. | ![Sign In Page](assets/
 
 ### Packages / Dependencies Installed
 
-* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - was used for user authentication, registration, and account management.
-* [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/) - was used to control the rendering of the forms.
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - used for user authentication, registration, and account management.
+* [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/) - used to control the rendering of the forms.
 * [Summernote](https://summernote.org/) - was used as a WYSIWYG editor.
 * [Cloudinary](https://cloudinary.com/) - was used as an image management solution.
 
@@ -323,17 +323,17 @@ Login | Allows the User to sign in with their account. | ![Sign In Page](assets/
 
 ### Tools and Programs
 
-* [GitPod](https://gitpod.io/) - was used for writing code, committing, and then pushing to GitHub.
-* [GitHub](https://github.com) - was used to store the project's code after being pushed from Git.
-* [Heroku](https://www.heroku.com) - was used to deploy the website.
-* [Am I Responsive](ami.responsivedesign.is) - was used to preview the website across a variety of popular devices.
+* [GitPod](https://gitpod.io/) - used for writing code, committing, and then pushing to GitHub.
+* [GitHub](https://github.com) - used to store the project's code after being pushed from Git.
+* [Heroku](https://www.heroku.com) - used to deploy the website.
+* [Am I Responsive](ami.responsivedesign.is) - used to preview the website across a variety of popular devices.
 * [Coolors](https://coolors.co) - was used to create a color scheme for the website.
 * [Balsamiq](https://balsamiq.com/) - was used to create the wireframes during the design phase of the project.
-* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used during development process for code review and to test responsiveness.
-* [W3C Markup Validator](https://validator.w3.org/) - was used to validate the HTML code.
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - was used to validate the CSS code.
-* [JSHint](https://jshint.com/) - was used to validate the site's JavaScript code.
-* [Favicon.cc](https://www.favicon.cc/) - was used to create the site favicon.
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - used during development process for code review and to test responsiveness.
+* [W3C Markup Validator](https://validator.w3.org/) - used to validate the HTML code.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - used to validate the CSS code.
+* [JSHint](https://jshint.com/) - used to validate the site's JavaScript code.
+* [Favicon.cc](https://www.favicon.cc/) - used to create the site favicon.
 
 
 [Back to top ⇧](#sports-therapy)
@@ -347,7 +347,7 @@ The testing documentation can be found [here](https://github.com/josswe26/code-b
 
 ## Deployment
 
-This project was developed using a [GitPod](https://gitpod.io/) workspace. The code was commited to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/") using the terminal.
+Project developed using a [GitPod](https://gitpod.io/) workspace. The code was commited to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/") using the terminal.
 
 ### Deploying on Heroku
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
