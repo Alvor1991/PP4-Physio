@@ -115,20 +115,28 @@ GitHub projects were used as a project management tool with a Kanban board to tr
 ![User Stories Progress - Week 3](assets/readme_files/week3.png)
 
 
-### Structure
+#### Structure
 
-The website is organized using a Hierarchical Tree Structure to ensure intuitive navigation.
+The website is organized using a Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features
 
-![Sports Therapy Booking website map](assets/readme_files/sitemap.jpg)
+![Sports Therapy Booking website map](assets/readme_files/flowchart.png)
 
-* Consistent header, footer, and navigation bar across all pages, ensuring a uniform and professional look.
+#### User Flow
 
-* Clear feedback is provided through links and forms, enhancing the user experience by confirming actions.
+#### Non-Logged-In Users:
+**Home Page**: Provides an overview of the services offered, client testimonials, and quick links to book an appointment or view the therapist’s profile.
+**About Page**: Contains detailed information about the therapist, their credentials, and philosophy. It also includes a contact form that non-logged-in users can use to submit inquiries.
+**Treatments Page**: Lists the available treatments with descriptions and pricing, along with a FAQ section to address common questions.
+**Login Page**: Allows users to log in to access personalized features like appointment management.
+**Book Appointment**: Prominently displayed for easy access; redirects non-logged-in users to log in before booking an appointment.
 
-* Users have the opportunity to book and manage appointments online, providing seamless & convenient scheduling.
-
-* A 404-error page is available, ensuring users are informed & redirected if they encounter a broken link.
-
+#### Logged-In Users:
+**Home Page**: Same as for non-logged-in users, but with access to additional features.
+**About Page**: Same content as for non-logged-in users, including the ability to submit a contact form.
+**Treatments Page**: Same for non-logged-in users, listing treatments & providing detailed descriptions and pricing.
+**My Appointments Page**: Allows logged-in users to view, edit, or delete their scheduled appointments.
+**Logout**: Allows users to securely log out of their account.
+**Book Appointment**: Directly accesses the booking form where users can schedule their appointments.
 
 #### Database Model
 

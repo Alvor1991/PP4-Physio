@@ -6,11 +6,10 @@
 <div class="container mt-5 pb-5">
     <!-- Professional Journey -->
     <div class="row mb-5 text-center text-md-start">
-        <div class="col-md-6 text-center mb-4 mb-md-0">
+        <div class="col-md-6 mb-4 text-center">
             <img src="{% static 'images/profile.png' %}" class="img-fluid rounded-circle small-profile-image" alt="Physiotherapist Image">
         </div>
-        <div class="col-md-6">
-            <!-- About Me section next to the image -->
+        <div class="col-md-6 mb-4"> <!-- Add mb-4 for consistent spacing -->
             <h3>About Me</h3>
             <p>I am Ryan Nolan, a certified sports therapist with over 10 years of experience in helping athletes and active individuals recover from injuries and enhance their performance. My approach is personalized and evidence-based, ensuring you receive the best care possible.</p>
         </div>
@@ -18,7 +17,7 @@
 
     <!-- Credentials and Philosophy -->
     <div class="row mb-5 text-center text-md-start">
-        <div class="col-md-6 mb-4 mb-md-0">
+        <div class="col-md-6 mb-4">
             <h3>Credentials</h3>
             <ul class="list-unstyled">
                 <li class="mb-2">
@@ -35,7 +34,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mb-4"> <!-- Add mb-4 for consistent spacing -->
             <h3>My Philosophy</h3>
             <p>I believe in a holistic approach to health and well-being, focusing on individualized treatment plans for each patient. My goal is to help you achieve optimal health through a combination of hands-on therapy, exercise, and education.</p>
         </div>
@@ -43,7 +42,7 @@
 
     <!-- Contact Me Section -->
     <div class="row mb-5 text-center text-md-start">
-        <div class="col-lg-6 col-12 text-center text-lg-start mb-4 mb-lg-0">
+        <div class="col-md-6 mb-4 text-center text-md-start">
             <h3>Contact Me</h3>
             <p>To book an appointment, drop us a message using the contact form below or use our online appointment
                 <a href="{% url 'book_appointment' %}">booking system</a>.
@@ -52,7 +51,7 @@
             <h5>Other Ways to Reach Me</h5>
             <p><strong>Phone:</strong> (123) 456-7890</p>
             <p><strong>Email:</strong> info@physioapp.com</p>
-            <div class="d-flex justify-content-lg-start justify-content-center social-icons">
+            <div class="d-flex justify-content-start social-icons">
                 <a href="https://www.facebook.com/yourprofile" class="social-icon me-3" aria-label="Facebook">
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -63,7 +62,7 @@
         </div>
 
         <!-- Contact Form or Success Message -->
-        <div class="col-lg-6 col-12">
+        <div class="col-md-6 mb-4"> <!-- Add mb-4 for consistent spacing -->
             {% if success %}
                 <div class="alert alert-success" role="alert">
                     Your booking has been successful. We will get back to you shortly!
@@ -82,7 +81,7 @@
                 <form method="post" action="{% url 'about' %}">
                     {{ contact_form|crispy }}
                     {% csrf_token %}
-                    <button class="btn btn-secondary" type="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary mb-5 mt-2">Submit</button>
                 </form>
             {% endif %}
         </div>
