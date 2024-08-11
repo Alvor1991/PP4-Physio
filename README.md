@@ -235,22 +235,29 @@ View Appointments | ![View Appointments wireframe image](assets/wireframes/your_
 
 * Mobile-first, responsive design for all devices, ensuring a seamless experience across desktops, tablets, and smartphones.
 * Consistent navigation across all pages with hover effects for feedback, enhancing usability and user experience.
+* **Dynamic Navbar:** The navbar adapts based on user authentication status, providing relevant links and actions for both logged-in and guest users.
+    - **Home Link:** Redirects to the home page for easy navigation back to the main site.
+    - **About Link:** Provides access to detailed information about the therapist, their credentials, and philosophy.
+    - **Treatments Link:** Directs users to a page listing available treatments with descriptions and pricing.
+    - **My Appointments Link:** (Visible only to logged-in users) Allows users to view their scheduled appointments through a personalized dashboard.
+    - **Login/Logout Link:** Displays the login option for guests and a logout option for authenticated users, ensuring smooth session management.
+    - **Book Appointment Button:** Prominently displayed, this button redirects users to the appointment booking page. If the user is not logged in, it prompts them to sign up first.
 * Footer with contact info and social media links, providing easy access to contact details and social media profiles.
 
 ### Home Page
 
-* Overview of services and featured therapists, giving visitors a quick insight into the offerings and expertise.
+* Overview of services, giving visitors a quick insight into the offerings and expertise.
 * Quick links to book an appointment or view therapist profiles, facilitating easy navigation and action.
 * Client testimonials carousel, showcasing positive feedback from clients to build trust and credibility.
 
 ### About Page
 
-* Detailed information about the therapist, their credentials, and philosophy, helping clients understand the expertise and approach.
+* Detailed info about the therapist, their credentials, and philosophy, helping clients understand the expertise and approach.
 * Contact form for inquiries, allowing visitors to reach out with questions or requests for more information.
 
 ### Treatments Page
 
-* List of available treatments with descriptions and pricing, providing clear and detailed information about services offered.
+* List of available treatments with descriptions and pricing, providing clear and detailed info about services offered.
 * FAQ section to address common client questions, helping to answer typical inquiries and provide quick information.
 
 ### Appointments
