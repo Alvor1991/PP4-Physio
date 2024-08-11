@@ -117,7 +117,7 @@ GitHub projects were used as a project management tool with a Kanban board to tr
 
 #### Structure
 
-The website is organized using a Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features.
+The website is organized using a Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features. The flowchart was designed using [Mermaid](https://mermaid.js.org/).
 
 ![Sports Therapy Booking website map](assets/readme_files/flowchart.png)
 
@@ -142,79 +142,77 @@ The website is organized using a Flowchart to illustrate the user journey and in
 
 The database model was designed using [drawsql](https://drawsql.app/) and is managed with [PostgreSQL](https://www.postgresql.org/), a relational database.
 
-![Sports Therapy Management database model](assets/readme_files/db_model.png)
+![Sports Therapy Management database model](assets/readme_files/erdiagram.png)
 
 ### Home App
 
 **ClientTestimonial Model**
 
-* **Client Name**: A `CharField` that stores the name of the client providing the testimonial.
-* **Testimonial Text**: A `TextField` containing testimonials provided by users, describing their experience and satisfaction.
-* **Active**: A `BooleanField` indicating whether the testimonial is currently active and displayed on the website. 
-* **Date Added**: A `DateTimeField` of when the testimonial was added, allowing for tracking & organization of user feedback.
+The `ClientTestimonial` model model manages and displays client feedback on the website
 
-The `ClientTestimonial` model model manages and displays client feedback on the website, showcasing positive experiences and building credibility to attract potential clients
+* **Client Name**: A `CharField` that stores the name of the client providing the testimonial.
+* **Testimonial Text**: A `TextField` containing testimonials provided by users.
+* **Active**: A `BooleanField` indicating whether the testimonial is currently active and displayed on the website. 
+* **Date Added**: A `DateTimeField` of when the testimonial was added, allowing for tracking of feedback.
 
 ### About App
 
 **About Model**
 
-* **Title**: A `CharField` that stores the title of the "About Me" section.
-* **Content**: A `TextField` containing the main content of the "About Me" section, detailing the therapist’s background, philosophy, and credentials.
-
 The `About` model is designed to manage and present detailed information about the therapist, including their background and credentials.
 
+* **Title**: A `CharField` that stores the title of the "About Me" section.
+* **Content**: A `TextField` containing the main content of the "About Me" section.
+
 **ContactRequest Model**
+
+The `ContactRequest` model allows for efficient handling of client inquiries and communication.
 
 * **Name**: A `CharField` storing the name of the individual making the contact request.
 * **Email**: An `EmailField` for capturing the email address of the requester.
 * **Message**: A `TextField` containing the message or inquiry sent by the individual.
 * **Read**: A `BooleanField` indicating whether the message has been read. Defaults to `False`.
-* **Created On**: A `DateTimeField` that records when the contact request was created, providing a record of inquiries.
+* **Created On**: A `DateTimeField` that records when the contact request was created.
 
-The `ContactRequest` model allows for efficient handling of client inquiries and communication, supporting responsive interaction and client engagement with the therapist.
 
 ### Treatments App
 
 **Treatment Model**
 
+Each treatment offered by the therapist is detailed in the `Treatment` model.
+
 * **Name**: A `CharField` storing the name of the treatment.
 * **Description**: A `TextField` providing a detailed description of the treatment.
 * **Services Offered**: An optional `TextField` detailing the services provided as part of the treatment.
 * **Benefits**: An optional `TextField` outlining the benefits of the treatment.
-* **Price**: A `DecimalField` indicating the price of the treatment, with support for precision up to two decimal places.
+* **Price**: A `DecimalField` indicating the price of the treatment, up to two decimal places.
 * **Image**: A `CloudinaryField` used to store an optional image associated with the treatment.
-* **Button Text**: A `CharField` providing default text for call-to-action buttons related to booking appointments for the treatment.
-
-Each treatment offered by the therapist is detailed in the `Treatment` model, which allows clients to view information about various therapies, their benefits, and pricing.
+* **Button Text**: A `CharField` providing default text for call-to-action buttons related for booking appointments.
 
 **FAQ Model**
 
+The `FAQ` model is used to manage frequently asked questions.
+
 * **Question**: A `CharField` storing the frequently asked question.
 * **Answer**: A `TextField` containing the answer to the question.
-
-The `FAQ` model is used to manage frequently asked questions, providing clients with quick answers to common queries.
 
 ### Appointments App
 
 **Appointment Model**
 
+The `Appointment` model facilitates the scheduling & management of therapy sessions.
+
 * **User**: A foreign key from the `User` model that stores the client who has booked the appointment.
 * **Date**: The date of the appointment, stored as a `DateField`.
 * **Time**: The time of the appointment, stored as a `TimeField`.
 * **Notes**: Optional text field allowing the client to add additional notes or information for the appointment.
-* **Treatment**: A `CharField` representing the type of treatment selected for the appointment. It includes choices such as:
-  * Sports Therapy
-  * Orthotics
-  * Health Coaching
-
-The `Appointment` model facilitates the scheduling & management of therapy sessions, allowing clients to book treatments at convenience.
+* **Treatment**: A `CharField` representing the type of treatment selected for the appointment.
 
 ### Skeleton
 
 #### Wireframes
 
-[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
+[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site & display the placement of different elements.
 
 Page | Desktop Version | Mobile Version
 --- | --- | ---
