@@ -20,70 +20,70 @@
 
 ## Testing User Stories
 
-### 1. As a User, I Can Register an Account So That I Can Book and Manage My Appointments Online
+### 1. As a user, I can register an account so that I can book and manage my appointments online
 
 * AC1: Given a registration form, when I fill in my details and submit, my account is created.
 * AC2: When I enter a valid username and password, my account is successfully registered.
 * AC3: Then I am redirected to the "My Profile" page, where I see a message indicating that I have no bookings.
 
 
-### 2. As an Admin, I Can Manage Website Content So That I Can Keep Information Up-To-Date and Relevant for Users
+### 2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users
 
 * AC1: Given an admin dashboard, when I log in, I can access tools to edit and update the content on various pages.
 * AC2: When I update a treatment description, it is immediately reflected on the public site.
 * AC3: Then I can edit treatment content and prices to ensure accurate information is displayed.
 
 
-### 3. As a User, I Can Access the Website on Any Device So That I Have a Seamless Experience Regardless of Screen Size
+### 3. As a user, I can access the website on any device so that I have a seamless experience on all devices
 
 * AC1: Given a mobile device, the website layout adjusts to fit the screen.
 * AC2: When I resize the browser window, content remains readable and navigable.
 * AC3: Then the navigation menu collapses into a mobile-friendly version.
 
 
-### 4. As a User, I Can View the Home Page to Get an Overview of the Services So That I Learn More About the Website
+### 4. As a user, I can view the home page to get an overview of the services so that I learn more about the website
 
 * AC1: Given the home page, when I visit it, I see a welcoming introduction and an overview of available services.
 * AC2: When I scroll down, I see user testimonials that highlight the effectiveness of the services.
 * AC3: Then I see call-to-action buttons that direct me to book an appointment or learn more about treatments.
 
 
-### 5. As a User, I Can View Information About the Therapist So That I Can Learn About Their Credentials and Expertise
+### 5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise
 
 * AC1: Given the about page, when I visit it, I can see the therapist’s biography and credentials.
 * AC2: When I read the content, I understand the services offered and the therapist’s experience.
 * AC3: Then I can use the contact form to ask questions or request more information.
 
 
-### 6. As a User, I Can View a List of Available Treatments So That I Can Choose the Appropriate Therapy Session
+### 6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session
 
 * AC1: Given the treatments page, when I visit it, I see a list of available therapy services.
 * AC2: When I click on a treatment, I see a detailed description.
 * AC3: Then I understand the benefits and pricing of each treatment.
 
 
-### 7. As a User, I Can Create an Appointment So That I Can Schedule a Therapy Session
+### 7. As a user, I can create an appointment so that I can schedule a therapy session
 
 * AC1: Given a booking form, when I select a date and time, available slots are shown.
 * AC2: When I select a treatment type, it is added to my booking.
 * AC3: Then I receive a confirmation on the website once the appointment is created.
 
 
-### 8. As a User, I Can View a List of My Appointments So That I Can See My Scheduled Therapy Sessions
+### 8. As a user, I can view a list of my appointments so that I can see my scheduled therapy sessions
 
 * AC1: Given a list of appointments, when I log in, I can see upcoming and past bookings.
 * AC2: When I view the list, I can see details such as date, time, and treatment.
 * AC3: Then I can navigate to detailed appointment information if needed.
 
 
-### 9. As a User, I Can Update My Appointments So That I Can Change the Details of a Scheduled Session
+### 9. As a user, I can update my appointments so that I can change the details of a scheduled session
 
 * AC1: Given an appointment, when I choose to edit it, a form with current details is displayed.
 * AC2: When I update the date, time, or treatment, the appointment reflects these changes.
 * AC3: Then I receive confirmation on the website that the appointment has been updated.
 
 
-### 10. As a User, I Can Delete My Appointments So That I Can Cancel a Session I No Longer Need
+### 10. As a user, I can delete my appointments so that I can cancel a session I no longer need
 
 * AC1: Given an appointment, when I choose to delete it, I am prompted for confirmation.
 * AC2: When I confirm the deletion, the appointment is removed from my list.
@@ -134,7 +134,7 @@ No errors were found.
 
 ## Accessibility
 
-Lighthouse in Chrome DevTools was used to confirm that the colors and fonts used throughout the website are easy to read and accessible. See the reports below:
+Lighthouse in Chrome DevTools was used to confirm that the colors and fonts used throughout the website are easy to read and accessible.
 
 ### Lighthouse Reports
 
@@ -150,7 +150,7 @@ Page | Lighthouse Report |
 
 ### [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
 
-Chrome DevTools was used throughout the development process to test, explore, and modify HTML elements and CSS styles used in the project.
+Chrome DevTools was used throughout the development process to test, explore, and modify HTML elements and CSS styles.
 
 ### Responsiveness
 
@@ -183,8 +183,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
 
 ### Test Results
 
-#### Base HTML Page
-
 <table>
     <tr>
         <th colspan=2>Feature</th>
@@ -194,7 +192,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=14>Navigation Bar</td>
+        <td rowspan=18>Navigation Bar</td>
         <td rowspan=2>Main logo link</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
@@ -255,7 +253,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>My Appointments</td>
+        <td rowspan=2>My Appointments link</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
         <td>Clicking the link redirects to the Appointments page.</td>
@@ -282,11 +280,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>All</td>
         <td>Functionality</td>
         <td>Clicking the button toggles the navigation menu.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Responsive navigation menu on smaller screens.<br>Hover effect working as expected.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -605,7 +598,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Submit Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the submit button successfully submits the form and books the appointment.</td>
+        <td>Clicking the submit button successfully submits form & books the appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -629,48 +622,48 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Date Field</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Date field allows users to select a date for the appointment. Past dates are disabled.</td>
+        <td>Allows users to select a date for the appointment. Past dates are disabled.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Date picker is styled consistently with the overall design and is user-friendly.</td>
+        <td>Styled consistently with the overall design and is user-friendly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>Time Slot Field</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Time slot field populates available time slots based on the selected date.</td>
+        <td>Populates available time slots based on the selected date.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Dropdown for time slots is styled consistently with the overall design and is user-friendly.</td>
+        <td>Dropdown for time slots is styled consistently with the overall design & is user-friendly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>Treatment Field</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Treatment field allows users to select the desired treatment for the appointment.</td>
+        <td>Allows users to select the desired treatment for the appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Treatment dropdown is styled consistently with the overall design and is user-friendly.</td>
+        <td>Treatment dropdown is styled consistently with the overall design & is user-friendly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>Notes Field</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Notes field allows users to add any additional information or requests for the appointment.</td>
+        <td>Allows users to add any additional information or requests for the appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Notes textarea is styled consistently with the overall design and is user-friendly.</td>
+        <td>Notes textarea is styled consistently with the overall design & is user-friendly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
@@ -689,19 +682,19 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Appointments Table</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>The table displays appointment details such as date, time, treatment, and notes correctly.</td>
+        <td>Displays appointment details such as date, time, treatment, and notes correctly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>The table is styled consistently with the overall design and is responsive.</td>
+        <td>Styled consistently with the overall design and is responsive.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td rowspan=2>Update Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the update button redirects to the update appointment page for the correct appointment.</td>
+        <td>Clicking the update button redirects to the update appointment page for correct appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -713,7 +706,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Delete Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the delete button triggers a confirmation modal for the correct appointment.</td>
+        <td>Clicking the delete button triggers a confirmation modal for correct appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -725,7 +718,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Delete Confirmation Modal</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>The modal displays the correct appointment details and allows the user to confirm or cancel the deletion.</td>
+        <td>The modal displays the correct appointment details & allows the user to confirm or cancel deletion.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -761,7 +754,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Update Form</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>The form allows users to update the date, time slot, treatment, and notes for an appointment.</td>
+        <td>Allows users to update the date, time slot, treatment, and notes for an appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -773,7 +766,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Update Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the update button successfully updates the appointment and redirects to the user appointments page.</td>
+        <td>Clicking the update button successfully updates the appointment & redirects to user appointments.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -785,7 +778,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Cancel Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the cancel button redirects back to the user appointments page without making any changes.</td>
+        <td>Clicking the cancel button redirects back to the user appointments without making any changes.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -821,7 +814,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Delete Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the delete button successfully deletes the appointment and redirects to the user appointments page.</td>
+        <td>Clicking the delete button successfully deletes the appointment & redirects to user appointments.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -833,7 +826,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Cancel Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the cancel button redirects back to the home page without deleting the appointment.</td>
+        <td>Clicking the cancel button redirects back to the home page without deleting appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
