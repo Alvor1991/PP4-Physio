@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+# Define URL patterns for the appointments app
 urlpatterns = [
     path('book/', views.book_appointment, name='book_appointment'),
     path('update/<int:pk>/', views.update_appointment, name='update_appointment'),

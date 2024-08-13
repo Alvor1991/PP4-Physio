@@ -183,6 +183,8 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
 
 ### Test Results
 
+#### Base HTML 
+
 <table>
     <tr>
         <th colspan=2>Feature</th>
@@ -192,7 +194,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=18>Navigation Bar</td>
+        <td rowspan=16>Navigation Bar</td>
         <td rowspan=2>Main logo link</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
@@ -277,7 +279,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>All</td>
+        <td rowspan=2>Responsive Toggle Menu</td>
         <td>Functionality</td>
         <td>Clicking the button toggles the navigation menu.</td>
         <td><span style="color:green">Pass</span></td>
@@ -288,19 +290,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=10>Footer</td>
-        <td rowspan=2>Logo link</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Clicking the link redirects to the home page.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
+        <td rowspan=8>Footer</td>
         <td rowspan=2>Facebook icon</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
@@ -317,6 +307,18 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>All</td>
         <td>Functionality</td>
         <td>Clicking the link opens Instagram page on a separate tab.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Hover effect working as expected.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Logo link</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Clicking the link redirects to the home page.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>

@@ -72,6 +72,7 @@ a {
 
 .card img {
   border-bottom: 3px solid #0a5d61;
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
 }
 
 .banner-container {
@@ -118,12 +119,13 @@ a {
 
 /* Footer */
 .footer {
-  background-color: #f7f6e5;
+  background-color: #fdfdfb;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-top: 4rem;
   flex-shrink: 0;
   border-top: 2px solid #0a5d61;
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
 }
 
 .footer h3 {
@@ -137,7 +139,6 @@ a {
 }
 
 .social-icon {
-  color: #ffffff;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
@@ -184,7 +185,6 @@ a {
 /* Cards */
 .card {
   border: none;
-  background-color: #f7f6e5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
@@ -300,9 +300,9 @@ About Page
 =================================== */
 
 .about-image {
-  height: 150px;
+  height: 300px;
   object-fit: cover;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 /* ===================================
