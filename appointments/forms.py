@@ -17,15 +17,14 @@ class DateInput(forms.DateInput):
 class AppointmentForm(forms.ModelForm):
     """
     Form for creating or updating an appointment.
-    Includes fields for date, time slot, treatment, and notes.
+    Includes fields for date, time slot, and treatment.
     """
-    date = forms.DateField(widget=DateInput)  # Date field with a custom date picker widget
-    time_slot = forms.ChoiceField(choices=[], required=True, label="Time Slot")  # Time slot field populated dynamically
-    notes = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'Please describe your issue'}), required=False)  # Optional notes field with a placeholder
+    date = forms.DateField(widget=DateInput)  
+    time_slot = forms.ChoiceField(choices=[], required=True, label="Time Slot")  
 
     class Meta:
         model = Appointment
-        fields = ['date', 'time_slot', 'treatment', 'notes']  # Specifies the fields to include in the form
+        fields = ['date', 'time_slot', 'treatment']  # 'notes' field removed
 
     def __init__(self, *args, **kwargs):
         """
@@ -36,25 +35,25 @@ class AppointmentForm(forms.ModelForm):
         if 'date' in self.data:
             try:
                 date = self.data.get('date')
-                available_slots = get_available_time_slots(date)  # Fetch available time slots for the selected date
-                self.fields['time_slot'].choices = [(slot, slot) for slot in available_slots]  # Populate time_slot choices
+                available_slots = get_available_time_slots(date)  
+                self.fields['time_slot'].choices = [(slot, slot) for slot in available_slots]  
             except (ValueError, TypeError):
-                self.fields['time_slot'].choices = []  # If date is invalid, set an empty choice list
+                self.fields['time_slot'].choices = []  
         elif self.instance and self.instance.pk:
             # If the form is being used to update an existing appointment
             date = self.instance.date
             available_slots = get_available_time_slots(date)
             self.fields['time_slot'].choices = [(slot, slot) for slot in available_slots]
-            self.fields['time_slot'].initial = self.instance.time.strftime('%H:%M')  # Set the initial value to the existing time slot
+            self.fields['time_slot'].initial = self.instance.time.strftime('%H:%M')  
         else:
-            self.fields['time_slot'].choices = []  # Set an empty choice list if no date is provided
+            self.fields['time_slot'].choices = []  
 
     def save(self, commit=True):
         """
         Save the form, ensuring the time slot is saved correctly as a time object.
         """
         appointment = super().save(commit=False)
-        appointment.time = datetime.strptime(self.cleaned_data['time_slot'], '%H:%M').time()  # Convert selected time slot to a time object
+        appointment.time = datetime.strptime(self.cleaned_data['time_slot'], '%H:%M').time() 
         if commit:
             appointment.save()  # Save the appointment if commit is True
         return appointment

@@ -3,7 +3,7 @@ from .models import Appointment
 
 @admin.register(Appointment)
 class AppointmentAdmin(admin.ModelAdmin):
-    list_display = ('user', 'formatted_date', 'formatted_time', 'treatment', 'notes')
+    list_display = ('user', 'formatted_date', 'formatted_time', 'treatment')  # 'notes' removed
     search_fields = ('user__username', 'treatment')
     list_filter = ('date', 'time', 'treatment')
 

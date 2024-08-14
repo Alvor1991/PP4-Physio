@@ -17,7 +17,6 @@ class Appointment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateField()
     time = models.TimeField()
-    notes = models.TextField(blank=True, null=True)
     treatment = models.CharField(max_length=50, choices=TREATMENT_CHOICES, default='physio')
 
     def __str__(self):
