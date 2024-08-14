@@ -144,7 +144,8 @@ Page | Lighthouse Report |
 | About | ![About Lighthouse Report](assets/testing_files/lighthouse_about.jpg) |
 | Treatments | ![Register Lighthouse Report](assets/testing_files/lighthouse_treatments.jpg) |
 | Login | ![Login Lighthouse Report](assets/testing_files/lighthouse_login.jpg) |
-| My appointments | ![Booking Lighthouse Report](assets/testing_files/lighthouse_appointments.jpg) |
+| Signup | ![Signup Lighthouse Report](assets/testing_files/lighthouse_signup.jpg) |
+| My appointments | ![Booking Lighthouse Report](assets/testing_files/lighthouse_myappointments.jpg) |
 
 ## Tools Testing
 
@@ -173,13 +174,10 @@ Microsoft Edge | No appearance, responsiveness, or functionality issues. | <span
 
 Device | Operating System | Outcome | Pass/Fail
 --- | --- | --- | --- |
-Dell Optiplex 7060 | Windows 11 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 MacBook Pro 15" | macOS Big Sur | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
-Dell Latitude 5300 | Windows 10 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 iPad Pro 12.9" | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
-iPad Pro 10.5" | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 iPhone XR | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
-iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
+iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 
 ### Test Results
 
@@ -589,7 +587,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Booking Form</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Form fields for date, time slot, treatment, and notes render correctly and are functional.</td>
+        <td>Form fields for date, time slot, and treatment render correctly and are functional.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -657,18 +655,6 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td>Treatment dropdown is styled consistently with overall design & is user-friendly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
-    <tr>
-        <td rowspan=2>Notes Field</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Allows users to add any additional information or requests for the appointment.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Notes textarea is styled consistently with overall design & is user-friendly.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
 </table>
 
 #### User Appointments Page
@@ -685,7 +671,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Appointments Table</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Displays appointment details such as date, time, treatment, and notes correctly.</td>
+        <td>Displays appointment details such as date, time and treatment correctly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -757,7 +743,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Update Form</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Users can update the date, time slot, treatment, and notes for an appointment.</td>
+        <td>Users can update the date, time slot, and treatment for an appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
