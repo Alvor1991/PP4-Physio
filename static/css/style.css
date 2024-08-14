@@ -125,7 +125,7 @@ a {
   margin-top: 4rem;
   flex-shrink: 0;
   border-top: 2px solid #0a5d61;
-  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -8px 12px -2px rgba(0, 0, 0, 0.2);
 }
 
 .footer h3 {
@@ -243,7 +243,7 @@ a {
   height: 100%;
   border: none;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -8px 12px -2px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -462,5 +462,10 @@ Appointments Page
 
   .alert-success {
     margin-top: 30px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+  margin-top: 140px;
   }
 }

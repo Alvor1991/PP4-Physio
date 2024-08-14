@@ -280,6 +280,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td rowspan=2>Responsive Toggle Menu</td>
+        <td rowspan=2>All</td>
         <td>Functionality</td>
         <td>Clicking the button toggles the navigation menu.</td>
         <td><span style="color:green">Pass</span></td>
@@ -400,7 +401,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Carousel controls are styled consistently with the overall design.</td>
+        <td>Carousel controls are styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -468,12 +469,12 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Content Sections</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Content sections for "Professional Journey and Mission", "Credentials", "My Philosophy", and "Contact Me" render correctly.</td>
+        <td>Content sections render correctly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
         <td>Style</td>
-        <td>Even vertical spacing between content sections, ensuring readability and a clean layout.</td>
+        <td>Even spacing between content sections, ensuring readability and a clean layout.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -516,7 +517,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Card Display</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Each treatment is displayed as a card with an image, title, description, and a "Learn More" button.</td>
+        <td>Treatments are displayed as a card with an image, title, description, and a button.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -540,7 +541,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Learn More Button</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the "Learn More" button redirects to a detailed page for the specific treatment.</td>
+        <td>Button redirects to a detailed page for the specific treatment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -600,7 +601,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Submit Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the submit button successfully submits form & books the appointment.</td>
+        <td>Clicking submit button successfully submits form & books appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -641,7 +642,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Dropdown for time slots is styled consistently with the overall design & is user-friendly.</td>
+        <td>Time slot dropdown is styled consistently with overall design & is user-friendly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -653,7 +654,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Treatment dropdown is styled consistently with the overall design & is user-friendly.</td>
+        <td>Treatment dropdown is styled consistently with overall design & is user-friendly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -665,7 +666,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Notes textarea is styled consistently with the overall design & is user-friendly.</td>
+        <td>Notes textarea is styled consistently with overall design & is user-friendly.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
@@ -701,7 +702,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
     </tr>
     <tr>
         <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with overall design.</td>
+        <td>Button has a hover effect & is styled consistently with overall design.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -756,7 +757,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Update Form</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Allows users to update the date, time slot, treatment, and notes for an appointment.</td>
+        <td>Users can update the date, time slot, treatment, and notes for an appointment.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -780,7 +781,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Cancel Button</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the cancel button redirects back to the user appointments without making any changes.</td>
+        <td>Redirects back to the user appointments without making any changes.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -804,7 +805,7 @@ iPhone 7 | iOS 15 | No appearance, responsiveness, or functionality issues. | <s
         <td rowspan=2>Confirmation Message</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Confirmation message displays the correct appointment date and time.</td>
+        <td>Confirmation message displays the correct appointment date & time.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
