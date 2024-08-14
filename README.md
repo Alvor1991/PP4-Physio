@@ -125,18 +125,18 @@ The website is organized using a Flowchart to illustrate the user journey and in
 
 #### Non-Logged-In Users:
 * **Home Page**: an overview of the services offered, client testimonials, and quick links to book an appointment
-* **About Page**: detailed information about the therapist, their credentials, and philosophy. It also includes a contact form.
+* **About Page**: detailed infor about the therapist's credentials and philosophy. It also includes a contact form.
 * **Treatments Page**: all available treatments with descriptions and pricing, along with a FAQ section.
 * **Login Page**: allows users to log in to access personalized features like appointment management.
-* **Book Appointment**: prominently displayed for easy access; redirects non-logged-in users to log in before booking an appointment.
+* **Book Appointment**: direct accesses to booking form; redirects users to log in before booking an appointment.
 
 #### Logged-In Users:
-* **Home Page**: Same as for non-logged-in users, but with access to additional features.
-* **About Page**: Same content as for non-logged-in users, including the ability to submit a contact form.
-* **Treatments Page**: Same for non-logged-in users, listing treatments & providing detailed descriptions and pricing.
-* **My Appointments Page**: Allows logged-in users to view, edit, or delete their scheduled appointments.
-* **Logout**: Allows users to securely log out of their account.
-* **Book Appointment**: Directly accesses the booking form where users can schedule their appointments.
+* **Home Page**: same for non-logged-in users.
+* **About Page**: same for non-logged-in users.
+* **Treatments Page**: same for non-logged-in users.
+* **My Appointments Page**: allows users to view, edit, or delete their scheduled appointments.
+* **Logout**: allows users to securely log out of their account.
+* **Book Appointment**: direct accesses to booking form; users can schedule their appointments.
 
 #### Database Model
 
@@ -159,7 +159,7 @@ The `ClientTestimonial` model model manages and displays client feedback on the 
 
 **About Model**
 
-The `About` model is designed to manage and present detailed information about the therapist, including their background and credentials.
+The `About` model is designed to manage and present detailed information about the therapist.
 
 * **Title**: A `CharField` that stores the title of the "About Me" section.
 * **Content**: A `TextField` containing the main content of the "About Me" section.
@@ -205,14 +205,13 @@ The `Appointment` model facilitates the scheduling & management of therapy sessi
 * **User**: A foreign key from the `User` model that stores the client who has booked the appointment.
 * **Date**: The date of the appointment, stored as a `DateField`.
 * **Time**: The time of the appointment, stored as a `TimeField`.
-* **Notes**: Optional text field allowing the client to add additional notes or information for the appointment.
 * **Treatment**: A `CharField` representing the type of treatment selected for the appointment.
 
 ### Skeleton
 
 #### Wireframes
 
-[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site & display the placement of different elements.
+[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site & display the placement of different elements. I removed 'notes' from the booking form, as I felt this was unnecessary. Users can ask detailed questions in the contact form.  
 
 Page | Desktop Version | Mobile Version
 --- | --- | ---
@@ -272,7 +271,7 @@ View Appointments | ![View Appointments wireframe image](assets/wireframes/your_
 * View Appointments: dashboard for registered users to view their scheduled appointments.
 * Update Appointment: users can edit appointments, providing flexibility to manage their schedules.
 * Delete Appointment: user casn cancel appointments if no longer needed.
-* Confirmation messages after successful bookings, updates, or deletions to inform users of appointment status.
+* Confirmation messages after successful bookings, updates & deletions to inform users of appointment status.
 
 ### Error Handling
 

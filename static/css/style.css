@@ -440,6 +440,15 @@ Appointments Page
   overflow-y: auto; /* Ensure scrolling works if content is tall */
 }
 
+.btn-danger {
+  background-color: #8B0000 !important; /* Crimson Red, or choose another dark red */
+  border-color: #8B0000 !important; /* Ensure the border matches the button */
+}
+
+.form-control {
+  width: 50%;
+}
+
 /* Media Queries */
 @media (max-width: 767.98px) {
   .text-md-end {
@@ -478,11 +487,5 @@ Appointments Page
 
   .navbar-nav .nav-item {
     margin-bottom: 0.5rem;
-  }
-
-  .form-narrow {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
