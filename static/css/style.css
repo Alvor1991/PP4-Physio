@@ -430,6 +430,15 @@ Appointments Page
   z-index: 1040;
 }
 
+.modal-dialog {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+}
 
 /* Media Queries */
 @media (max-width: 767.98px) {
