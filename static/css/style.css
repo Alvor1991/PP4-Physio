@@ -216,11 +216,6 @@ a {
   background-color: #23bbbb;
 }
 
-.btn-secondary {
-  background-color: #f7f6e5;
-  color: #0a5d61;
-}
-
 .banner-image {
   width: 100%;
   height: auto;
@@ -426,16 +421,6 @@ Appointments Page
 .user-appointments-page .btn-warning:focus {
   background-color: #007f99;
   transform: translateY(-2px);
-}
-
-.caption {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #0a5d61;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 /* Media Queries */
