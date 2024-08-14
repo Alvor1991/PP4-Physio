@@ -462,4 +462,10 @@ Appointments Page
   .navbar-nav .nav-item {
     margin-bottom: 0.5rem;
   }
+
+  .form-narrow {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
