@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['8000-alvor1991-pp4physio-pw1n6yw5d9k.ws.codeinstitute-ide.net', '.herokuapp.com']
 
 INSTALLED_APPS = [
@@ -97,11 +97,10 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com"
 ]
 
-# Allauth settings
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_USERNAME_REQUIRED = True
-ACCOUNT_AUTHENTICATION_METHOD = "username_email"  # Allow both username and email if desired
+ACCOUNT_AUTHENTICATION_METHOD = "username_email" 
 
 ACCOUNT_FORMS = {
     'signup': 'home.forms.CustomSignupForm',
