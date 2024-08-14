@@ -70,11 +70,6 @@ a {
   color: #fff;
 }
 
-.card img {
-  border-bottom: 3px solid #0a5d61;
-  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
-}
-
 .banner-container {
   position: relative;
 
@@ -184,6 +179,7 @@ a {
 
 /* Cards */
 .card {
+  background-color: #fff;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
@@ -309,6 +305,11 @@ About Page
 /* ===================================
 Treatments Page
 =================================== */
+
+.card img {
+  border-bottom: 3px solid #0a5d61;
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
+}
 
 /* FAQ */
 .accordion-button {
@@ -459,11 +460,11 @@ Appointments Page
   }
 
   .row {
-    margin-bottom: 1.5rem !important; /* Adjust row spacing to be more consistent */
+    margin-bottom: 1.5rem !important; 
   }
 
   .mb-4 {
-    margin-bottom: 1.5rem !important; /* Ensure column spacing is consistent within rows */
+    margin-bottom: 1.5rem !important;
   }
 
   .alert-success {
@@ -473,5 +474,9 @@ Appointments Page
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
   margin-top: 140px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
   }
 }
