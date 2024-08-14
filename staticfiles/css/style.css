@@ -1,162 +1,465 @@
+/* ===================================
+   General Styles
+   =================================== */
 body {
-    background-color: #F9FAFC;
+  background-color: #fdfdfb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
 }
 
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #0a5d61;
+  margin-bottom: 25px;
 }
 
-.red-o {
-    color: #E84610;
+h2 {
+  font-size: 36px;
+  line-height: 1.3;
+  color: #333;
 }
 
-.thin {
-    font-weight: 300;
+h3 {
+  font-size: 28px;
+  line-height: 1.4;
 }
 
-.light-bg {
-    background-color: #fff;
+h6 {
+  margin-bottom: 10px;
 }
 
-.dark-bg {
-    background-color: #445261;
+p,
+a,
+span,
+li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 2;
+  color: #333;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
 }
 
+ul {
+  padding-left: 0;
+}
+
+a {
+  color: #0a5d61;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn-primary {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  background-color: #0a5d61;
+  color: #fff;
+}
+
+.banner-container {
+  position: relative;
+
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 2px solid #0a5d61;
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f7f6e5;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Header and Branding */
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+
+.navbar {
+  background-color: #fdfdfb;
+  border-bottom: 2px solid #0a5d61;
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  background-color: #fdfdfb;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  flex-shrink: 0;
+  border-top: 2px solid #0a5d61;
+  box-shadow: 0 -8px 12px -2px rgba(0, 0, 0, 0.2);
+}
+
+.footer h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Margin and Padding */
+.mb-4 {
+  margin-bottom: 3rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mt-3 {
+  margin-top: 3rem !important;
+}
+
+.pb-5 {
+  padding-bottom: 3rem !important;
+}
+
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
+/* ===================================
+   Home Page
+=================================== */
+
+.welcome-section {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.welcome-section p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Cards */
 .card {
-    border: none;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #188181;
-}
-
-.scale {
-    width: 100%;
-    height: auto;
-}
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
-.appointment-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.appointment-link:hover,
-.page-link {
-    color: #E84610;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
 }
 
 .card-title {
-    margin-top: 10%;
-    margin-left: 5%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0a5d61;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
 .card-subtitle {
-    margin-left: 5%;
-    color: lightgray;
+  font-size: 1rem;
+  color: #445261;
+  margin-left: 5%;
 }
 
-.btn-book,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
+.card-text {
+  font-size: 1rem;
+  color: #666;
 }
 
-.btn-book:hover,
-.btn-book:active {
-    background-color: #fff;
-    color: #23BBBB;
+.btn-primary {
+  background-color: #0a5d61;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
-.link {
-    color: #23BBBB;
-    text-decoration: none;
+.btn-primary:hover {
+  background-color: #23bbbb;
 }
 
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
+.banner-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
+.banner-image img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
 }
 
-.btn-delete {
-    color: #fff;
-    background: #E84610;
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
+.service-card:hover {
+  transform: translateY(-10px);
 }
 
-.faded {
-    color: rgb(172, 175, 175);
+.service-card .card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.approval {
-    color: rgb(222, 146, 168);
+.service-card i {
+  color: #0a5d61;
+}
+
+.cta-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.testimonial {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #0a5d61;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0a5d61;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* ===================================
+About Page
+=================================== */
+
+.about-image {
+  height: 300px;
+  object-fit: cover;
+  max-width: 300px;
+}
+
+/* ===================================
+Treatments Page
+=================================== */
+
+.card img {
+  border-bottom: 3px solid #0a5d61;
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ */
+.accordion-button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #0a5d61;
+  color: #f7f6e5;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+  background-color: #23bbbb;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #445261;
+  color: #f7f6e5;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button::after {
+  color: #f7f6e5; 
+  filter: none;
+}
+
+.accordion-header {
+  margin-bottom: 0;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.accordion-body {
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9fafc;
+  padding: 1rem;
+  border-top: 1px solid #e3e3e3;
+}
+
+/* ===================================
+Signup Page
+=================================== */
+
+.signup-page .card,
+.login-page .card,
+.user-appointments-page .card {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.signup-page .card-title,
+.login-page .card-title,
+.user-appointments-page .card-title {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #445261;
+}
+
+.signup-page .btn-primary,
+.login-page .btn-primary {
+  background-color: #0a5d61;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-page .btn-primary:hover,
+.signup-page .btn-primary:focus,
+.login-page .btn-primary:hover,
+.login-page .btn-primary:focus {
+  background-color: #23bbbb;
+  transform: translateY(-2px);
+}
+
+.signup-page .link,
+.login-page .link,
+.user-appointments-page .link {
+  color: #0a5d61;
+  text-decoration: none;
+}
+
+.signup-page .link:hover,
+.signup-page .link:focus,
+.login-page .link:hover,
+.login-page .link:focus,
+.user-appointments-page .link:hover,
+.user-appointments-page .link:focus {
+  color: #445261;
+  text-decoration: underline;
+}
+
+/* ===================================
+Appointments Page
+=================================== */
+
+.user-appointments-page .btn-warning {
+  background-color: #005f73;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.user-appointments-page .btn-warning:hover,
+.user-appointments-page .btn-warning:focus {
+  background-color: #007f99;
+  transform: translateY(-2px);
+}
+
+/* Media Queries */
+@media (max-width: 767.98px) {
+  .text-md-end {
+    text-align: center !important;
+  }
+
+  .footer .container .row>div {
+    margin-bottom: 15px;
+  }
+
+  .text-center .text-md-left {
+    text-align: center !important;
+  }
+
+  .text-md-left ul {
+    text-align: left !important;
+  }
+
+
+  .row {
+    margin-bottom: 1.5rem !important; 
+  }
+
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .alert-success {
+    margin-top: 30px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+  margin-top: 140px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
 }
