@@ -1,4 +1,4 @@
-# PhysioApp
+# SportsTherapy
 
 ![PhysioApp mockup images](assets/readme_files/mockup_image.jpg)
 
@@ -100,7 +100,7 @@ The project will focus on delivering essential features for the first release, b
 
 #### User Stories
 
-GitHub projects were used as a project management tool with a Kanban board to track user stories and monitor progress:
+GitHub projects was used as a project management tool with a Kanban board to track user stories & monitor progress:
 
 **Start**
 ![User Stories Progress - Start](assets/readme_files/start.png)
@@ -261,7 +261,7 @@ The `Appointment` model facilitates the scheduling & management of therapy sessi
 
 #### Wireframes
 
-[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site & display the placement of different elements. I removed 'notes' from the booking form, as I felt this was unnecessary. Users can ask detailed questions in the contact form.  
+[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site & display the placement of different elements. 
 
 Page | Desktop Version | Mobile Version
 --- | --- | ---
@@ -519,15 +519,9 @@ Page | Desktop | Mobile |
 
 * [iStock](https://www.istockphoto.com/)
 
-    * Health Coaching image: taken by [designer491](https://www.pexels.com/@buro-millennial-636760/).
-
-    * Orthotics image: taken by [Andrey Popov](https://www.pexels.com/@buro-millennial-636760/).
-
-    * Ort image: taken by [Andrey Popov](https://www.pexels.com/@buro-millennial-636760/).
-
-* [Unsplash](https://unsplash.com/)
-
-    * 404 Error Page image: Taken by [Tai Bui](https://unsplash.com/@agforl24).
+* Health Coaching image: taken by [designer491](https://www.pexels.com/@buro-millennial-636760/).
+* Orthotics image: taken by [Andrey Popov](https://www.pexels.com/@buro-millennial-636760/).
+* Ort image: taken by [Andrey Popov](https://www.pexels.com/@buro-millennial-636760/).
 
 ### Code
 

@@ -59,8 +59,7 @@ W3C CSS Validator found no errors or warnings in the CSS.
 
 ### Python
 
-[PEP8 online](http://pep8online.com/) was used to validate the Python code for PEP8 compliance. As there many files to assess within each app, I have focused on the appointment app for this testing section. This approach resolves the PEP 8 warnings for line length while keeping the code clean and readable.
-The validation results are shown below:
+[PEP8 online](http://pep8online.com/) was used to validate the Python code for PEP8 compliance. As there many files to assess within each app, I have focused on the appointment app for this testing section. 
 
 | Location | Errors / Warnings | Code Reviewed |
 | --- | --- | --- |
@@ -81,13 +80,13 @@ No errors were found.
 
 ## Accessibility
 
-Lighthouse in Chrome DevTools was used to confirm that the colors and fonts used throughout the website are easy to read and accessible.
+Lighthouse in Chrome DevTools was used to confirm that colors & fonts used throughout the website are easy to read and accessible.
 
 ### Lighthouse Reports
 
 Page | Lighthouse Report |
 | --- | --- |
-| Index | ![Index Lighthouse Report](assets/testing_files/lighthouse_index.jpg) |
+| Home | ![Index Lighthouse Report](assets/testing_files/lighthouse_index.jpg) |
 | About | ![About Lighthouse Report](assets/testing_files/lighthouse_about.jpg) |
 | Treatments | ![Register Lighthouse Report](assets/testing_files/lighthouse_treatments.jpg) |
 | My appointments | ![Booking Lighthouse Report](assets/testing_files/lighthouse_myappointments.jpg) |
