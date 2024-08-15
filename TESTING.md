@@ -96,11 +96,15 @@
 
 The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the HTML code of the project to ensure there were no syntax errors.
 
-W3C Markup Validator found the following errors in `index.html`:
+W3C Markup Validator found the following errors in `base.html`:
 
-![index.html validation errors image](assets/testing_files/index_validation_errors.jpg)
+![home.html validation errors image](assets/testing_files/base_errors.png)
 
-The errors were resolved by correcting the invalid HTML elements and ensuring all tags were properly closed.
+Moved the modal inside the body tag.
+
+![treatments.html validation errors image](assets/testing_files/treatment_errors.png)
+
+Wrapped Content with a div instead of p and removed redundant closing tags. 
 
 ![index.html validation](assets/testing_files/index_validation.jpg)
 
