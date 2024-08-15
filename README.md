@@ -102,6 +102,60 @@ The project will focus on delivering essential features for the first release, b
 
 GitHub projects were used as a project management tool with a Kanban board to track user stories, focus on tasks, and monitor progress.
 
+**Story points** are assigned using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
+
+### 1. User can register an account to book and manage appointments (**3 Story Points**)
+* AC1: Register with a form, account is created.
+* AC2: Valid username and password register the account.
+* AC3: Redirected to "My Profile" page, see a no bookings message.
+
+### 2. Admin can manage content to keep info up-to-date (**8 Story Points**)
+* AC1: Admin dashboard access to edit/update content.
+* AC2: Treatment updates reflected on the public site.
+* AC3: Edit treatment content and prices accurately.
+
+### 3. User can access the website on any device for a seamless experience (**3 Story Points**)
+* AC1: Website layout adjusts to fit mobile screens.
+* AC2: Content remains readable when resizing the browser.
+* AC3: Navigation menu collapses into mobile-friendly version.
+
+### 4. User can view the home page to get an overview of services (**3 Story Points**)
+* AC1: Home page shows introduction and service overview.
+* AC2: Scroll to see user testimonials.
+* AC3: Call-to-action buttons for booking or learning more.
+
+### 5. User can view therapist info to learn about credentials (**3 Story Points**)
+* AC1: About page shows therapist’s biography and credentials.
+* AC2: Read content to understand services and experience.
+* AC3: Contact form for questions or more information.
+
+### 6. User can view treatments to choose appropriate therapy (**5 Story Points**)
+* AC1: Treatments page lists available services.
+* AC2: Click on treatment to see detailed description.
+* AC3: Understand benefits and pricing of each treatment.
+
+### 7. User can create an appointment to schedule a therapy session (**5 Story Points**)
+* AC1: Booking form shows available slots.
+* AC2: Selected treatment is added to the booking.
+* AC3: Confirmation received once appointment is created.
+
+### 8. User can view appointments to see scheduled sessions (**5 Story Points**)
+* AC1: Log in to see upcoming and past bookings.
+* AC2: View details like date, time, and treatment.
+* AC3: Navigate to detailed appointment information.
+
+### 9. User can update appointments to change session details (**5 Story Points**)
+* AC1: Edit appointment to see current details.
+* AC2: Update date, time, or treatment, reflecting changes.
+* AC3: Confirmation received after updating appointment.
+
+### 10. User can delete appointments to cancel a session (**5 Story Points**)
+* AC1: Delete appointment prompts for confirmation.
+* AC2: Confirm to remove appointment from the list.
+* AC3: Message confirms appointment cancellation.
+
+Below is the Kanban board I uses to track user stories:
+
 **Start**
 ![User Stories Progress - Start](assets/readme_files/start.png)
 
@@ -227,6 +281,29 @@ View Appointments | ![View Appointments wireframe image](assets/wireframes/your_
 ### Surface
 
 #### Color Scheme
+
+The color scheme for the Sports Therapy Management website was carefully chosen to create a calming, professional, and accessible user experience. The primary colors are used consistently across the site to maintain a cohesive and modern design.
+
+- **Primary Color (Teal Green):** `#0a5d61` - used for headings, buttons, and key interface elements
+  - represents trust, professionalism, and health, which aligns with the therapeutic nature of the site.
+
+- **Accent Color (Lighter Teal):** `#23bbbb` - used for hover effects and interactions
+  - provides a subtle yet noticeable contrast that enhances the user experience without being overly aggressive.
+
+- **Secondary Color (Dark Gray):** `#333333` - used for body text and general content
+  - ensures readability while complementing the primary teal.
+
+- **Highlight Color (Crimson Red):** `#8B0000` - used sparingly actions such as cancel & delete buttons
+  - effectively draws attention without clashing with the overall design.
+
+- **Neutral Background (Light Gray):** `#fdfdfb` - used as the primary background color
+  - provides a clean and neutral backdrop that allows the content to stand out.
+
+- **Footer and Borders (Muted Gray):** `#f9fafc` - used in the footer and for subtle border elements
+  - ensures a gentle visual separation between different sections of the site.
+
+- **Link Color:** `#0a5d61` - styled with the primary teal color, maintaining consistency across the site
+  - on hover, they transition to the lighter teal (`#23bbbb`), providing a visual cue to users.
 
 ![Color scheme image](assets/readme_files/color_scheme.png)
 

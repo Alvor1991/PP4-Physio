@@ -21,74 +21,15 @@
 ## Testing User Stories
 
 ### 1. As a user, I can register an account so that I can book and manage my appointments online
-
-* AC1: Given a registration form, when I fill in my details and submit, my account is created.
-* AC2: When I enter a valid username and password, my account is successfully registered.
-* AC3: Then I am redirected to the "My Profile" page, where I see a message indicating that I have no bookings.
-
-
 ### 2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users
-
-* AC1: Given an admin dashboard, when I log in, I can access tools to edit and update the content on various pages.
-* AC2: When I update a treatment description, it is immediately reflected on the public site.
-* AC3: Then I can edit treatment content and prices to ensure accurate information is displayed.
-
-
 ### 3. As a user, I can access the website on any device so that I have a seamless experience on all devices
-
-* AC1: Given a mobile device, the website layout adjusts to fit the screen.
-* AC2: When I resize the browser window, content remains readable and navigable.
-* AC3: Then the navigation menu collapses into a mobile-friendly version.
-
-
 ### 4. As a user, I can view the home page to get an overview of the services so that I learn more about the website
-
-* AC1: Given the home page, when I visit it, I see a welcoming introduction and an overview of available services.
-* AC2: When I scroll down, I see user testimonials that highlight the effectiveness of the services.
-* AC3: Then I see call-to-action buttons that direct me to book an appointment or learn more about treatments.
-
-
 ### 5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise
-
-* AC1: Given the about page, when I visit it, I can see the therapist’s biography and credentials.
-* AC2: When I read the content, I understand the services offered and the therapist’s experience.
-* AC3: Then I can use the contact form to ask questions or request more information.
-
-
 ### 6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session
-
-* AC1: Given the treatments page, when I visit it, I see a list of available therapy services.
-* AC2: When I click on a treatment, I see a detailed description.
-* AC3: Then I understand the benefits and pricing of each treatment.
-
-
 ### 7. As a user, I can create an appointment so that I can schedule a therapy session
-
-* AC1: Given a booking form, when I select a date and time, available slots are shown.
-* AC2: When I select a treatment type, it is added to my booking.
-* AC3: Then I receive a confirmation on the website once the appointment is created.
-
-
 ### 8. As a user, I can view a list of my appointments so that I can see my scheduled therapy sessions
-
-* AC1: Given a list of appointments, when I log in, I can see upcoming and past bookings.
-* AC2: When I view the list, I can see details such as date, time, and treatment.
-* AC3: Then I can navigate to detailed appointment information if needed.
-
-
 ### 9. As a user, I can update my appointments so that I can change the details of a scheduled session
-
-* AC1: Given an appointment, when I choose to edit it, a form with current details is displayed.
-* AC2: When I update the date, time, or treatment, the appointment reflects these changes.
-* AC3: Then I receive confirmation on the website that the appointment has been updated.
-
-
 ### 10. As a user, I can delete my appointments so that I can cancel a session I no longer need
-
-* AC1: Given an appointment, when I choose to delete it, I am prompted for confirmation.
-* AC2: When I confirm the deletion, the appointment is removed from my list.
-* AC3: Then I see a message confirming that the appointment has been canceled.
-
 
 ## Code Validation
 
@@ -100,19 +41,13 @@ W3C Markup Validator found the following errors in `base.html`:
 
 ![home.html validation errors image](assets/testing_files/base_errors.png)
 
-Moved the modal inside the body tag.
+To resolve the error, I moved the modal inside the body tag.
 
-W3C Markup Validator found the following errors in `base.html`:
-
-![treatments.html validation errors image](assets/testing_files/treatment_errors.png)
-
-Wrapped Content with a div instead of p and removed redundant closing tags. 
-
-W3C Markup Validator found the following errors in `base.html`:
+W3C Markup Validator found the following errors in `treatments.html`:
 
 ![treatments.html validation errors image](assets/testing_files/treatment_errors.png)
 
-Wrapped Content with a div instead of p and removed redundant closing tags. 
+To resolve the error, I wrapped content with a div instead of p and removed redundant closing tags. 
 
 ### CSS
 
@@ -124,21 +59,18 @@ W3C CSS Validator found no errors or warnings in the CSS.
 
 ### Python
 
-Pylint was used continuously during the development process to analyze the Python code for programming errors.
-
-[PEP8 online](http://pep8online.com/) was further used to validate the Python code for PEP8 compliance. The validation results are shown below:
+[PEP8 online](http://pep8online.com/) was used to validate the Python code for PEP8 compliance. As there many files to assess within each app, I have focused on the appointment app for this testing section. This approach resolves the PEP 8 warnings for line length while keeping the code clean and readable.
+The validation results are shown below:
 
 | Location | Errors / Warnings | Code Reviewed |
 | --- | --- | --- |
-| ./appointments/model.py | lines too long |![admin.py code reviewed image](assets/testing_files/appointments_model.png) |
-| ./appointments/forms.py | ![forms.py errors/warnings image](assets/testing_files/pep8_forms_errors.png) | ![forms.py code reviewed image](assets/testing_files/pep8_forms_reviewed.png) |
-| ./appointments/models.py | ![models.py errors/warnings image](assets/testing_files/pep8_models_errors.png) | ![models.py code reviewed image](assets/testing_files/pep8_models_reviewed.png) |
+| ./appointments/model.py | ![forms.py errors/warnings image](assets/testing_files/appointments_forms.png) | ![forms.py code reviewed image](assets/testing_files/pep8_forms_reviewed.png) |
+| ./appointments/views.py | ![views.py errors/warnings image](assets/testing_files/appointments_views.png) | ![views.py code reviewed image](assets/testing_files/pep8_models_reviewed.png) |
 | ./appointments/urls.py | ![urls.py errors/warnings image](assets/testing_files/pep8_urls_errors.png) | ![urls.py code reviewed image](assets/testing_files/pep8_urls_reviewed.png) |
-| ./appointments/views.py | ![views.py errors/warnings image](assets/testing_files/pep8_views_errors.png) | ![views.py code reviewed image](assets/testing_files/pep8_views_reviewed.png) |
 
-Splitting Long Lines:
-    * For the treatment field, I split the line into three parts: max_length, choices, and default. Each part is on a separate line, which keeps the line length under 79 characters.
-    * The __str__ method's return statement has been split into two lines using string concatenation. This keeps each line within the 79-character limit.
+Outside of trailing whitespace and code comments, there were additional issues related to splitting long lines. For example:
+* In the treatment field, the line was divided into three parts: `max_length`, `choices`, and `default`. Each part is now on a separate line to keep the overall line length under 79 characters.
+* The `__str__` method's return statement was split into two lines using string concatenation, ensuring each line remains within the 79-character limit.
 
 
 ### JavaScript
@@ -158,9 +90,9 @@ Page | Lighthouse Report |
 | Index | ![Index Lighthouse Report](assets/testing_files/lighthouse_index.jpg) |
 | About | ![About Lighthouse Report](assets/testing_files/lighthouse_about.jpg) |
 | Treatments | ![Register Lighthouse Report](assets/testing_files/lighthouse_treatments.jpg) |
+| My appointments | ![Booking Lighthouse Report](assets/testing_files/lighthouse_myappointments.jpg) |
 | Login | ![Login Lighthouse Report](assets/testing_files/lighthouse_login.jpg) |
 | Signup | ![Signup Lighthouse Report](assets/testing_files/lighthouse_signup.jpg) |
-| My appointments | ![Booking Lighthouse Report](assets/testing_files/lighthouse_myappointments.jpg) |
 
 ## Tools Testing
 
