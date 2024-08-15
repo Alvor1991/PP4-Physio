@@ -20,16 +20,16 @@
 
 ## Testing User Stories
 
-### 1. As a user, I can register an account so that I can book and manage my appointments online
-### 2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users
-### 3. As a user, I can access the website on any device so that I have a seamless experience on all devices
-### 4. As a user, I can view the home page to get an overview of the services so that I learn more about the website
-### 5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise
-### 6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session
-### 7. As a user, I can create an appointment so that I can schedule a therapy session
-### 8. As a user, I can view a list of my appointments so that I can see my scheduled therapy sessions
-### 9. As a user, I can update my appointments so that I can change the details of a scheduled session
-### 10. As a user, I can delete my appointments so that I can cancel a session I no longer need
+1. As a user, I can register an account so that I can book and manage my appointments online
+2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users
+3. As a user, I can access the website on any device so that I have a seamless experience on all devices
+4. As a user, I can view the home page to get an overview of the services so that I learn more about the website
+5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise
+6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session
+7. As a user, I can create an appointment so that I can schedule a therapy session
+8. As a user, I can view a list of my appointments so that I can see my scheduled therapy sessions
+9. As a user, I can update my appointments so that I can change the details of a scheduled session
+10. As a user, I can delete my appointments so that I can cancel a session I no longer need
 
 ## Code Validation
 

@@ -100,61 +100,7 @@ The project will focus on delivering essential features for the first release, b
 
 #### User Stories
 
-GitHub projects were used as a project management tool with a Kanban board to track user stories, focus on tasks, and monitor progress.
-
-**Story points** are assigned using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
-
-### 1. User can register an account to book and manage appointments (**3 Story Points**)
-* AC1: Register with a form, account is created.
-* AC2: Valid username and password register the account.
-* AC3: Redirected to "My Profile" page, see a no bookings message.
-
-### 2. Admin can manage content to keep info up-to-date (**8 Story Points**)
-* AC1: Admin dashboard access to edit/update content.
-* AC2: Treatment updates reflected on the public site.
-* AC3: Edit treatment content and prices accurately.
-
-### 3. User can access the website on any device for a seamless experience (**3 Story Points**)
-* AC1: Website layout adjusts to fit mobile screens.
-* AC2: Content remains readable when resizing the browser.
-* AC3: Navigation menu collapses into mobile-friendly version.
-
-### 4. User can view the home page to get an overview of services (**3 Story Points**)
-* AC1: Home page shows introduction and service overview.
-* AC2: Scroll to see user testimonials.
-* AC3: Call-to-action buttons for booking or learning more.
-
-### 5. User can view therapist info to learn about credentials (**3 Story Points**)
-* AC1: About page shows therapist’s biography and credentials.
-* AC2: Read content to understand services and experience.
-* AC3: Contact form for questions or more information.
-
-### 6. User can view treatments to choose appropriate therapy (**5 Story Points**)
-* AC1: Treatments page lists available services.
-* AC2: Click on treatment to see detailed description.
-* AC3: Understand benefits and pricing of each treatment.
-
-### 7. User can create an appointment to schedule a therapy session (**5 Story Points**)
-* AC1: Booking form shows available slots.
-* AC2: Selected treatment is added to the booking.
-* AC3: Confirmation received once appointment is created.
-
-### 8. User can view appointments to see scheduled sessions (**5 Story Points**)
-* AC1: Log in to see upcoming and past bookings.
-* AC2: View details like date, time, and treatment.
-* AC3: Navigate to detailed appointment information.
-
-### 9. User can update appointments to change session details (**5 Story Points**)
-* AC1: Edit appointment to see current details.
-* AC2: Update date, time, or treatment, reflecting changes.
-* AC3: Confirmation received after updating appointment.
-
-### 10. User can delete appointments to cancel a session (**5 Story Points**)
-* AC1: Delete appointment prompts for confirmation.
-* AC2: Confirm to remove appointment from the list.
-* AC3: Message confirms appointment cancellation.
-
-Below is the Kanban board I uses to track user stories:
+GitHub projects were used as a project management tool with a Kanban board to track user stories and monitor progress:
 
 **Start**
 ![User Stories Progress - Start](assets/readme_files/start.png)
@@ -168,23 +114,74 @@ Below is the Kanban board I uses to track user stories:
 **Week 3**
 ![User Stories Progress - Week 3](assets/readme_files/week3.png)
 
+**Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
 
-#### Structure
+##### 1. User can register an account to book and manage appointments (**3 Story Points**)
+* AC1: Register with a form, account is created.
+* AC2: Valid username and password register the account.
+* AC3: Redirected to "My Profile" page, see a no bookings message.
 
-The website is organized using a Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features. The flowchart was designed using [Mermaid](https://mermaid.js.org/).
+##### 2. Admin can manage content to keep info up-to-date (**8 Story Points**)
+* AC1: Admin dashboard access to edit/update content.
+* AC2: Treatment updates reflected on the public site.
+* AC3: Edit treatment content and prices accurately.
+
+##### 3. User can access the website on any device for a seamless experience (**3 Story Points**)
+* AC1: Website layout adjusts to fit mobile screens.
+* AC2: Content remains readable when resizing the browser.
+* AC3: Navigation menu collapses into mobile-friendly version.
+
+##### 4. User can view the home page to get an overview of services (**3 Story Points**)
+* AC1: Home page shows introduction and service overview.
+* AC2: Scroll to see user testimonials.
+* AC3: Call-to-action buttons for booking or learning more.
+
+##### 5. User can view therapist info to learn about credentials (**3 Story Points**)
+* AC1: About page shows therapist’s biography and credentials.
+* AC2: Read content to understand services and experience.
+* AC3: Contact form for questions or more information.
+
+##### 6. User can view treatments to choose appropriate therapy (**5 Story Points**)
+* AC1: Treatments page lists available services.
+* AC2: Click on treatment to see detailed description.
+* AC3: Understand benefits and pricing of each treatment.
+
+##### 7. User can create an appointment to schedule a therapy session (**5 Story Points**)
+* AC1: Booking form shows available slots.
+* AC2: Selected treatment is added to the booking.
+* AC3: Confirmation received once appointment is created.
+
+##### 8. User can view appointments to see scheduled sessions (**5 Story Points**)
+* AC1: Log in to see upcoming and past bookings.
+* AC2: View details like date, time, and treatment.
+* AC3: Navigate to detailed appointment information.
+
+##### 9. User can update appointments to change session details (**5 Story Points**)
+* AC1: Edit appointment to see current details.
+* AC2: Update date, time, or treatment, reflecting changes.
+* AC3: Confirmation received after updating appointment.
+
+##### 10. User can delete appointments to cancel a session (**5 Story Points**)
+* AC1: Delete appointment prompts for confirmation.
+* AC2: Confirm to remove appointment from the list.
+* AC3: Message confirms appointment cancellation.
+
+### Structure
+
+The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features.
 
 ![Sports Therapy Booking website map](assets/readme_files/flowchart.png)
 
 #### User Flow
 
-#### Non-Logged-In Users:
+##### Non-Logged-In Users:
 * **Home Page**: an overview of the services offered, client testimonials, and quick links to book an appointment
 * **About Page**: detailed infor about the therapist's credentials and philosophy. It also includes a contact form.
 * **Treatments Page**: all available treatments with descriptions and pricing, along with a FAQ section.
 * **Login Page**: allows users to log in to access personalized features like appointment management.
 * **Book Appointment**: direct accesses to booking form; redirects users to log in before booking an appointment.
 
-#### Logged-In Users:
+##### Logged-In Users:
 * **Home Page**: same for non-logged-in users.
 * **About Page**: same for non-logged-in users.
 * **Treatments Page**: same for non-logged-in users.
@@ -198,7 +195,7 @@ The database model was designed using [drawsql](https://drawsql.app/) and is man
 
 ![Sports Therapy Management database model](assets/readme_files/erdiagram.png)
 
-### Home App
+##### Home App
 
 **ClientTestimonial Model**
 
@@ -209,7 +206,7 @@ The `ClientTestimonial` model model manages and displays client feedback on the 
 * **Active**: A `BooleanField` indicating whether the testimonial is currently active and displayed on the website. 
 * **Date Added**: A `DateTimeField` of when the testimonial was added, allowing for tracking of feedback.
 
-### About App
+##### About App
 
 **About Model**
 
@@ -228,8 +225,7 @@ The `ContactRequest` model allows for efficient handling of client inquiries and
 * **Read**: A `BooleanField` indicating whether the message has been read. Defaults to `False`.
 * **Created On**: A `DateTimeField` that records when the contact request was created.
 
-
-### Treatments App
+##### Treatments App
 
 **Treatment Model**
 
@@ -250,7 +246,7 @@ The `FAQ` model is used to manage frequently asked questions.
 * **Question**: A `CharField` storing the frequently asked question.
 * **Answer**: A `TextField` containing the answer to the question.
 
-### Appointments App
+##### Appointments App
 
 **Appointment Model**
 
@@ -282,13 +278,13 @@ View Appointments | ![View Appointments wireframe image](assets/wireframes/your_
 
 #### Color Scheme
 
-The color scheme for the Sports Therapy Management website was carefully chosen to create a calming, professional, and accessible user experience. The primary colors are used consistently across the site to maintain a cohesive and modern design.
+The following colours were chosen to create color a calming, professional, and accessible user experience:
 
 - **Primary Color (Teal Green):** `#0a5d61` - used for headings, buttons, and key interface elements
   - represents trust, professionalism, and health, which aligns with the therapeutic nature of the site.
 
 - **Accent Color (Lighter Teal):** `#23bbbb` - used for hover effects and interactions
-  - provides a subtle yet noticeable contrast that enhances the user experience without being overly aggressive.
+  - provides a subtle contrast that enhances the user experience without being overly aggressive.
 
 - **Secondary Color (Dark Gray):** `#333333` - used for body text and general content
   - ensures readability while complementing the primary teal.
@@ -313,7 +309,7 @@ The color scheme for the Sports Therapy Management website was carefully chosen 
 
 ## Features
 
-### General
+#### General
 
 * Mobile-first, responsive design for all devices, ensuring a seamless experience.
 * Consistent navigation across all pages with hover effects for feedback, enhancing usability.
@@ -326,23 +322,23 @@ The color scheme for the Sports Therapy Management website was carefully chosen 
     - **Book Appointment Button:** redirects users to the appointment booking page. If the user is not logged in.
 * Footer with contact info and social media links.
 
-### Home Page
+#### Home Page
 
 * Overview of services, giving visitors a quick insight into the offerings and expertise.
 * Quick links to book an appointment or view therapist profiles, facilitating easy navigation and action.
 * Client testimonials carousel, showcasing positive feedback from clients to build trust and credibility.
 
-### About Page
+#### About Page
 
 * Detailed info about the therapist, credentials, and philosophy, helping clients understand expertise & approach.
 * Contact form for inquiries, allowing visitors to reach out with questions or requests for more information.
 
-### Treatments Page
+#### Treatments Page
 
 * List of available treatments with descriptions & pricing, providing clear & detailed info about services offered.
 * FAQ section to address common client questions, providing quick information.
 
-### Appointments
+#### Appointments
 
 * Book Appointment: Easy-to-use booking form allowing users to select dates, times, and treatment types.
 * View Appointments: dashboard for registered users to view their scheduled appointments.
@@ -350,11 +346,11 @@ The color scheme for the Sports Therapy Management website was carefully chosen 
 * Delete Appointment: user casn cancel appointments if no longer needed.
 * Confirmation messages after successful bookings, updates & deletions to inform users of appointment status.
 
-### Error Handling
+#### Error Handling
 
 * Custom 404-error page to inform users and redirect them appropriately if they encounter a broken link.
 
-### Authentication Pages
+#### Authentication Pages
 
 Page | Purpose | Image |
 --- | --- | --- |

@@ -21,36 +21,9 @@ body {
 
 .navbar {
   background-color: #fdfdfb;
-  border-bottom: 2px solid #0a5d61;
+  border-bottom: 2px solid #8BB8A8;
   box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
 }
-
-/* Override styles for navigation links */
-.navbar-nav .nav-item .nav-link {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800; /* or your preferred weight */
-  font-size: 27px; /* or your preferred size */
-  line-height: 2;
-  color: #f50f0f; /* or your preferred color */
-  text-decoration: none; /* Ensure no underline */
-}
-
-/* Remove text decorations and specify style for all anchor tags within the navbar */
-.navbar-nav .nav-item .nav-link:hover,
-.navbar-nav .nav-item .nav-link:focus {
-  text-decoration: underline;
-  color: #ff0000; /* Optional: Change color on hover/focus */
-}
-
-/* Ensure general styles do not override nav styles */
-body a:not(.nav-link) {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 2;
-  color: #333;
-}
-
 
 h3,
 h4,
