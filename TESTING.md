@@ -102,11 +102,17 @@ W3C Markup Validator found the following errors in `base.html`:
 
 Moved the modal inside the body tag.
 
+W3C Markup Validator found the following errors in `base.html`:
+
 ![treatments.html validation errors image](assets/testing_files/treatment_errors.png)
 
 Wrapped Content with a div instead of p and removed redundant closing tags. 
 
-![index.html validation](assets/testing_files/index_validation.jpg)
+W3C Markup Validator found the following errors in `base.html`:
+
+![treatments.html validation errors image](assets/testing_files/treatment_errors.png)
+
+Wrapped Content with a div instead of p and removed redundant closing tags. 
 
 ### CSS
 
@@ -124,11 +130,16 @@ Pylint was used continuously during the development process to analyze the Pytho
 
 | Location | Errors / Warnings | Code Reviewed |
 | --- | --- | --- |
-| ./appointments/admin.py | No errors / warnings |![admin.py code reviewed image](assets/testing_files/pep8_admin.png) |
+| ./appointments/model.py | lines too long |![admin.py code reviewed image](assets/testing_files/appointments_model.png) |
 | ./appointments/forms.py | ![forms.py errors/warnings image](assets/testing_files/pep8_forms_errors.png) | ![forms.py code reviewed image](assets/testing_files/pep8_forms_reviewed.png) |
 | ./appointments/models.py | ![models.py errors/warnings image](assets/testing_files/pep8_models_errors.png) | ![models.py code reviewed image](assets/testing_files/pep8_models_reviewed.png) |
 | ./appointments/urls.py | ![urls.py errors/warnings image](assets/testing_files/pep8_urls_errors.png) | ![urls.py code reviewed image](assets/testing_files/pep8_urls_reviewed.png) |
 | ./appointments/views.py | ![views.py errors/warnings image](assets/testing_files/pep8_views_errors.png) | ![views.py code reviewed image](assets/testing_files/pep8_views_reviewed.png) |
+
+Splitting Long Lines:
+    * For the treatment field, I split the line into three parts: max_length, choices, and default. Each part is on a separate line, which keeps the line length under 79 characters.
+    * The __str__ method's return statement has been split into two lines using string concatenation. This keeps each line within the 79-character limit.
+
 
 ### JavaScript
 

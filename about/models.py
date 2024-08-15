@@ -1,6 +1,7 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
+
 class About(models.Model):
     """
     Model representing the 'About Me' section.
@@ -12,6 +13,7 @@ class About(models.Model):
 
     def __str__(self):
         return self.title
+
 
 class ContactRequest(models.Model):
     """

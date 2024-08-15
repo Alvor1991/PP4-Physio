@@ -3,9 +3,10 @@ from django.http import JsonResponse
 from .models import About, ContactRequest
 from .forms import ContactForm
 
+
 def about_me(request):
     """
-    View to handle the 'About Me' page, including displaying the latest 'About' content 
+    View to handle the 'About Me' page, displaying the latest 'About' content
     and handling the contact form submission.
     Displays an individual instance of :model:`about.About`
     """
