@@ -422,15 +422,14 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 Page | Desktop | Mobile |
 --- | --- | --- |
-| Home | ![Desktop Home Page image](assets/readme_files/desktop_home.png) | ![Mobile Home Page image](assets/readme_files/mobile_home.png) |
-| About | ![Desktop About Page image](assets/readme_files/desktop_about.png) | ![Mobile About Page image](assets/readme_files/mobile_about.png) |
-| Book Appointment | ![Desktop Book Appointment Page image](assets/readme_files/desktop_book_appointment.png) | ![Mobile Book Appointment Page image](assets/readme_files/mobile_book_appointment.png) |
-| User Appointments | ![Desktop User Appointments Page image](assets/readme_files/desktop_user_appointments.png) | ![Mobile User Appointments Page image](assets/readme_files/mobile_user_appointments.png) |
-| Update Appointment | ![Desktop Update Appointment Page image](assets/readme_files/desktop_update_appointment.png) | ![Mobile Update Appointment Page image](assets/readme_files/mobile_update_appointment.png) |
-| Delete Appointment | ![Desktop Delete Appointment Page image](assets/readme_files/desktop_delete_appointment.png) | ![Mobile Delete Appointment Page image](assets/readme_files/mobile_delete_appointment.png) |
-| Sign Up | ![Desktop Sign Up Page image](assets/readme_files/desktop_sign_up.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_sign_up.png) |
-| Sign In | ![Desktop Sign In Page image](assets/readme_files/desktop_login.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_login.png) |
-| Sign Out | ![Desktop Sign Out Page image](assets/readme_files/desktop_logout.png) | ![Mobile Sign Out Page image](assets/readme_files/mobile_logout.png) |
+| Home | ![Desktop Home Page image](assets/readme_files/home.png) | ![Mobile Home Page image](assets/readme_files/mobile_home.png) |
+| About | ![Desktop About Page image](assets/readme_files/about.png) | ![Mobile About Page image](assets/readme_files/mobile_about.png) |
+| Book Appointment | ![Desktop Book Appointment Page image](assets/readme_files/book_appointment.png) | ![Mobile Book Appointment Page image](assets/readme_files/mobile_book_appointment.png) |
+| User Appointments | ![Desktop User Appointments Page image](assets/readme_files/user_appointments.png) | ![Mobile User Appointments Page image](assets/readme_files/mobile_user_appointments.png) |
+| Update Appointment | ![Desktop Update Appointment Page image](assets/readme_files/update_appointment.png) | ![Mobile Update Appointment Page image](assets/readme_files/mobile_update_appointment.png) |
+| Delete Appointment | ![Desktop Delete Appointment Page image](assets/readme_files/delete_appointment.png) | ![Mobile Delete Appointment Page image](assets/readme_files/mobile_delete_appointment.png) |
+| Sign Up | ![Desktop Sign Up Page image](assets/readme_files/signup.png) | ![Mobile Sign Up Page image](assets/readme_files/mobile_sign_up.png) |
+| Sign In | ![Desktop Sign In Page image](assets/readme_files/login.png) | ![Mobile Sign In Page image](assets/readme_files/mobile_login.png) |
 | 404 Error | ![Desktop 404 Error Page image](assets/readme_files/desktop_404.png) | ![Mobile 404 Error Page image](assets/readme_files/mobile_404.png) |
 
 
