@@ -43,8 +43,8 @@ a,
 span,
 li {
   font-family: 'Roboto', sans-serif;
-  font-weight: 450;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 2;
   color: #333;
 }
@@ -445,9 +445,6 @@ Appointments Page
   border-color: #8B0000 !important; /* Ensure the border matches the button */
 }
 
-.form-control {
-  width: 50%;
-}
 
 /* Media Queries */
 @media (max-width: 767.98px) {
