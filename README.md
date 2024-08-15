@@ -100,7 +100,7 @@ The project will focus on delivering essential features for the first release, b
 
 #### User Stories
 
-GitHub projects was used as a project management tool with a Kanban board to track user stories & monitor progress:
+GitHub projects was used as a project management tool with a Kanban board to track user stories:
 
 **Start**
 ![User Stories Progress - Start](assets/readme_files/start.png)
