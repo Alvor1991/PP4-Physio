@@ -344,7 +344,7 @@ The testing documentation can be found [here](https://github.com/Alvor1991/PP4-P
 
 ## Deployment
 
-Project developed using a [GitPod](https://gitpod.io/) workspace. The code was commited to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/") using the terminal.
+Project developed using a [GitPod](https://gitpod.io/) workspace. The code was commited to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/").
 
 ### Deploying on Heroku
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:

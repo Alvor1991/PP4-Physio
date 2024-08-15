@@ -13,6 +13,45 @@ body {
   color: #333;
 }
 
+/* Header and Branding */
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+
+.navbar {
+  background-color: #fdfdfb;
+  border-bottom: 2px solid #0a5d61;
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Override styles for navigation links */
+.navbar-nav .nav-item .nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800; /* or your preferred weight */
+  font-size: 27px; /* or your preferred size */
+  line-height: 2;
+  color: #f50f0f; /* or your preferred color */
+  text-decoration: none; /* Ensure no underline */
+}
+
+/* Remove text decorations and specify style for all anchor tags within the navbar */
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+  text-decoration: underline;
+  color: #ff0000; /* Optional: Change color on hover/focus */
+}
+
+/* Ensure general styles do not override nav styles */
+body a:not(.nav-link) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  color: #333;
+}
+
+
 h3,
 h4,
 h5,
@@ -36,6 +75,13 @@ h3 {
 
 h6 {
   margin-bottom: 10px;
+}
+
+.btn-primary {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  background-color: #0a5d61;
+  color: #fff;
 }
 
 p,
@@ -63,13 +109,6 @@ a {
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
-}
-
-.btn-primary {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  background-color: #0a5d61;
-  color: #fff;
 }
 
 .banner-container {
@@ -101,36 +140,6 @@ a {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-/* Header and Branding */
-.navbar-brand img {
-  height: 60px;
-  width: auto;
-}
-
-.navbar {
-  background-color: #fdfdfb;
-  border-bottom: 2px solid #0a5d61;
-  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-nav .nav-link {
-  color: #333; /* Dark Gray */
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #ffffff;
-  background-color: #0a5d61; /* Teal/Green */
-  border-radius: 4px;
-}
-
-.navbar-nav .nav-link.active {
-  color: #ffffff;
-  background-color: #445261; /* Slightly darker teal */
-  border-radius: 4px;
-}
-
 
 /* Footer */
 .footer {
