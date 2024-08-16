@@ -239,7 +239,7 @@ The following colours were chosen to create a calming, professional, and accessi
 - **Primary Color (Teal Green):** `#0a5d61` - used for headings, buttons, and key interface elements
   - represents trust, professionalism, and health, which aligns with the therapeutic nature of the site.
 
-- **Accent Color (Lighter Teal):** `#23bbbb` - used for hover effects and interactions
+- **Accent Color (Lighter Teal):** `#1fa2a2` - used for hover effects and interactions
   - provides a subtle contrast that enhances the user experience without being overly aggressive.
 
 - **Secondary Color (Dark Gray):** `#333333` - used for body text and general content
@@ -255,11 +255,10 @@ The following colours were chosen to create a calming, professional, and accessi
   - ensures a gentle visual separation between different sections of the site.
 
 - **Link Color:** `#0a5d61` - styled with the primary teal color, maintaining consistency across the site
-  - on hover, they transition to the lighter teal (`#23bbbb`), providing a visual cue to users.
 
 #### Typography
 
-The Sports Therapy Management website employs a carefully chosen typography scheme to ensure readability and a professional appearance across all devices.
+This typography setup is designed to create a clear, user-friendly reading experience while supporting the professional tone of the website.
 
 - **Primary Font - Roboto:**
   - **Usage:** Utilized for body text, general content, and links, offering a modern and clean look.
@@ -269,14 +268,6 @@ The Sports Therapy Management website employs a carefully chosen typography sche
 
 - **Tertiary Font - Raleway:**
   - **Usage:** Reserved for buttons and call-to-actions, ensuring these elements are distinct and noticeable.
-
-### Text Styling
-
-- **Text Color:** The primary text color is `#333333`, providing excellent readability.
-- **Link Color:** Links use `#0a5d61` for consistency with the site’s color scheme, and they change to `#1fa2a2` on hover to enhance user interaction.
-- **Line Heights:** A consistent line height is used across body text and links to maintain readability and a balanced layout.
-
-This typography setup is designed to create a clear, user-friendly reading experience while supporting the professional tone of the website.
 
 
 [Back to top ⇧](#sports-therapy)
@@ -293,18 +284,18 @@ This typography setup is designed to create a clear, user-friendly reading exper
     - **Treatments:** Directs users to a page listing available treatments with descriptions and pricing.
     - **My Appointments:** (Visible only to logged-in users) Allows users to view their scheduled appointments.
     - **Login/Logout Link:** Displays the login option for guests and a logout option for authenticated users.
-    - **Book Appointment Button:** redirects users to the appointment booking page. If the user is not logged in.
+    - **Book Appointment Button:** redirects users to the appointment booking page.
 * Footer with contact info and social media links.
 
 ### Home Page
 
 * Overview of services, giving visitors a quick insight into the offerings and expertise.
-* Quick links to book an appointment or view therapist profiles, facilitating easy navigation and action.
+* Quick links to book an appointment or view therapist profile, facilitating easy navigation and action.
 * Client testimonials carousel, showcasing positive feedback from clients to build trust and credibility.
 
 ### About Page
 
-* Detailed info about the therapist, credentials, and philosophy, helping clients understand expertise & approach.
+* Detailed info about the therapist and credentials, helping clients understand expertise & approach.
 * Contact form for inquiries, allowing visitors to reach out with questions or requests for more information.
 
 ### Treatments Page
@@ -314,7 +305,7 @@ This typography setup is designed to create a clear, user-friendly reading exper
 
 ### Appointments
 
-* Book Appointment: Easy-to-use booking form allowing users to select dates, times, and treatment types.
+* Book Appointment: easy-to-use booking form allowing users to select dates, times, and treatment types.
 * View Appointments: dashboard for registered users to view their scheduled appointments.
 * Update Appointment: users can edit appointments, providing flexibility to manage their schedules.
 * Delete Appointment: user casn cancel appointments if no longer needed.
@@ -352,7 +343,6 @@ Login | Allows the User to sign in with their account. | ![Sign In Page](assets/
 * [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - was used to help with styling and responsiveness.
 * [Google Fonts](https://fonts.google.com) - was used to import the fonts into the html file.
 * [Font Awesome](https://fontawesome.com) - was used throughout the website to add icons for aesthetic and UX purposes.
-* [jQuery 3.6.0](https://jquery.com/) - was used as a JavaScript library to help writing less JavaScript code.
 
 ### Packages / Dependencies Installed
 

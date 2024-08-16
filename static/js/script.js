@@ -1,6 +1,7 @@
 console.log("Physio Appointment Project Loaded");
 
 document.addEventListener("DOMContentLoaded", function () {
+    // Handle Date and Time Slot Selection if elements exist
     const dateInput = document.getElementById("id_date");
     const timeSelect = document.getElementById("id_time");
 
@@ -32,6 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     } else {
-        console.error("Date input or time select element not found.");
+        console.warn("Date input or time select element not found. Skipping date/time related functionality.");
     }
 });
