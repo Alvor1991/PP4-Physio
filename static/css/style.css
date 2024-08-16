@@ -450,6 +450,11 @@ Appointments Page
 
 /* Media Queries */
 @media (max-width: 767.98px) {
+  .content-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .text-md-end {
     text-align: center !important;
   }
