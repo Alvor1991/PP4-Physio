@@ -63,59 +63,49 @@ Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/
 
 * Ensure secure authentication and data handling.
 
-#### User Stories
+#### Site Goals
 
-##### 1. User can register an account to book and manage appointments (**3 Story Points**)
-* AC1: Register with a form, account is created.
-* AC2: Valid username and password register the account.
-* AC3: Redirected to "My Profile" page, see a no bookings message.
+1. As a user, I can register an account so that I can book and manage my appointments online
+2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users
+3. As a user, I can access the website on any device so that I have a seamless experience on all devices
+4. As a user, I can view the home page to get an overview of the services so that I learn more about the website
+5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise
+6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session
+7. As a user, I can create an appointment so that I can schedule a therapy session
+8. As a user, I can view a list of my appointments so that I can see my scheduled therapy sessions
+9. As a user, I can update my appointments so that I can change the details of a scheduled session
+10. As a user, I can delete my appointments so that I can cancel a session I no longer need
 
-##### 2. Admin can manage content to keep info up-to-date (**8 Story Points**)
-* AC1: Admin dashboard access to edit/update content.
-* AC2: Treatment updates reflected on the public site.
-* AC3: Edit treatment content and prices accurately.
+#### Strategy Table
 
-##### 3. User can access the website on any device for a seamless experience (**3 Story Points**)
-* AC1: Website layout adjusts to fit mobile screens.
-* AC2: Content remains readable when resizing the browser.
-* AC3: Navigation menu collapses into mobile-friendly version.
+Opportunity / Problem | Importance | Viability / Feasibility
+--- | --- | ---
+Responsive design | 5 | 5
+Account registration | 5 | 5
+Browse treatments | 5 | 5
+Book appointments | 5 | 5
+Manage appointments | 5 | 5
+User appointments dashboard | 5 | 4
+Integration with payment gateway | 5 | 4
+Email notifications for booking confirmations | 5 | 4
+Expand to include blog for sharing tips | 4 | 3
+Expand to include more therapists | 4 | 3
+**Total** | **38** | **35**
 
-##### 4. User can view the home page to get an overview of services (**3 Story Points**)
-* AC1: Home page shows introduction and service overview.
-* AC2: Scroll to see user testimonials.
-* AC3: Call-to-action buttons for booking or learning more.
+### Scope
 
-##### 5. User can view therapist info to learn about credentials (**3 Story Points**)
-* AC1: About page shows therapist’s biography and credentials.
-* AC2: Read content to understand services and experience.
-* AC3: Contact form for questions or more information.
+According to the strategy table, not all features can be implemented in the first release of the project. For this reason, the project will be divided in multiple phases, as shown below:
 
-##### 6. User can view treatments to choose appropriate therapy (**5 Story Points**)
-* AC1: Treatments page lists available services.
-* AC2: Click on treatment to see detailed description.
-* AC3: Understand benefits and pricing of each treatment.
+| **First Phase**                   | **Second Phase**                                     |
+|-----------------------------------|------------------------------------------------------|
+| Responsive design                 | Integration with payment gateway                     |
+| Account registration              | Email notifications for booking confirmations        |
+| Browse and view treatments        | Blog page for sharing tips                           |
+| Book and manage appointments      | Ability to add more therapists to the site           |
 
-##### 7. User can create an appointment to schedule a therapy session (**5 Story Points**)
-* AC1: Booking form shows available slots.
-* AC2: Selected treatment is added to the booking.
-* AC3: Confirmation received once appointment is created.
+#### Kanban board
 
-##### 8. User can view appointments to see scheduled sessions (**5 Story Points**)
-* AC1: Log in to see upcoming and past bookings.
-* AC2: View details like date, time, and treatment.
-* AC3: Navigate to detailed appointment information.
-
-##### 9. User can update appointments to change session details (**5 Story Points**)
-* AC1: Edit appointment to see current details.
-* AC2: Update date, time, or treatment, reflecting changes.
-* AC3: Confirmation received after updating appointment.
-
-##### 10. User can delete appointments to cancel a session (**5 Story Points**)
-* AC1: Delete appointment prompts for confirmation.
-* AC2: Confirm to remove appointment from the list.
-* AC3: Message confirms appointment cancellation.
-
-GitHub Projects was used as a project management tool with a Kanban board to track these user stories:
+GitHub Projects was used as a project management tool with a Kanban board to track these user stories and monitor progress. **Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
 
 **Start**
 ![User Stories Progress - Start](assets/readme_files/start.png)
@@ -128,34 +118,6 @@ GitHub Projects was used as a project management tool with a Kanban board to tra
 
 **Week 3**
 ![User Stories Progress - Week 3](assets/readme_files/week3.png)
-
-**Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
-
-#### Strategy Table
-
-Opportunity / Problem | Importance | Viability / Feasibility
---- | --- | ---
-Responsive design | 5 | 5
-Account registration | 5 | 5
-Browse treatments | 5 | 5
-Book appointments | 5 | 5
-Manage appointments | 5 | 5
-User appointments dashboard | 5 | 4
-Expand to include blog for sharing tips | 4 | 3
-Expand to include more therapists | 4 | 3
-**Total** | **38** | **35**
-
-
-### Scope
-
-The project will focus on delivering essential features for the first release, before moving on to the second phase.
-
-| **First Phase**                   | **Second Phase**                                     |
-|-----------------------------------|------------------------------------------------------|
-| Responsive design                 | Integration with payment gateway                     |
-| Account registration              | Email notifications for booking confirmations        |
-| Browse and view treatments        | Blog page for sharing tips                           |
-| Book and manage appointments      | Ability to add more therapists to the site           |
 
 
 ### Structure
@@ -189,7 +151,7 @@ The database model was designed using [drawsql](https://drawsql.app/) and is man
 
 ##### Home App
 
-**ClientTestimonial Model**
+###### ClientTestimonial Model
 
 The `ClientTestimonial` model model manages and displays client feedback on the website
 
@@ -200,14 +162,14 @@ The `ClientTestimonial` model model manages and displays client feedback on the 
 
 ##### About App
 
-**About Model**
+###### About Model
 
 The `About` model is designed to manage and present detailed information about the therapist.
 
 * **Title**: A `CharField` that stores the title of the "About Me" section.
 * **Content**: A `TextField` containing the main content of the "About Me" section.
 
-**ContactRequest Model**
+###### ContactRequest Model
 
 The `ContactRequest` model allows for efficient handling of client inquiries and communication.
 
@@ -219,7 +181,7 @@ The `ContactRequest` model allows for efficient handling of client inquiries and
 
 ##### Treatments App
 
-**Treatment Model**
+###### Treatment Model
 
 Each treatment offered by the therapist is detailed in the `Treatment` model.
 
@@ -240,7 +202,7 @@ The `FAQ` model is used to manage frequently asked questions.
 
 ##### Appointments App
 
-**Appointment Model**
+###### Appointment Model
 
 The `Appointment` model facilitates the scheduling & management of therapy sessions.
 
