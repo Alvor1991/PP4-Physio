@@ -224,7 +224,7 @@ Sign Up | ![Desktop Sign Up wireframe image](assets/wireframes/signup.png) | ![M
 Home | ![Desktop Home wireframe image](assets/wireframes/index.png) | ![Mobile Home wireframe image](assets/wireframes/index_mobile.png)
 About | ![Desktop About wireframe image](assets/wireframes/about.png) | ![Mobile About wireframe image](assets/wireframes/about_mobile.png)
 Treatments | ![Desktop Treatments wireframe image](assets/wireframes/treatments.png) | ![Mobile Treatments wireframe image](assets/wireframes/treatments_mobile.png)
-Book Appointment | ![Book Appointment wireframe image](assets/wireframes/book_appointment.png) | ![Mobile Book Appointment wireframe image](assets/wireframes/book_appointments_mobile.png)
+Book Appointment | ![Book Appointment wireframe image](assets/wireframes/book_appointment.png) | ![Mobile Book Appointment wireframe image](assets/wireframes/book_appointment_mobile.png)
 View Appointments | ![View Appointments wireframe image](assets/wireframes/your_appointments.png) | ![Mobile View Appointments wireframe image](assets/wireframes/your_appointments_mobile.png)
 
 
