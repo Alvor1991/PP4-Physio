@@ -9,7 +9,8 @@
         <div class="card-body">
           <h3 class="card-title text-center">Sign In</h3>
           <p class="text-center">
-            Welcome back to PhysioApp. To make a booking, please log in. If you have not created an account yet, then <a class="link" href="{% url 'account_signup' %}">sign up</a> first.
+            Welcome back to SportsTherapy. To make a booking, please log in. If you have not created an account yet, 
+            then <a class="link" href="{% url 'account_signup' %}">sign up</a> first.
           </p>
           <form class="login" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}

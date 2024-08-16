@@ -21,9 +21,28 @@ body {
 
 .navbar {
   background-color: #fdfdfb;
-  border-bottom: 2px solid #8BB8A8;
+  border-bottom: 2px solid #0a5d61;
   box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
 }
+
+/* Make sure to target exactly the nav links */
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #56733C !important; /* Desired color */
+  font-weight: 600 !important; /* Make it bold */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover state */
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:focus {
+  color: #E5B87B !important; /* Hover color */
+}
+
+/* Active link state */
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: #784742 !important; /* Active link color */
+}
+
 
 h3,
 h4,
@@ -213,7 +232,7 @@ a {
 }
 
 .btn-primary:hover {
-  background-color: #23bbbb;
+  background-color: #1fa2a2;
 }
 
 .banner-image {
@@ -320,7 +339,7 @@ Treatments Page
 
 .accordion-button:hover,
 .accordion-button:focus {
-  background-color: #23bbbb;
+  background-color: #1fa2a2;
   color: #fff;
 }
 
@@ -385,7 +404,7 @@ Signup Page
 .signup-page .btn-primary:focus,
 .login-page .btn-primary:hover,
 .login-page .btn-primary:focus {
-  background-color: #23bbbb;
+  background-color: #1fa2a2;
   transform: translateY(-2px);
 }
 
@@ -424,8 +443,8 @@ Appointments Page
 }
 
 .btn-danger {
-  background-color: #8B0000 !important; /* Crimson Red, or choose another dark red */
-  border-color: #8B0000 !important; /* Ensure the border matches the button */
+  background-color: #8B0000 !important;
+  border-color: #8B0000 !important; 
 }
 
 
@@ -447,7 +466,6 @@ Appointments Page
     text-align: left !important;
   }
 
-
   .row {
     margin-bottom: 1.5rem !important; 
   }
@@ -463,9 +481,5 @@ Appointments Page
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
   margin-top: 140px;
-  }
-
-  .navbar-nav .nav-item {
-    margin-bottom: 0.5rem;
   }
 }

@@ -4,18 +4,25 @@
 
 SportsTherapy is a dedicated platform for individuals seeking personalized sports therapy and wellness solutions. Run by a sole practitioner, SportsTherapy emphasizes a holistic approach to health, offering specialized services including sports therapy, orthotics, and health coaching. Whether you're aiming to enhance your athletic performance, recovering from an injury, or interested in improving your overall health, SportsTherapy is here to provide tailored support and expert guidance.
 
+Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/).
+
 ## Table of Contents
 
 1. [User Experience (UX)](#user-experience-ux)
     1. [Strategy](#strategy)
         1. [Project Goals](#project-goals)
-        2. [User Goals](#user-goals)
+        2. [User Stories](#user-stories)
         3. [Strategy Table](#strategy-table)
     2. [Scope](#scope)
         1. [User Stories](#user-stories)
     3. [Structure](#structure)
+        1. [Flowchart](#flowchart)
+        2. [Database model](#database-model)
     4. [Skeleton](#skeleton)
+        1. [Flowchart](#wireframe)
     5. [Surface](#surface)
+        1. [Color Scheme](#color_scheme)
+        2. [Typography](#typography)
 2. [Features](#features)
     1. [General](#general)
     2. [Home Page](#home-page)
@@ -56,63 +63,7 @@ SportsTherapy is a dedicated platform for individuals seeking personalized sport
 
 * Ensure secure authentication and data handling.
 
-
-#### User Goals
-
-* As an Admin, I want to manage site content and appointments.
-
-* As a User, I want to browse therapist info and treatments.
-
-* As a User, I want to book an appointment easily.
-
-* As a User, I want to view and manage my appointments.
-
-* As a User, I want the site to be easy to navigate on any device.
-
-
-#### Strategy Table
-
-Opportunity / Problem | Importance | Viability / Feasibility
---- | --- | ---
-Responsive design | 5 | 5
-Account registration | 5 | 5
-Browse treatments | 5 | 5
-Book appointments | 5 | 5
-Manage appointments | 5 | 5
-User dashboard | 5 | 4
-Blog for sharing tips | 4 | 3
-Expand to include more therapists | 4 | 3
-**Total** | **38** | **35**
-
-
-### Scope
-
-The project will focus on delivering essential features for the first release, before moving on to the second phase.
-
-| **First Phase**                   | **Second Phase**                                     |
-|-----------------------------------|------------------------------------------------------|
-| Responsive design                 | Integration with payment gateway                     |
-| Account registration              | Email notifications for booking confirmations        |
-| Browse and view treatments        | Blog page for sharing tips                           |
-| Book and manage appointments      | Ability to add more therapists to the site           |
-
 #### User Stories
-
-GitHub projects was used as a project management tool with a Kanban board to track user stories:
-
-**Start**
-![User Stories Progress - Start](assets/readme_files/start.png)
-
-**Week 1**
-![User Stories Progress - Week 1](assets/readme_files/week1.png)
-
-**Week 2**
-![User Stories Progress - Week 2](assets/readme_files/week2.png)
-
-**Week 3**
-![User Stories Progress - Week 3](assets/readme_files/week3.png)
-
-**Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
 
 ##### 1. User can register an account to book and manage appointments (**3 Story Points**)
 * AC1: Register with a form, account is created.
@@ -163,6 +114,49 @@ GitHub projects was used as a project management tool with a Kanban board to tra
 * AC1: Delete appointment prompts for confirmation.
 * AC2: Confirm to remove appointment from the list.
 * AC3: Message confirms appointment cancellation.
+
+GitHub Projects was used as a project management tool with a Kanban board to track these user stories:
+
+**Start**
+![User Stories Progress - Start](assets/readme_files/start.png)
+
+**Week 1**
+![User Stories Progress - Week 1](assets/readme_files/week1.png)
+
+**Week 2**
+![User Stories Progress - Week 2](assets/readme_files/week2.png)
+
+**Week 3**
+![User Stories Progress - Week 3](assets/readme_files/week3.png)
+
+**Story points** were assigned to these user stories, using the Fibonacci sequence (3, 5, 8) to represent the relative complexity and effort involved in each task:
+
+#### Strategy Table
+
+Opportunity / Problem | Importance | Viability / Feasibility
+--- | --- | ---
+Responsive design | 5 | 5
+Account registration | 5 | 5
+Browse treatments | 5 | 5
+Book appointments | 5 | 5
+Manage appointments | 5 | 5
+User appointments dashboard | 5 | 4
+Expand to include blog for sharing tips | 4 | 3
+Expand to include more therapists | 4 | 3
+**Total** | **38** | **35**
+
+
+### Scope
+
+The project will focus on delivering essential features for the first release, before moving on to the second phase.
+
+| **First Phase**                   | **Second Phase**                                     |
+|-----------------------------------|------------------------------------------------------|
+| Responsive design                 | Integration with payment gateway                     |
+| Account registration              | Email notifications for booking confirmations        |
+| Browse and view treatments        | Blog page for sharing tips                           |
+| Book and manage appointments      | Ability to add more therapists to the site           |
+
 
 ### Structure
 
@@ -276,7 +270,9 @@ View Appointments | ![View Appointments wireframe image](assets/wireframes/your_
 
 #### Color Scheme
 
-The following colours were chosen to create color a calming, professional, and accessible user experience:
+![Color scheme image](assets/readme_files/color_scheme.png)
+
+The following colours were chosen to create a calming, professional, and accessible user experience:
 
 - **Primary Color (Teal Green):** `#0a5d61` - used for headings, buttons, and key interface elements
   - represents trust, professionalism, and health, which aligns with the therapeutic nature of the site.
@@ -299,15 +295,33 @@ The following colours were chosen to create color a calming, professional, and a
 - **Link Color:** `#0a5d61` - styled with the primary teal color, maintaining consistency across the site
   - on hover, they transition to the lighter teal (`#23bbbb`), providing a visual cue to users.
 
-![Color scheme image](assets/readme_files/color_scheme.png)
-
 #### Typography
+
+The Sports Therapy Management website employs a carefully chosen typography scheme to ensure readability and a professional appearance across all devices.
+
+- **Primary Font - Roboto:**
+  - **Usage:** Utilized for body text, general content, and links, offering a modern and clean look.
+
+- **Secondary Font - Montserrat:**
+  - **Usage:** Applied to all headings, providing a strong and professional visual hierarchy.
+
+- **Tertiary Font - Raleway:**
+  - **Usage:** Reserved for buttons and call-to-actions, ensuring these elements are distinct and noticeable.
+
+### Text Styling
+
+- **Text Color:** The primary text color is `#333333`, providing excellent readability.
+- **Link Color:** Links use `#0a5d61` for consistency with the site’s color scheme, and they change to `#1fa2a2` on hover to enhance user interaction.
+- **Line Heights:** A consistent line height is used across body text and links to maintain readability and a balanced layout.
+
+This typography setup is designed to create a clear, user-friendly reading experience while supporting the professional tone of the website.
+
 
 [Back to top ⇧](#sports-therapy)
 
 ## Features
 
-#### General
+### General
 
 * Mobile-first, responsive design for all devices, ensuring a seamless experience.
 * Consistent navigation across all pages with hover effects for feedback, enhancing usability.
@@ -320,23 +334,23 @@ The following colours were chosen to create color a calming, professional, and a
     - **Book Appointment Button:** redirects users to the appointment booking page. If the user is not logged in.
 * Footer with contact info and social media links.
 
-#### Home Page
+### Home Page
 
 * Overview of services, giving visitors a quick insight into the offerings and expertise.
 * Quick links to book an appointment or view therapist profiles, facilitating easy navigation and action.
 * Client testimonials carousel, showcasing positive feedback from clients to build trust and credibility.
 
-#### About Page
+### About Page
 
 * Detailed info about the therapist, credentials, and philosophy, helping clients understand expertise & approach.
 * Contact form for inquiries, allowing visitors to reach out with questions or requests for more information.
 
-#### Treatments Page
+### Treatments Page
 
 * List of available treatments with descriptions & pricing, providing clear & detailed info about services offered.
 * FAQ section to address common client questions, providing quick information.
 
-#### Appointments
+### Appointments
 
 * Book Appointment: Easy-to-use booking form allowing users to select dates, times, and treatment types.
 * View Appointments: dashboard for registered users to view their scheduled appointments.
@@ -344,11 +358,11 @@ The following colours were chosen to create color a calming, professional, and a
 * Delete Appointment: user casn cancel appointments if no longer needed.
 * Confirmation messages after successful bookings, updates & deletions to inform users of appointment status.
 
-#### Error Handling
+### Error Handling
 
 * Custom 404-error page to inform users and redirect them appropriately if they encounter a broken link.
 
-#### Authentication Pages
+### Authentication Pages
 
 Page | Purpose | Image |
 --- | --- | --- |
@@ -511,7 +525,7 @@ Page | Desktop | Mobile |
 ### Content
 
 * Website content was written by the developer.
-* Example questions and replies were taken from [Stack Overflow](https://stackoverflow.com/)-
+* Example questions and replies were taken from [Stack Overflow](https://stackoverflow.com/)
 
 ### Media
 
