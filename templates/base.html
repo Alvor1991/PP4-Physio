@@ -34,6 +34,22 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+    .nav-link {
+        color: #333;
+        font-weight: 500; 
+        font-size: 18px; 
+        text-transform: uppercase; 
+        transition: color 0.3s ease, background-color 0.3s ease; 
+    }
+    .nav-link:hover {
+        color: #1fa2a2; 
+    }
+    .nav-link.active {
+        color: #0a5d61; 
+        font-weight: 900;
+    }
+    </style>
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
