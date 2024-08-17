@@ -86,11 +86,13 @@ Browse treatments | 5 | 5
 Book appointments | 5 | 5
 Manage appointments | 5 | 5
 User appointments dashboard | 5 | 4
-Integration with payment gateway | 5 | 4
-Email notifications for booking confirmations | 5 | 4
-Expand to include blog for sharing tips | 4 | 3
-Expand to include more therapists | 4 | 3
-**Total** | **38** | **35**
+**Future Implementations:**
+Integration with payment gateway | 3 | 2
+Email notifications for booking confirmations | 3 | 2
+Expand to include blog for sharing tips | 2 | 2
+Expand to include more therapists | 2 | 2
+**Total** | **40** | **37**
+
 
 ### Scope
 
@@ -494,6 +496,16 @@ Page | Desktop | Mobile |
 [Back to top ⇧](#sports-therapy)
 
 ## Known Bugs
+
+**Issue:**  
+When a user attempts to delete an appointment from the "User Appointments" dashboard, the modal pops up correctly on most devices. This functionality has been tested and works as expected on various screen sizes using Google Chrome's inspect tool. However, when the delete action is performed directly on an iPhone, the entire screen becomes greyed out, and the modal is visible but not clickable.
+
+**Technical Explanation:**  
+This issue is likely due to how iOS handles modal dialogs and stacking contexts, causing the backdrop to incorrectly layer over the modal content. As a result, the modal is displayed but not interactable.
+
+**Current Status:**  
+Due to project time constraints, this issue cannot be resolved at the moment. A potential fix could involve adjusting the CSS z-index and position properties, but this will need to be addressed in a future update.
+
 
 [Back to top ⇧](#sports-therapy)
 
