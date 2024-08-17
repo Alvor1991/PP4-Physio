@@ -115,7 +115,9 @@ Outside of trailing whitespace and code comments, there were additional issues r
 
 [JSHint's JavaScript Code Quality Tool](https://jshint.com/) was used to validate the site's JavaScript code.
 
-No errors were found.
+During development, I encountered errors related to the use of ES6 features, such as const, arrow functions, and template literals, which were flagged by environments expecting older JavaScript versions. These errors included:
+
+Despite these errors, I chose to stick with ES6 because it offers a more modern and readable syntax, improving code maintainability. The project targets modern browsers, which fully support ES6, allowing for better performance and alignment with current web development practices.
 
 ## Accessibility
 
