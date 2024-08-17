@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from appointments.views import immediate_logout_view
 
 urlpatterns = [
-    path('', include('home.urls')),  
+    path('', include('home.urls')),
     path('about/', include('about.urls')),
     path('treatments/', include('treatments.urls')),
     path('appointments/', include('appointments.urls')),
@@ -16,6 +16,11 @@ urlpatterns = [
 ]
 
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(
+        settings.MEDIA_URL,
+        document_root=settings.MEDIA_ROOT
+    )
+
+handler404 = 'home.views.custom_404'
 
 handler404 = 'home.views.custom_404'

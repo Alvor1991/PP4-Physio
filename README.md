@@ -68,7 +68,7 @@ Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/
 1. As a user, I can register an account so that I can book and manage my appointments online
 2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users
 3. As a user, I can access the website on any device so that I have a seamless experience on all devices
-4. As a user, I can view the home page to get an overview of the services so that I learn more about the website
+4. As a user, I can view the home page to get an overview of the services so that I can learn more about the website
 5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise
 6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session
 7. As a user, I can create an appointment so that I can schedule a therapy session
@@ -134,17 +134,17 @@ The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to
 
 ###### Non-Logged-In Users:
 * **Home Page**: an overview of the services offered, client testimonials, and quick links to book an appointment
-* **About Page**: detailed infor about the therapist's credentials and philosophy. It also includes a contact form.
+* **About Page**: detailed info about the therapist's credentials and philosophy. It also includes a contact form.
 * **Treatments Page**: all available treatments with descriptions and pricing, along with a FAQ section.
 * **Login Page**: allows users to log in to access personalized features like appointment management.
-* **Book Appointment**: direct accesses to booking form; redirects users to log in before booking an appointment.
+* **Book Appointment**: direct access to booking form; redirects users to log in before booking an appointment.
 
 ###### Logged-In Users:
 * **Home Page**: same for non-logged-in users.
 * **About Page**: same for non-logged-in users.
 * **Treatments Page**: same for non-logged-in users.
 * **My Appointments Page**: allows users to view, edit, or delete their scheduled appointments.
-* **Logout**: allows users to securely log out of their account.
+* **Logout**: allows users to log out of their account securely.
 * **Book Appointment**: direct accesses to booking form; users can schedule their appointments.
 
 #### Database Model
@@ -178,7 +178,7 @@ The `About` model is designed to manage and present detailed information about t
 The `ContactRequest` model allows for efficient handling of client inquiries and communication.
 
 * **Name**: A `CharField` storing the name of the individual making the contact request.
-* **Email**: An `EmailField` for capturing the email address of the requester.
+* **Email**: An `EmailField` capturing the email address of the requester.
 * **Message**: A `TextField` containing the message or inquiry sent by the individual.
 * **Read**: A `BooleanField` indicating whether the message has been read. Defaults to `False`.
 * **Created On**: A `DateTimeField` that records when the contact request was created.
@@ -194,14 +194,14 @@ Each treatment offered by the therapist is detailed in the `Treatment` model.
 * **Services Offered**: An optional `TextField` detailing the services provided as part of the treatment.
 * **Benefits**: An optional `TextField` outlining the benefits of the treatment.
 * **Price**: A `DecimalField` indicating the price of the treatment, up to two decimal places.
-* **Image**: A `CloudinaryField` used to store an optional image associated with the treatment.
+* **Image**: A `CloudinaryField` to store an optional image associated with the treatment.
 * **Button Text**: A `CharField` providing default text for call-to-action buttons related for booking appointments.
 
 **FAQ Model**
 
 The `FAQ` model is used to manage frequently asked questions.
 
-* **Question**: A `CharField` storing the frequently asked question.
+* **Question**: A `CharField` storing the frequently asked questions.
 * **Answer**: A `TextField` containing the answer to the question.
 
 ##### Appointments App
@@ -312,7 +312,7 @@ This typography setup is designed to create a clear, user-friendly reading exper
 * Book Appointment: easy-to-use booking form allowing users to select dates, times, and treatment types.
 * View Appointments: dashboard for registered users to view their scheduled appointments.
 * Update Appointment: users can edit appointments, providing flexibility to manage their schedules.
-* Delete Appointment: user casn cancel appointments if no longer needed.
+* Delete Appointment: user can cancel appointments if no longer needed.
 * Confirmation messages after successful bookings, updates & deletions to inform users of appointment status.
 
 ### Error Handling
@@ -341,7 +341,7 @@ This typography setup is designed to create a clear, user-friendly reading exper
 * [Django](https://www.djangoproject.com/) - was used as web framework.
 * [Django Template](https://jinja.palletsprojects.com) - was used as a templating language for Django to display backend data to HTML.
 * [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - was used to help with styling and responsiveness.
-* [Google Fonts](https://fonts.google.com) - was used to import the fonts into the html file.
+* [Google Fonts](https://fonts.google.com) - was used to import the fonts into the HTML file.
 * [Font Awesome](https://fontawesome.com) - was used throughout the website to add icons for aesthetic and UX purposes.
 
 ### Packages / Dependencies Installed
@@ -381,7 +381,7 @@ The testing documentation can be found [here](https://github.com/Alvor1991/PP4-P
 
 ## Deployment
 
-Project developed using a [GitPod](https://gitpod.io/) workspace. The code was commited to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/").
+Project developed using a [GitPod](https://gitpod.io/) workspace. The code was committed to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/").
 
 ### Deploying on Heroku
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
@@ -415,7 +415,7 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
     - Create three directories in the main directory; media, storage and templates.
     - Create a file named "Procfile" in the main directory and add the following:
         - web: gunicorn project-name.wsgi
-    - Go to Deploy tab on Heroku and connect to the GitHub, then to the required recpository.
+    - Go to Deploy tab on Heroku and connect to the GitHub, then to the required repository.
     Click on Delpoy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku.
 
 ### Forking the Repository
@@ -489,9 +489,9 @@ Page | Desktop | Mobile |
 
 ### Code
 
-* [Stack Overflow](https://stackoverflow.com/) and [W3Schools](https://www.w3schools.com/) were consulted on a regular basis for inspiration and sometimes to be able to better understand the code being implement.
+* [Stack Overflow](https://stackoverflow.com/) and [W3Schools](https://www.w3schools.com/) were consulted on a regular basis for inspiration.
 
-* Message implementation an dismissal code is taken from [Code Institute](https://codeinstitute.net/)'s django-blog project.
+* Initial structcure and base HTML code was taken from [Code Institute](https://codeinstitute.net/)'s django-blog project.
 
 [Back to top ⇧](#sports-therapy)
 
@@ -505,6 +505,8 @@ This issue is likely due to how iOS handles modal dialogs and stacking contexts,
 
 **Current Status:**  
 Due to project time constraints, this issue cannot be resolved at the moment. A potential fix could involve adjusting the CSS z-index and position properties, but this will need to be addressed in a future update.
+
+![Delete modal bug](assets/readme_files/modal_bug.png)
 
 
 [Back to top ⇧](#sports-therapy)

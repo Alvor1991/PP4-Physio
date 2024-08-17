@@ -98,7 +98,7 @@ W3C CSS Validator found no errors or warnings in the CSS.
 
 ### Python
 
-[PEP8 online](http://pep8online.com/) was used to validate the Python code for PEP8 compliance. As there many files to assess within each app, I have focused on the appointment app for this testing section. 
+[PEP8 online](http://pep8online.com/) was used to validate the Python code for PEP8 compliance. As there were many files to assess within each app, I have focused on the appointment app for this testing section. 
 
 | Location | Errors / Warnings | Code Reviewed |
 | --- | --- | --- |
@@ -845,10 +845,10 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Signin Link</td>
+        <td rowspan=2>Sign up Link</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Clicking the link redirects to the signin page.</td>
+        <td>Clicking the link redirects to the sign up page.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
