@@ -11,25 +11,25 @@ Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/
 1. [User Experience (UX)](#user-experience-ux)
     1. [Strategy](#strategy)
         1. [Project Goals](#project-goals)
-        2. [User Stories](#user-stories)
+        2. [Site Goals](#site-goals)
         3. [Strategy Table](#strategy-table)
     2. [Scope](#scope)
-        1. [User Stories](#user-stories)
+        1. [Kanban Board](#kanban-board)
     3. [Structure](#structure)
         1. [Flowchart](#flowchart)
-        2. [Database model](#database-model)
+        3. [Database model](#database-model)
     4. [Skeleton](#skeleton)
-        1. [Flowchart](#wireframe)
+        1. [Wireframe](#wireframe)
     5. [Surface](#surface)
-        1. [Color Scheme](#color_scheme)
+        1. [Color Scheme](#color-scheme)
         2. [Typography](#typography)
 2. [Features](#features)
     1. [General](#general)
     2. [Home Page](#home-page)
     3. [About Page](#about-page)
-    4. [Service Offerings](#service-offerings)
-    5. [Appointment Booking](#appointment-booking)
-    6. [User Profile](#user-profile)
+    4. [Treatments](#treatments)
+    5. [My Appointments](#my-appointments)
+    6. [Error Handling](#user-profile)
     7. [Authentication Pages](#authentication-pages)
 3. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
@@ -122,20 +122,22 @@ GitHub Projects was used as a project management tool with a Kanban board to tra
 
 ### Structure
 
+#### Flowchart
+
 The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to illustrate the user journey and interactions, ensuring intuitive navigation and a seamless user experience. The chart outlines the interactions available to both logged-in and logged-out users, illustrating how they navigate through the site's features.
 
 ![Sports Therapy Booking website map](assets/readme_files/flowchart.png)
 
-#### User Flow
+##### User Flow
 
-##### Non-Logged-In Users:
+###### Non-Logged-In Users:
 * **Home Page**: an overview of the services offered, client testimonials, and quick links to book an appointment
 * **About Page**: detailed infor about the therapist's credentials and philosophy. It also includes a contact form.
 * **Treatments Page**: all available treatments with descriptions and pricing, along with a FAQ section.
 * **Login Page**: allows users to log in to access personalized features like appointment management.
 * **Book Appointment**: direct accesses to booking form; redirects users to log in before booking an appointment.
 
-##### Logged-In Users:
+###### Logged-In Users:
 * **Home Page**: same for non-logged-in users.
 * **About Page**: same for non-logged-in users.
 * **Treatments Page**: same for non-logged-in users.
@@ -303,7 +305,7 @@ This typography setup is designed to create a clear, user-friendly reading exper
 * List of available treatments with descriptions & pricing, providing clear & detailed info about services offered.
 * FAQ section to address common client questions, providing quick information.
 
-### Appointments
+### My Appointments
 
 * Book Appointment: easy-to-use booking form allowing users to select dates, times, and treatment types.
 * View Appointments: dashboard for registered users to view their scheduled appointments.
@@ -317,11 +319,8 @@ This typography setup is designed to create a clear, user-friendly reading exper
 
 ### Authentication Pages
 
-Page | Purpose | Image |
---- | --- | --- |
-Register | Allows the User to sign up for an account on the website. | ![Sign Up Page](assets/readme_files/sign_up.png) |
-Login | Allows the User to sign in with their account. | ![Sign In Page](assets/readme_files/sign_in.png) |
-
+* Signup: allows the User to sign up for an account on the website.
+* Login: allows the User to sign in with their account.
 
 [Back to top ⇧](#sports-therapy)
 
@@ -334,7 +333,6 @@ Login | Allows the User to sign in with their account. | ![Sign In Page](assets/
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
-
 
 ### Libraries and Frameworks
 
