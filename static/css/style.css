@@ -19,9 +19,8 @@ body {
   width: auto;
 }
 
-.nav-link:hover {
-  color: #e74c3c; /* Your hover color */
-  text-decoration: underline; /* Optional: underline on hover */
+.nav-link {
+  color: red; /* Replace with your desired color */
 }
 
 h3,
