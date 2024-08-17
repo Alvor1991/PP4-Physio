@@ -1,8 +1,8 @@
 # Sports Therapy Website Testing
 
-[Back to the README.md file](github.com/Alvor1991/PP4-SportsTherapy#sports-therapy)  
+[Back to the README.md file](https://github.com/Alvor1991/PP4-SportsTherapy)  
 
-[Back to the Testing section in the README.md file](github.com/Alvor1991/PP4-SportsTherapy/sports-therapy#testing)
+[Back to the Testing section in the README.md file](github.com/Alvor1991/PP4-SportsTherapy#testing)
 
 [View the live website here](https://pp4-physio-4e914098e1ff.herokuapp.com)  
 
