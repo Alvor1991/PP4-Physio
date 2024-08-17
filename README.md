@@ -1,7 +1,5 @@
 # SportsTherapy
 
-![PhysioApp mockup images](assets/readme_files/mockup_image.jpg)
-
 SportsTherapy is a dedicated platform for individuals seeking personalized sports therapy and wellness solutions. Run by a sole practitioner, SportsTherapy emphasizes a holistic approach to health, offering specialized services including sports therapy, orthotics, and health coaching. Whether you're aiming to enhance your athletic performance, recovering from an injury, or interested in improving your overall health, SportsTherapy is here to provide tailored support and expert guidance.
 
 Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/).
@@ -65,16 +63,25 @@ Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/
 
 #### Site Goals
 
-1. As a user, I can register an account so that I can book and manage my appointments online
-2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users
-3. As a user, I can access the website on any device so that I have a seamless experience on all devices
-4. As a user, I can view the home page to get an overview of the services so that I can learn more about the website
-5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise
-6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session
-7. As a user, I can create an appointment so that I can schedule a therapy session
-8. As a user, I can view a list of my appointments so that I can see my scheduled therapy sessions
-9. As a user, I can update my appointments so that I can change the details of a scheduled session
-10. As a user, I can delete my appointments so that I can cancel a session I no longer need
+1. As a user, I can register an account so that I can book and manage my appointments online.
+
+2. As an admin, I can manage website content so that I can keep info up-to-date and relevant for users.
+
+3. As a user, I can access the website on any device so that I have a seamless experience on all devices.
+
+4. As a user, I can view the home page to get an overview of services so I can learn more about the website.
+
+5. As a user, I can view info about the therapist so that I can learn about their credentials and expertise.
+
+6. As a user, I can view a list of available treatments so that I can choose the appropriate therapy session.
+
+7. As a user, I can create an appointment so that I can schedule a therapy session.
+
+8. As a user, I can view a list of my appointments so that I can see my scheduled therapy sessions.
+
+9. As a user, I can update my appointments so that I can change the details of a scheduled session.
+
+10. As a user, I can delete my appointments so that I can cancel a session I no longer need.
 
 #### Strategy Table
 
@@ -321,7 +328,7 @@ This typography setup is designed to create a clear, user-friendly reading exper
 
 ### Authentication Pages
 
-* Signup: allows the User to sign up for an account on the website.
+* Sign up: allows the User to sign up for an account on the website.
 * Login: allows the User to sign in with their account.
 
 [Back to top ⇧](#sports-therapy)
@@ -481,7 +488,7 @@ Page | Desktop | Mobile |
 
 ### Media
 
-* [iStock](https://www.istockphoto.com/)
+[iStock](https://www.istockphoto.com/) was used for images on the site.
 
 * Health Coaching image: taken by [designer491](https://www.pexels.com/@buro-millennial-636760/).
 * Orthotics image: taken by [Andrey Popov](https://www.pexels.com/@buro-millennial-636760/).
@@ -512,5 +519,9 @@ Due to project time constraints, this issue cannot be resolved at the moment. A 
 [Back to top ⇧](#sports-therapy)
 
 ## Acknowledgements
+
+* My tutor, Marcel, for his  feedback and guidance.
+
+* Code Institute and the Slack community.
 
 [Back to top ⇧](#sports-therapy)

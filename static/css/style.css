@@ -19,30 +19,10 @@ body {
   width: auto;
 }
 
-.navbar {
-  background-color: #fdfdfb;
-  border-bottom: 2px solid #0a5d61;
-  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
+.nav-link:hover {
+  color: #e74c3c; /* Your hover color */
+  text-decoration: underline; /* Optional: underline on hover */
 }
-
-/* Make sure to target exactly the nav links */
-.navbar .navbar-nav .nav-item .nav-link {
-  color: #56733C !important; /* Desired color */
-  font-weight: 600 !important; /* Make it bold */
-  transition: color 0.3s ease; /* Smooth transition */
-}
-
-/* Hover state */
-.navbar .navbar-nav .nav-item .nav-link:hover,
-.navbar .navbar-nav .nav-item .nav-link:focus {
-  color: #E5B87B !important; /* Hover color */
-}
-
-/* Active link state */
-.navbar .navbar-nav .nav-item .nav-link.active {
-  color: #784742 !important; /* Active link color */
-}
-
 
 h3,
 h4,
