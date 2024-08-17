@@ -102,9 +102,9 @@ W3C CSS Validator found no errors or warnings in the CSS.
 
 | Location | Errors / Warnings | Code Reviewed |
 | --- | --- | --- |
-| ./appointments/model.py | ![forms.py errors/warnings image](assets/testing_files/appointments_model.png) | ![forms.py code reviewed image](assets/testing_files/models_reviewed.png) |
-| ./appointments/views.py | ![views.py errors/warnings image](assets/testing_files/appointments_views.png) | ![views.py code reviewed image](assets/testing_files/views.png) |
-| ./appointments/urls.py | ![urls.py errors/warnings image](assets/testing_files/appointments_forms.png) | ![urls.py code reviewed image](assets/testing_files/forms_reviewed.pmg.png) |
+| ./appointments/model.py | ![forms.py errors/warnings image](assets/testing_files/appointment_model.png) | ![forms.py code reviewed image](assets/testing_files/models_reviewed.pmg.png) |
+| ./appointments/views.py | ![views.py errors/warnings image](assets/testing_files/appointments_views.png) | ![views.py code reviewed image](assets/testing_files/views_reviewed.png) |
+| ./appointments/forms.py | ![urls.py errors/warnings image](assets/testing_files/appointments_forms.png) | ![urls.py code reviewed image](assets/testing_files/forms_reviewed.pmg.png) |
 
 
 ### JavaScript
@@ -132,10 +132,6 @@ Page | Lighthouse Report |
 
 ## Tools Testing
 
-### [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
-
-Chrome DevTools was used throughout the development process to test, explore, and modify HTML elements and CSS styles.
-
 ### Responsiveness
 
 * Chrome DevTools was used to test responsiveness in different screen sizes during the development process.
@@ -149,7 +145,6 @@ Browser | Outcome | Pass/Fail |
 Google Chrome | No appearance, responsiveness, or functionality issues.| <span style="color:green">Pass</span> |
 Safari | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 Mozilla Firefox | No responsiveness or functionality issues.| <span style="color:green">Pass</span> |
-Microsoft Edge | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 
 ### Device Compatibility
 
