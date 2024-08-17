@@ -489,9 +489,9 @@ Page | Desktop | Mobile |
 
 [iStock](https://www.istockphoto.com/) was used for images on the site.
 
-* Health Coaching image: taken by [designer491](https://www.pexels.com/@buro-millennial-636760/).
-* Orthotics image: taken by [Andrey Popov](https://www.pexels.com/@buro-millennial-636760/).
-* Ort image: taken by [Andrey Popov](https://www.pexels.com/@buro-millennial-636760/).
+* Health Coaching image: taken by [designer491](https://www.istockphoto.com/portfolio/designer491?mediatype=photography).
+* Orthotics image: taken by [Andrey Popov](https://www.istockphoto.com/portfolio/AndreyPopov?mediatype=photography).
+* Sports Therapy image: taken by [Lyndon Stratford](https://www.istockphoto.com/portfolio/StratfordProductions?mediatype=photography).
 
 ### Code
 

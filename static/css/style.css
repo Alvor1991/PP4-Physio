@@ -287,6 +287,9 @@ About Page
   height: 300px;
   object-fit: cover;
   max-width: 300px;
+  border: 4px solid #0a5d61;
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
+  max-width: 300px; /* Optional: Adjust the maximum width of the image */
 }
 
 /* ===================================

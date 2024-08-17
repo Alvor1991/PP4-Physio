@@ -20,52 +20,52 @@
 
 ## Testing User Stories
 
-##### 1. User can register an account to book and manage appointments (**3 Story Points**)
+#### 1. User can register an account to book and manage appointments (**3 Story Points**)
 * AC1: Register with a form, account is created.
 * AC2: Valid username and password register the account.
 * AC3: Redirected to "My Profile" page, see a no bookings message.
 
-##### 2. Admin can manage content to keep info up-to-date (**8 Story Points**)
+#### 2. Admin can manage content to keep info up-to-date (**8 Story Points**)
 * AC1: Admin dashboard access to edit/update content.
 * AC2: Treatment updates reflected on the public site.
 * AC3: Edit treatment content and prices accurately.
 
-##### 3. User can access the website on any device for a seamless experience (**3 Story Points**)
+#### 3. User can access the website on any device for a seamless experience (**3 Story Points**)
 * AC1: Website layout adjusts to fit mobile screens.
 * AC2: Content remains readable when resizing the browser.
 * AC3: Navigation menu collapses into mobile-friendly version.
 
-##### 4. User can view the home page to get an overview of services (**3 Story Points**)
+#### 4. User can view the home page to get an overview of services (**3 Story Points**)
 * AC1: Home page shows introduction and service overview.
 * AC2: Scroll to see user testimonials.
 * AC3: Call-to-action buttons for booking or learning more.
 
-##### 5. User can view therapist info to learn about credentials (**3 Story Points**)
+#### 5. User can view therapist info to learn about credentials (**3 Story Points**)
 * AC1: About page shows therapist’s biography and credentials.
 * AC2: Read content to understand services and experience.
 * AC3: Contact form for questions or more information.
 
-##### 6. User can view treatments to choose appropriate therapy (**5 Story Points**)
+#### 6. User can view treatments to choose appropriate therapy (**5 Story Points**)
 * AC1: Treatments page lists available services.
 * AC2: Click on treatment to see detailed description.
 * AC3: Understand benefits and pricing of each treatment.
 
-##### 7. User can create an appointment to schedule a therapy session (**5 Story Points**)
+#### 7. User can create an appointment to schedule a therapy session (**5 Story Points**)
 * AC1: Booking form shows available slots.
 * AC2: Selected treatment is added to the booking.
 * AC3: Confirmation received once appointment is created.
 
-##### 8. User can view appointments to see scheduled sessions (**5 Story Points**)
+#### 8. User can view appointments to see scheduled sessions (**5 Story Points**)
 * AC1: Log in to see upcoming and past bookings.
 * AC2: View details like date, time, and treatment.
 * AC3: Navigate to detailed appointment information.
 
-##### 9. User can update appointments to change session details (**5 Story Points**)
+#### 9. User can update appointments to change session details (**5 Story Points**)
 * AC1: Edit appointment to see current details.
 * AC2: Update date, time, or treatment, reflecting changes.
 * AC3: Confirmation received after updating appointment.
 
-##### 10. User can delete appointments to cancel a session (**5 Story Points**)
+#### 10. User can delete appointments to cancel a session (**5 Story Points**)
 * AC1: Delete appointment prompts for confirmation.
 * AC2: Confirm to remove appointment from the list.
 * AC3: Message confirms appointment cancellation.
@@ -80,13 +80,13 @@ W3C Markup Validator found the following errors in `base.html`:
 
 ![home.html validation errors image](assets/testing_files/base_errors.png)
 
-To resolve the error, I moved the modal inside the body tag.
+* To resolve the error, I moved the modal inside the body tag.
 
 W3C Markup Validator found the following errors in `treatments.html`:
 
 ![treatments.html validation errors image](assets/testing_files/treatment_errors.png)
 
-To resolve the error, I wrapped content with a div instead of p and removed redundant closing tags. 
+* To resolve the error, I wrapped content with a div instead of p and removed redundant closing tags. 
 
 ### CSS
 
@@ -98,26 +98,22 @@ W3C CSS Validator found no errors or warnings in the CSS.
 
 ### Python
 
-[PEP8 online](http://pep8online.com/) was used to validate the Python code for PEP8 compliance. As there were many files to assess within each app, I have focused on the appointment app for this testing section. 
+[PEP8CI](https://pep8ci.herokuapp.com/) was used to validate the Python code for PEP8 compliance. As there were many files to assess within each app, I have focused on the appointment app for this testing section. 
 
 | Location | Errors / Warnings | Code Reviewed |
 | --- | --- | --- |
-| ./appointments/model.py | ![forms.py errors/warnings image](assets/testing_files/appointments_forms.png) | ![forms.py code reviewed image](assets/testing_files/pep8_forms_reviewed.png) |
-| ./appointments/views.py | ![views.py errors/warnings image](assets/testing_files/appointments_views.png) | ![views.py code reviewed image](assets/testing_files/pep8_models_reviewed.png) |
-| ./appointments/urls.py | ![urls.py errors/warnings image](assets/testing_files/pep8_urls_errors.png) | ![urls.py code reviewed image](assets/testing_files/pep8_urls_reviewed.png) |
-
-Outside of trailing whitespace and code comments, there were additional issues related to splitting long lines. For example:
-* In the treatment field, the line was divided into three parts: `max_length`, `choices`, and `default`. Each part is now on a separate line to keep the overall line length under 79 characters.
-* The `__str__` method's return statement was split into two lines using string concatenation, ensuring each line remains within the 79-character limit.
+| ./appointments/model.py | ![forms.py errors/warnings image](assets/testing_files/appointments_model.png) | ![forms.py code reviewed image](assets/testing_files/models_reviewed.png) |
+| ./appointments/views.py | ![views.py errors/warnings image](assets/testing_files/appointments_views.png) | ![views.py code reviewed image](assets/testing_files/views.png) |
+| ./appointments/urls.py | ![urls.py errors/warnings image](assets/testing_files/appointments_forms.png) | ![urls.py code reviewed image](assets/testing_files/forms_reviewed.pmg.png) |
 
 
 ### JavaScript
 
 [JSHint's JavaScript Code Quality Tool](https://jshint.com/) was used to validate the site's JavaScript code.
 
-During development, I encountered errors related to the use of ES6 features, such as const, arrow functions, and template literals, which were flagged by environments expecting older JavaScript versions. These errors included:
+During development, I encountered errors related to the use of ES6 features, such as const, arrow functions, and template literals, which were flagged by environments expecting older JavaScript versions.
 
-Despite these errors, I chose to stick with ES6 because it offers a more modern and readable syntax, improving code maintainability. The project targets modern browsers, which fully support ES6, allowing for better performance and alignment with current web development practices.
+Despite these errors, I chose to stick with ES6 as it offers a more modern and readable syntax, improving code maintainability. The project targets modern browsers, which fully support ES6, allowing for better performance & alignment with current web development practices.
 
 ## Accessibility
 
@@ -142,8 +138,6 @@ Chrome DevTools was used throughout the development process to test, explore, an
 
 ### Responsiveness
 
-* [Am I Responsive?](http://ami.responsivedesign.is/#) was used to check the responsiveness of the site pages across different devices.
-
 * Chrome DevTools was used to test responsiveness in different screen sizes during the development process.
 
 ## Manual Testing
@@ -161,9 +155,7 @@ Microsoft Edge | No appearance, responsiveness, or functionality issues. | <span
 
 Device | Operating System | Outcome | Pass/Fail
 --- | --- | --- | --- |
-MacBook Pro 15" | macOS Big Sur | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
-iPad Pro 12.9" | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
-iPhone XR | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
+MacBook Air 15" | macOS Sonoma | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <span style="color:green">Pass</span> |
 
 ### Test Results
@@ -188,7 +180,7 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
     <tr>
         <td>Style</td>
-        <td>Hover effect working as expected.</td>
+        <td>Responsive on smaller screens.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -243,7 +235,7 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td rowspan=2>My Appointments link</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
-        <td>Clicking the link redirects to the Appointments page.</td>
+        <td>Clicking the link redirects to Appointments page.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -301,29 +293,10 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Logo link</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>Clicking the link redirects to the home page.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Hover effect working as expected.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
         <td>Main Content Area</td>
         <td>All</td>
         <td>Functionality</td>
         <td>Main content area renders correctly and displays the page-specific content.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Main Content Area</td>
-        <td>All</td>
-        <td>Style</td>
-        <td>Main content area is styled correctly and is responsive across all devices.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>
@@ -368,7 +341,7 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td rowspan=2>Service Icons</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
-        <td>Icons are displayed correctly and provide visual cues for each service.</td>
+        <td>Icons are displayed correctly and provide visual cues.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
@@ -703,6 +676,30 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
+        <td rowspan=2>Appointment Deleted Message</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>If appointments is deleted, a message is displayed to confirm.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Message is styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Appointment Updated Message</td>
+        <td rowspan=2>Registered</td>
+        <td>Functionality</td>
+        <td>If appointments is updated, a message is displayed to confirm.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Message is styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
         <td rowspan=2>No Appointments Message</td>
         <td rowspan=2>Registered</td>
         <td>Functionality</td>
@@ -764,54 +761,6 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
     </tr>
 </table>
 
-#### Delete Appointments Page
-
-<table>
-    <tr>
-        <th>Feature</th>
-        <th>Users</th>
-        <th>Test</th>
-        <th>Outcome</th>
-        <th>Pass/Fail</th>
-    </tr>
-    <tr>
-        <td rowspan=2>Confirmation Message</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Confirmation message displays the correct appointment date & time.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Message is styled consistently with the overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Delete Button</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Clicking the delete button successfully deletes the appointment & redirects to user appointments.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Button has a hover effect and is styled in red to indicate danger.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Cancel Button</td>
-        <td rowspan=2>Registered</td>
-        <td>Functionality</td>
-        <td>Clicking the cancel button redirects back to the home page without deleting appointment.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Button has a hover effect and is styled consistently with overall design.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-</table>
-
 #### Signup Page
 
 <table>
@@ -823,7 +772,7 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td rowspan=2>Signup Form</td>
+        <td rowspan=2>Sign Up Form</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
         <td>Form fields render correctly and accept user input.</td>
@@ -847,7 +796,7 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=2>Sign up Link</td>
+        <td rowspan=2>Sign Up Link</td>
         <td rowspan=2>All</td>
         <td>Functionality</td>
         <td>Clicking the link redirects to the sign up page.</td>
