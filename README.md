@@ -9,7 +9,7 @@ Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/
 1. [User Experience (UX)](#user-experience-ux)
     1. [Strategy](#strategy)
         1. [Project Goals](#project-goals)
-        2. [Site Goals](#site-goals)
+        2. [User Stories](#user-stories)
         3. [Strategy Table](#strategy-table)
     2. [Scope](#scope)
         1. [Kanban Board](#kanban-board)
@@ -36,7 +36,7 @@ Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/
     4. [Database Management](#database-management)
     5. [Tools and Programs](#tools-and-programs)
 4. [Testing](#testing)
-    1. [Go to TESTING.md](https://github.com/Alvor1991/PP4-Physio/blob/main/TESTING.md)
+    1. [Go to TESTING.md](https://github.com/Alvor1991/PP4-SportsTherapy/blob/main/TESTING.md)
 5. [Deployment](#deployment)
 6. [Finished Product](#finished-product)
 7. [Credits](#credits)
@@ -61,7 +61,7 @@ Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/
 
 * Ensure secure authentication and data handling.
 
-#### Site Goals
+#### User Stories
 
 1. As a user, I can register an account so that I can book and manage my appointments online.
 
@@ -164,7 +164,7 @@ The database model was designed using [drawsql](https://drawsql.app/) and is man
 
 ###### ClientTestimonial Model
 
-The `ClientTestimonial` model model manages and displays client feedback on the website
+The `ClientTestimonial` model model manages and displays client feedback on the website.
 
 * **Client Name**: A `CharField` that stores the name of the client providing the testimonial.
 * **Testimonial Text**: A `TextField` containing testimonials provided by users.
@@ -262,9 +262,6 @@ The following colours were chosen to create a calming, professional, and accessi
 - **Neutral Background (Light Gray):** `#fdfdfb` - used as the primary background color
   - provides a clean and neutral backdrop that allows the content to stand out.
 
-- **Footer and Borders (Muted Gray):** `#f9fafc` - used in the footer and for subtle border elements
-  - ensures a gentle visual separation between different sections of the site.
-
 - **Link Color:** `#0a5d61` - styled with the primary teal color, maintaining consistency across the site
 
 #### Typography
@@ -289,7 +286,8 @@ This typography setup is designed to create a clear, user-friendly reading exper
 
 * Mobile-first, responsive design for all devices, ensuring a seamless experience.
 * Consistent navigation across all pages with hover effects for feedback, enhancing usability.
-* The navbar adapts based on user authentication status;
+* The navbar adapts based on user authentication status:
+
     - **Home:** Redirects to the home page for easy navigation back to the main site.
     - **About:** Provides access to detailed information about the therapist, their credentials, and philosophy.
     - **Treatments:** Directs users to a page listing available treatments with descriptions and pricing.
@@ -346,14 +344,14 @@ This typography setup is designed to create a clear, user-friendly reading exper
 ### Libraries and Frameworks
 
 * [Django](https://www.djangoproject.com/) - was used as web framework.
-* [Django Template](https://jinja.palletsprojects.com) - was used as a templating language for Django to display backend data to HTML.
+* [Django Template](https://docs.djangoproject.com/en/5.1/topics/templates/) - was used as a templating language for Django to display backend data to HTML.
 * [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - was used to help with styling and responsiveness.
 * [Google Fonts](https://fonts.google.com) - was used to import the fonts into the HTML file.
 * [Font Awesome](https://fontawesome.com) - was used throughout the website to add icons for aesthetic and UX purposes.
 
 ### Packages / Dependencies Installed
 
-* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) - used for user authentication, registration, and account management.
+* [Django Allauth](https://docs.allauth.org/en/latest/) - used for user authentication, registration, and account management.
 * [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/) - used to control the rendering of the forms.
 * [Summernote](https://summernote.org/) - was used as a WYSIWYG editor.
 * [Cloudinary](https://cloudinary.com/) - was used as an image management solution.
@@ -381,7 +379,7 @@ This typography setup is designed to create a clear, user-friendly reading exper
 
 ## Testing
 
-The testing documentation can be found [here](https://github.com/Alvor1991/PP4-Physio/blob/main/TESTING.md).
+The testing documentation can be found [here](https://github.com/Alvor1991/PP4-SportsTherapy/blob/main/TESTING.md).
 
 
 [Back to top ⇧](#sports-therapy)
@@ -429,7 +427,7 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
-2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP4-Physio).
+2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP4-SportsTherapy).
 3. At the top of the repository, on the right side of the page, select "Fork"
 4. You should now have a copy of the original repository in your GitHub account.
 
@@ -438,21 +436,21 @@ How to run this project locally:
 1. Install the [GitPod Browser](https://www.gitpod.io/docs/browser-extension/ "Link to Gitpod Browser extension download") Extension for Chrome.
 2. After installation, restart the browser.
 3. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP4-Physio).
+2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP4-SportsTherapy).
 5. Click the green "GitPod" button in the top right corner of the repository.
 This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
 
 How to run this project within a local IDE, such as VSCode:
 
 1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
-2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP4-Physio).
+2. Locate the [GitHub Repository](https://github.com/Alvor1991/PP4-SportsTherapy).
 3. Under the repository name, click "Clone or download".
 4. In the Clone with HTTPs section, copy the clone URL for the repository.
 5. In your local IDE open the terminal.
 6. Change the current working directory to the location where you want the cloned directory to be made.
 7. Type 'git clone', and then paste the URL you copied in Step 3.
 ```
-git clone https://github.com/Alvor1991/PP4-Physio
+git clone https://github.com/Alvor1991/PP4-SportsTherapy
 ```
 8. Press Enter. Your local clone will be created.
 
