@@ -261,43 +261,6 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td><span style="color:green">Pass</span></td>
     </tr>
     <tr>
-        <td rowspan=8>Authentication</td>
-        <td rowspan=2>Login</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>User is directed to appointments page upon login.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>A message in navbar displays that user is logged in.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Signup</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>User directed to appointments page upon signup.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>Message displays that user has no bookings yet.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td rowspan=2>Logout</td>
-        <td rowspan=2>All</td>
-        <td>Functionality</td>
-        <td>User directed back to home page upon logout.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
-        <td>Style</td>
-        <td>A message in navbar displays that user is logged out.</td>
-        <td><span style="color:green">Pass</span></td>
-    </tr>
-    <tr>
         <td rowspan=8>Footer</td>
         <td rowspan=2>Facebook icon</td>
         <td rowspan=2>All</td>
@@ -329,9 +292,139 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td>Main content area renders correctly and displays the page-specific content.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
+    <tr>
+        <td rowspan=8>Authentication</td>
+        <td rowspan=2>Login</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>User is directed to appointments page upon login.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>A message in navbar displays that user is logged in.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Sign up</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>User directed to appointments page upon signup.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Message displays that user has no bookings yet.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Logout</td>
+        <td>All</td>
+        <td>Functionality</td>
+        <td>User directed back to home page upon logout.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
 </table>
 
-   
+#### Home Page 
+
+<table>
+    <tr>
+        <th colspan=2>Feature</th>
+        <th>Users</th>
+        <th>Test</th>
+        <th>Outcome</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td rowspan=2>Page Buttons</td>
+        <td rowspan=2>Book Appointment button</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Clicking the button redirects to the Booking page.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Hover effect working as expected.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=4>Service Cards</td>
+        <td rowspan=2>Learn More buttons</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Clicking the button redirects to the Treatments page.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Hover effect working as expected.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Service Icons</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Icons are displayed correctly and provide visual cues.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Icons are styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=4>Client Testimonials</td>
+        <td rowspan=2>Carousel Controls</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Clicking the controls navigates through the testimonials.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Carousel controls are styled consistently with overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Testimonial Content</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Testimonials display correctly and are readable.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Testimonials are styled consistently with the overall design.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=4>Call to Action</td>
+        <td rowspan=2>Book Now button</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Clicking the button redirects to the Booking page.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Hover effect working as expected.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Contact Link</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>Clicking the link redirects to the About Me page.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Hover effect working as expected.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+</table>
 
 #### About Page 
 
