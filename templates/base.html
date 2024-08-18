@@ -36,24 +36,24 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <style>
     .nav-link {
-        color: #333;
+        color: #333 !important;
         font-weight: 500; 
         font-size: 18px; 
         transition: color 0.3s ease, background-color 0.3s ease; 
     }
     .nav-link:hover {
-        color: #1fa2a2; 
+        color: #1fa2a2 !important; 
     }
     .nav-link.active {
-        color: #0a5d61; 
+        color: #0a5d61 !important; 
         font-weight: 900;
     }
-    </style>
+</style>
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'images/favicon.png' %}" alt="PhysioApp">
