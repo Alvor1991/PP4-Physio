@@ -2,8 +2,6 @@
 
 [Back to the README.md file](https://github.com/Alvor1991/PP4-SportsTherapy)  
 
-[Back to the Testing section in the README.md file](github.com/Alvor1991/PP4-SportsTherapy#testing)
-
 [View the live website here](https://pp4-physio-4e914098e1ff.herokuapp.com)  
 
 ## Table of Contents
@@ -292,6 +290,38 @@ iPhone SE | iOS 15 | No appearance, responsiveness, or functionality issues. | <
         <td>All</td>
         <td>Functionality</td>
         <td>Main content area renders correctly and displays the page-specific content.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=8>Authentication</td>
+        <td rowspan=2>Login</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>User is directed to appointments page upon login.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>A message in navbar displays that user is logged in.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td rowspan=2>Sign up</td>
+        <td rowspan=2>All</td>
+        <td>Functionality</td>
+        <td>User directed to appointments page upon signup.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Style</td>
+        <td>Message displays that user has no bookings yet.</td>
+        <td><span style="color:green">Pass</span></td>
+    </tr>
+    <tr>
+        <td>Logout</td>
+        <td>All</td>
+        <td>Functionality</td>
+        <td>User directed back to home page upon logout.</td>
         <td><span style="color:green">Pass</span></td>
     </tr>
 </table>

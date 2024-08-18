@@ -53,7 +53,7 @@ Visit the deployed website [here](https://pp4-physio-4e914098e1ff.herokuapp.com/
 
 #### Project Goals
 
-* Provide a user-friendly interface for clients to book therapy appointments.
+* Provide a user-friendly interface for clients to book sports therapy appointments.
 
 * Implement a responsive design to ensure accessibility across various devices.
 
@@ -140,7 +140,7 @@ The website is organized using a [Mermaid](https://mermaid.js.org/) Flowchart to
 ##### User Flow
 
 ###### Non-Logged-In Users:
-* **Home Page**: an overview of the services offered, client testimonials, and quick links to book an appointment
+* **Home Page**: an overview of the services offered, client testimonials, and quick links to book an appointment.
 * **About Page**: detailed info about the therapist's credentials and philosophy. It also includes a contact form.
 * **Treatments Page**: all available treatments with descriptions and pricing, along with a FAQ section.
 * **Login Page**: allows users to log in to access personalized features like appointment management.
@@ -164,7 +164,7 @@ The database model was designed using [drawsql](https://drawsql.app/) and is man
 
 ###### ClientTestimonial Model
 
-The `ClientTestimonial` model model manages and displays client feedback on the website.
+The `ClientTestimonial` model manages and displays client feedback on the website.
 
 * **Client Name**: A `CharField` that stores the name of the client providing the testimonial.
 * **Testimonial Text**: A `TextField` containing testimonials provided by users.
@@ -326,8 +326,8 @@ This typography setup is designed to create a clear, user-friendly reading exper
 
 ### Authentication Pages
 
-* Sign up: allows the User to sign up for an account on the website.
-* Login: allows the User to sign in with their account.
+* Sign up: allows the user to sign up for an account on the website.
+* Login: allows the user to sign in with their account.
 
 [Back to top ⇧](#sports-therapy)
 
@@ -372,6 +372,7 @@ This typography setup is designed to create a clear, user-friendly reading exper
 * [W3C Markup Validator](https://validator.w3.org/) - used to validate the HTML code.
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - used to validate the CSS code.
 * [JSHint](https://jshint.com/) - used to validate the site's JavaScript code.
+* [PEP8CI](https://pep8ci.herokuapp.com/) - used to validate the Python code.
 * [Favicon.cc](https://www.favicon.cc/) - used to create the site favicon.
 
 
