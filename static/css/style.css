@@ -19,7 +19,6 @@ body {
   width: auto;
 }
 
-
 h3,
 h4,
 h5,
@@ -290,7 +289,8 @@ About Page
   max-width: 300px;
   border: 4px solid #0a5d61;
   box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.2);
-  max-width: 300px; /* Optional: Adjust the maximum width of the image */
+  max-width: 300px;
+  /* Optional: Adjust the maximum width of the image */
 }
 
 /* ===================================
@@ -325,7 +325,7 @@ Treatments Page
 }
 
 .accordion-button::after {
-  color: #f7f6e5; 
+  color: #f7f6e5;
   filter: none;
 }
 
@@ -419,7 +419,7 @@ Appointments Page
 
 .btn-danger {
   background-color: #8B0000 !important;
-  border-color: #8B0000 !important; 
+  border-color: #8B0000 !important;
 }
 
 
@@ -447,7 +447,7 @@ Appointments Page
   }
 
   .row {
-    margin-bottom: 1.5rem !important; 
+    margin-bottom: 1.5rem !important;
   }
 
   .mb-4 {
@@ -460,6 +460,6 @@ Appointments Page
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-  margin-top: 140px;
+    margin-top: 140px;
   }
 }
